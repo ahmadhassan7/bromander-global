@@ -1,20 +1,12 @@
 'use client';
 
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
   Globe, 
   Target, 
   Lightbulb, 
   Users,
-  Award,
-  TrendingUp,
   Heart,
-  Zap,
-  Brain,
-  Calculator,
-  ArrowRight,
-  CheckCircle,
   Sparkles
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
@@ -422,7 +414,7 @@ export default function AboutPage() {
                     {/* Quote Section */}
                     <blockquote className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border-l-4 border-blue-500 rounded-lg p-6">
                       <p className="text-white font-medium text-lg italic leading-relaxed">
-                        "Technology should enhance human potential, not replace it. At Bromander Global, we're building a future where digital products truly serve human welfare."
+                        &quot;Technology should enhance human potential, not replace it. At Bromander Global, we&apos;re building a future where digital products truly serve human welfare.&quot;
                       </p>
                       <footer className="mt-4 text-blue-400 text-sm">
                         — Carl Oscar Bromander, Founder & CEO

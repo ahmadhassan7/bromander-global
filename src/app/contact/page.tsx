@@ -7,8 +7,6 @@ import {
   MapPin, 
   Phone, 
   Send,
-  Building,
-  Globe,
   CheckCircle,
   ArrowRight
 } from 'lucide-react';
@@ -69,7 +67,7 @@ export default function ContactPage() {
               </h1>
               <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
                 Have questions about our company or portfolio? 
-                We'd love to hear from you.
+                We&apos;d love to hear from you.
               </p>
             </motion.div>
 

@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <p>
-                      Bromander Global ("we," "our," or "us") is a technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping. We are committed to protecting your privacy and ensuring transparency about how we collect, use, and protect your personal information.
+                      Bromander Global (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is a technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping. We are committed to protecting your privacy and ensuring transparency about how we collect, use, and protect your personal information.
                     </p>
                     <p>
                       This Privacy Policy applies to our corporate website and provides an overview of our privacy practices. Each of our portfolio companies maintains its own specific privacy policy for their respective products and services.
@@ -209,7 +209,7 @@ export default function PrivacyPolicyPage() {
                       <p><strong>Address:</strong> Bromander Global, Stockholm, Sweden</p>
                     </div>
                     <p className="text-sm text-gray-400 mt-6">
-                      We reserve the right to update this Privacy Policy periodically. Changes will be posted on this page with an updated "Last updated" date.
+                      We reserve the right to update this Privacy Policy periodically. Changes will be posted on this page with an updated &quot;Last updated&quot; date.
                     </p>
                   </div>
                 </motion.section>

@@ -7,21 +7,9 @@ import { gsap } from 'gsap';
 import CountUp from 'react-countup';
 import { 
   ArrowRight, 
-  Sparkles, 
-  Zap, 
-  Shield,
-  TrendingUp,
-  Users,
-  Award,
-  CheckCircle,
   Globe,
   Brain,
   Calculator,
-  Lightbulb,
-  Target,
-  BarChart3,
-  Rocket,
-  Heart,
   Building,
   Star
 } from 'lucide-react';
@@ -91,7 +79,9 @@ export default function Home() {
         </div>
 
         {/* Animated Text Background - Desktop Only */}
-        <div className="absolute inset-0 overflow-hidden opacity-5 hidden lg:block">
+        <motion.div 
+          className="absolute inset-0 overflow-hidden opacity-5 hidden lg:block"
+          style={{ y }}>
           <motion.div
             animate={{ x: [-1000, 1000] }}
             transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
@@ -106,7 +96,7 @@ export default function Home() {
           >
             BUILD • SCALE • GROW • DISRUPT • 
           </motion.div>
-        </div>
+        </motion.div>
 
         <div className="relative z-10 min-h-screen flex items-center">
           <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -227,132 +217,138 @@ export default function Home() {
             </div>
           </div>
         </div>
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    {/* Multiple Rotating Frames */}
-                    <motion.div
-                      animate={{ 
-                        rotateY: 360,
-                        rotateX: 360
-                      }}
-                      transition={{ 
-                        duration: 30,
-                        repeat: Infinity,
-                        ease: "linear"
-                      }}
-                      className="absolute inset-0"
-                      style={{ transformStyle: 'preserve-3d' }}
-                    >
-                      <div className="absolute inset-0 border-2 border-blue-500/30" />
-                      <div className="absolute inset-0 border-2 border-cyan-500/30 rotate-45" />
-                      <div className="absolute inset-0 border-2 border-emerald-500/30 rotate-90" />
-                    </motion.div>
 
-                    {/* Second Layer Rotating Opposite Direction */}
-                    <motion.div
-                      animate={{ 
-                        rotateY: -360,
-                        rotateZ: 360
-                      }}
-                      transition={{ 
-                        duration: 25,
-                        repeat: Infinity,
-                        ease: "linear"
-                      }}
-                      className="absolute inset-8"
-                      style={{ transformStyle: 'preserve-3d' }}
-                    >
-                      <div className="absolute inset-0 border border-blue-500/20" />
-                      <div className="absolute inset-0 border border-cyan-500/20 rotate-45" />
-                    </motion.div>
+        {/* Complex 3D Animation Section */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 1 }}
+            className="relative w-96 h-96"
+          >
+            <div className="relative w-full h-full flex items-center justify-center">
+              {/* Multiple Rotating Frames */}
+              <motion.div
+                animate={{ 
+                  rotateY: 360,
+                  rotateX: 360
+                }}
+                transition={{ 
+                  duration: 30,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="absolute inset-0"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="absolute inset-0 border-2 border-blue-500/30" />
+                <div className="absolute inset-0 border-2 border-cyan-500/30 rotate-45" />
+                <div className="absolute inset-0 border-2 border-emerald-500/30 rotate-90" />
+              </motion.div>
 
-                    {/* Third Layer */}
-                    <motion.div
-                      animate={{ 
-                        rotateX: 360,
-                        rotateZ: -360
-                      }}
-                      transition={{ 
-                        duration: 35,
-                        repeat: Infinity,
-                        ease: "linear"
-                      }}
-                      className="absolute inset-16"
-                      style={{ transformStyle: 'preserve-3d' }}
-                    >
-                      <div className="absolute inset-0 border border-emerald-500/20" />
-                      <div className="absolute inset-0 border border-blue-500/20 rotate-45" />
-                    </motion.div>
+              {/* Second Layer Rotating Opposite Direction */}
+              <motion.div
+                animate={{ 
+                  rotateY: -360,
+                  rotateZ: 360
+                }}
+                transition={{ 
+                  duration: 25,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="absolute inset-8"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="absolute inset-0 border border-blue-500/20" />
+                <div className="absolute inset-0 border border-cyan-500/20 rotate-45" />
+              </motion.div>
 
-                    {/* Central Glow */}
-                    <motion.div
-                      animate={{ 
-                        scale: [1, 1.2, 1],
-                        opacity: [0.1, 0.3, 0.1]
-                      }}
-                      transition={{ 
-                        duration: 4,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-full blur-3xl"
-                    />
+              {/* Third Layer */}
+              <motion.div
+                animate={{ 
+                  rotateX: 360,
+                  rotateZ: -360
+                }}
+                transition={{ 
+                  duration: 35,
+                  repeat: Infinity,
+                  ease: "linear"
+                }}
+                className="absolute inset-16"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="absolute inset-0 border border-emerald-500/20" />
+                <div className="absolute inset-0 border border-blue-500/20 rotate-45" />
+              </motion.div>
 
-                    {/* Floating Text Elements */}
-                    <div className="absolute inset-0">
-                      {[
-                        { text: 'AI', position: 'top-0 left-1/2 -translate-x-1/2 -translate-y-full' },
-                        { text: 'FINTECH', position: 'bottom-0 left-1/2 -translate-x-1/2 translate-y-full' },
-                        { text: 'WELLNESS', position: 'left-0 top-1/2 -translate-y-1/2 -translate-x-full' },
-                        { text: 'GLOBAL', position: 'right-0 top-1/2 -translate-y-1/2 translate-x-full' }
-                      ].map((item, i) => (
-                        <motion.div
-                          key={item.text}
-                          animate={{ 
-                            opacity: [0.3, 1, 0.3],
-                            scale: [0.8, 1, 0.8]
-                          }}
-                          transition={{ 
-                            duration: 3,
-                            delay: i * 0.5,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                          }}
-                          className={`absolute ${item.position}`}
-                        >
-                          <span className="text-2xl font-black text-white/20">{item.text}</span>
-                        </motion.div>
-                      ))}
-                    </div>
+              {/* Central Glow */}
+              <motion.div
+                animate={{ 
+                  scale: [1, 1.2, 1],
+                  opacity: [0.1, 0.3, 0.1]
+                }}
+                transition={{ 
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-full blur-3xl"
+              />
 
-                    {/* Floating Particles */}
-                    {[...Array(8)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        animate={{ 
-                          y: [-20, 20],
-                          x: [-10, 10],
-                          opacity: [0, 0.5, 0]
-                        }}
-                        transition={{ 
-                          duration: 3 + i * 0.5,
-                          repeat: Infinity,
-                          delay: i * 0.3,
-                          ease: "easeInOut"
-                        }}
-                        className="absolute"
-                        style={{
-                          top: `${Math.random() * 100}%`,
-                          left: `${Math.random() * 100}%`
-                        }}
-                      >
-                        <div className="w-1 h-1 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full" />
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
+              {/* Floating Text Elements */}
+              <div className="absolute inset-0">
+                {[
+                  { text: 'AI', position: 'top-0 left-1/2 -translate-x-1/2 -translate-y-full' },
+                  { text: 'FINTECH', position: 'bottom-0 left-1/2 -translate-x-1/2 translate-y-full' },
+                  { text: 'WELLNESS', position: 'left-0 top-1/2 -translate-y-1/2 -translate-x-full' },
+                  { text: 'GLOBAL', position: 'right-0 top-1/2 -translate-y-1/2 translate-x-full' }
+                ].map((item, i) => (
+                  <motion.div
+                    key={item.text}
+                    animate={{ 
+                      opacity: [0.3, 1, 0.3],
+                      scale: [0.8, 1, 0.8]
+                    }}
+                    transition={{ 
+                      duration: 3,
+                      delay: i * 0.5,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    className={`absolute ${item.position}`}
+                  >
+                    <span className="text-2xl font-black text-white/20">{item.text}</span>
+                  </motion.div>
+                ))}
               </div>
+
+              {/* Floating Particles */}
+              {[...Array(8)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  animate={{ 
+                    y: [-20, 20],
+                    x: [-10, 10],
+                    opacity: [0, 0.5, 0]
+                  }}
+                  transition={{ 
+                    duration: 3 + i * 0.5,
+                    repeat: Infinity,
+                    delay: i * 0.3,
+                    ease: "easeInOut"
+                  }}
+                  className="absolute"
+                  style={{
+                    top: `${Math.random() * 100}%`,
+                    left: `${Math.random() * 100}%`
+                  }}
+                >
+                  <div className="w-1 h-1 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full" />
+                </motion.div>
+              ))}
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Bottom Wave */}
@@ -650,7 +646,7 @@ export default function Home() {
                     <Star key={i} className="w-5 h-5 text-blue-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-300 mb-6 leading-relaxed">"{testimonial.content}"</p>
+                <p className="text-gray-300 mb-6 leading-relaxed">&quot;{testimonial.content}&quot;</p>
                 <div>
                   <h4 className="text-white font-bold">{testimonial.name}</h4>
                   <p className="text-gray-500 text-sm">{testimonial.role}</p>

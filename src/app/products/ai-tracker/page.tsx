@@ -7,28 +7,19 @@ import {
   Heart,
   Shield,
   Sparkles,
-  Smartphone,
   BarChart3,
   Bell,
   Users,
   Target,
   Zap,
-  CheckCircle,
-  ArrowRight,
   Download,
-  Star,
-  Cloud,
   Flower2,
   Sun,
   Moon,
-  Wind,
-  Waves,
   TreePine,
   Apple,
-  Play,
-  ChevronRight
+  Play
 } from 'lucide-react';
-import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -75,35 +66,6 @@ export default function AITrackerPage() {
     }
   ];
 
-  const benefits = [
-    'Reduce AI dependency gradually',
-    'Improve focus and productivity',
-    'Better work-life balance',
-    'Enhanced creativity',
-    'Reduced digital anxiety',
-    'Meaningful human connections'
-  ];
-
-  const testimonials = [
-    {
-      name: 'Sarah M.',
-      role: 'Product Designer',
-      content: 'This app helped me realize I was using AI for tasks I could do myself. Now I feel more confident and creative.',
-      rating: 5
-    },
-    {
-      name: 'David L.',
-      role: 'Software Engineer',
-      content: 'The gentle reminders and insights helped me find a healthy balance with AI tools. Game changer!',
-      rating: 5
-    },
-    {
-      name: 'Emma K.',
-      role: 'Content Writer',
-      content: 'I love how it doesn\'t shame you but guides you towards mindful usage. It\'s like meditation for tech habits.',
-      rating: 5
-    }
-  ];
 
   return (
     <>

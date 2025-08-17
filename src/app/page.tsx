@@ -4,23 +4,16 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
   ArrowRight, 
-  Sparkles, 
-  Zap, 
   Shield,
   TrendingUp,
-  Users,
   Award,
-  CheckCircle,
   Globe,
   Brain,
   Calculator,
   Lightbulb,
   Target,
-  BarChart3,
-  Rocket,
   Heart,
   Building,
-  Star,
   Lock
 } from 'lucide-react';
 import Navbar from '@/components/Navbar';

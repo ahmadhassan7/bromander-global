@@ -6,8 +6,6 @@ import {
   ArrowRight,
   Calculator,
   ChartBar,
-  FileText,
-  TrendingUp,
   DollarSign,
   Receipt,
   Clock,
@@ -15,18 +13,11 @@ import {
   Shield,
   CheckCircle,
   Plus,
-  Minus,
   X,
   ChevronRight,
   ChevronLeft,
   Sparkles,
-  Brain,
-  Database,
-  Building,
-  Users,
-  Target,
-  BarChart3,
-  BookOpen
+  Brain
 } from 'lucide-react';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
@@ -74,7 +65,13 @@ export default function BookkeepingPage() {
   const [showWaitlist, setShowWaitlist] = useState(false);
   const [waitlistMode, setWaitlistMode] = useState<'quick' | 'custom'>('quick');
   const [activeTab, setActiveTab] = useState('survey');
-  const [customRules, setCustomRules] = useState<any[]>([]);
+  interface CustomRule {
+    id: string;
+    condition: string;
+    transactionType: string;
+    account: string;
+  }
+  const [customRules, setCustomRules] = useState<CustomRule[]>([]);
   const [currentRule, setCurrentRule] = useState({
     condition: '',
     transactionType: '',
@@ -125,7 +122,7 @@ export default function BookkeepingPage() {
     // Rule preferences
     usePrebuiltRules: true,
     selectedTemplates: [] as string[],
-    customRulesData: [] as any[]
+    customRulesData: [] as CustomRule[]
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -133,12 +130,12 @@ export default function BookkeepingPage() {
 
   const handleAddRule = () => {
     if (currentRule.condition && currentRule.transactionType && currentRule.account) {
-      setCustomRules([...customRules, { ...currentRule, id: Date.now() }]);
+      setCustomRules([...customRules, { ...currentRule, id: Date.now().toString() }]);
       setCurrentRule({ condition: '', transactionType: '', account: '' });
     }
   };
 
-  const handleRemoveRule = (id: number) => {
+  const handleRemoveRule = (id: string) => {
     setCustomRules(customRules.filter(rule => rule.id !== id));
   };
 
@@ -1233,7 +1230,7 @@ export default function BookkeepingPage() {
                                 >
                                   <div className="flex items-center gap-4 text-sm">
                                     <span className="text-gray-400">When contains</span>
-                                    <span className="text-blue-400 font-medium">"{rule.condition}"</span>
+                                    <span className="text-blue-400 font-medium">&quot;{rule.condition}&quot;</span>
                                     <ArrowRight className="w-4 h-4 text-gray-500" />
                                     <span className="text-cyan-400 font-medium">{rule.transactionType}</span>
                                     <ArrowRight className="w-4 h-4 text-gray-500" />
@@ -1307,9 +1304,9 @@ export default function BookkeepingPage() {
                   <div className="w-24 h-24 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
                     <CheckCircle className="w-12 h-12 text-white" />
                   </div>
-                  <h3 className="text-3xl font-bold text-white mb-4">You're on the list!</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">You&apos;re on the list!</h3>
                   <p className="text-gray-400 mb-8 max-w-md mx-auto">
-                    Thank you for your interest in Smart Bookkeeping. We'll notify you as soon as we launch with exclusive early access benefits.
+                    Thank you for your interest in Smart Bookkeeping. We&apos;ll notify you as soon as we launch with exclusive early access benefits.
                   </p>
                   <button
                     onClick={() => {

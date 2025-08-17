@@ -160,7 +160,7 @@ export default function CookiePolicyPage() {
                       <p>Please note that disabling certain cookies may affect website functionality:</p>
                       <ul className="space-y-1 list-disc list-inside text-sm mt-2">
                         <li>Essential cookies: May prevent basic website functions</li>
-                        <li>Analytics cookies: Won't affect functionality but we can't improve user experience</li>
+                        <li>Analytics cookies: Won&apos;t affect functionality but we can&apos;t improve user experience</li>
                         <li>Functional cookies: May require re-entering preferences on each visit</li>
                       </ul>
                     </div>
@@ -181,7 +181,7 @@ export default function CookiePolicyPage() {
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Data Protection</h3>
-                      <p>We implement appropriate security measures to protect cookie data and ensure it's only used for its intended purpose.</p>
+                      <p>We implement appropriate security measures to protect cookie data and ensure it&apos;s only used for its intended purpose.</p>
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Anonymous Data</h3>
@@ -233,7 +233,7 @@ export default function CookiePolicyPage() {
                       We may update this Cookie Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons.
                     </p>
                     <p>
-                      When we make significant changes, we will update the "Last updated" date at the top of this policy and may provide additional notice through our website.
+                      When we make significant changes, we will update the &quot;Last updated&quot; date at the top of this policy and may provide additional notice through our website.
                     </p>
                   </div>
                 </motion.section>

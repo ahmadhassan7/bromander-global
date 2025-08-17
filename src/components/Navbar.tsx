@@ -11,10 +11,8 @@ import {
   Brain,
   Building,
   Mail,
-  Users,
   Home,
-  Zap,
-  Globe
+  Zap
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 

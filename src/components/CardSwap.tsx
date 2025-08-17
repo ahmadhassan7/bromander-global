@@ -117,7 +117,7 @@ const CardSwap: React.FC<CardSwapProps> = ({
   );
 
   const tlRef = useRef<gsap.core.Timeline | null>(null);
-  const intervalRef = useRef<number>();
+  const intervalRef = useRef<number | undefined>(undefined);
   const container = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -219,18 +219,25 @@ const CardSwap: React.FC<CardSwapProps> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cardDistance, verticalDistance, delay, pauseOnHover, skewAmount, easing]);
 
-  const rendered = childArr.map((child, i) =>
-    isValidElement(child)
-      ? cloneElement(child as React.ReactElement<any>, {
-        key: i,
-        ref: refs[i],
-        style: { width, height, ...(child.props.style ?? {}) },
-        onClick: (e: React.MouseEvent) => {
-          child.props.onClick?.(e);
-          onCardClick?.(i);
-        },
-      }) : child
-  );
+  const rendered = childArr.map((child, i) => {
+    if (!isValidElement(child)) return child;
+    
+    const typedChild = child as React.ReactElement<{
+      style?: React.CSSProperties;
+      onClick?: (e: React.MouseEvent) => void;
+      ref?: React.Ref<HTMLDivElement>;
+    }>;
+    
+    return cloneElement(typedChild, {
+      key: i,
+      ref: refs[i],
+      style: { width, height, ...(typedChild.props.style ?? {}) },
+      onClick: (e: React.MouseEvent) => {
+        typedChild.props.onClick?.(e);
+        onCardClick?.(i);
+      },
+    });
+  });
 
   return (
     <div

@@ -57,7 +57,7 @@ export default function TermsOfServicePage() {
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <p>
-                      Welcome to Bromander Global. These Terms of Service ("Terms") govern your use of our website and services. Bromander Global is a technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping.
+                      Welcome to Bromander Global. These Terms of Service (&quot;Terms&quot;) govern your use of our website and services. Bromander Global is a technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping.
                     </p>
                     <p>
                       By accessing or using our website or services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our services.
@@ -155,7 +155,7 @@ export default function TermsOfServicePage() {
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Service Availability</h3>
-                      <p>Our services are provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free service.</p>
+                      <p>Our services are provided &quot;as is&quot; without warranties of any kind. We do not guarantee uninterrupted or error-free service.</p>
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">Limitation of Liability</h3>
@@ -198,7 +198,7 @@ export default function TermsOfServicePage() {
                   <h2 className="text-2xl font-bold text-white mb-6">Changes to Terms</h2>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <p>
-                      We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated "Last updated" date. Your continued use of our services after changes are posted constitutes acceptance of the new Terms.
+                      We reserve the right to modify these Terms at any time. Changes will be posted on this page with an updated &quot;Last updated&quot; date. Your continued use of our services after changes are posted constitutes acceptance of the new Terms.
                     </p>
                     <p>
                       For significant changes, we may provide additional notice through our website or other communication channels.
