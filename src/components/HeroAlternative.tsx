@@ -2,9 +2,22 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import LightRays from '@/components/LightRays';
 
 export default function HeroAlternative() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   return (
     <section className="relative min-h-screen overflow-hidden bg-black">
       {/* Light Rays Background Effect */}
@@ -12,11 +25,11 @@ export default function HeroAlternative() {
         raysOrigin="top-center"
         raysColor="#3b82f6"
         raysSpeed={5.0}
-        lightSpread={8.0}
-        rayLength={3.0}
+        lightSpread={12.0}
+        rayLength={isMobile ? 7.0 : 4.5}
         pulsating={false}
-        fadeDistance={0.8}
-        saturation={0.8}
+        fadeDistance={0.6}
+        saturation={1.2}
         followMouse={true}
         mouseInfluence={0.15}
         noiseAmount={0.0}
@@ -25,7 +38,7 @@ export default function HeroAlternative() {
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 z-2">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/60" />
       </div>
 
       <div className="relative z-10 min-h-screen flex items-center justify-center">
@@ -77,15 +90,16 @@ export default function HeroAlternative() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-6 justify-center pt-8"
+              className="flex flex-col sm:flex-row gap-4 justify-center pt-8"
             >
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto"
               >
                 <Link 
                   href="#products" 
-                  className="group relative inline-flex items-center justify-center px-12 py-6 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider overflow-hidden rounded-xl text-lg"
+                  className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider overflow-hidden rounded-xl w-full sm:w-auto"
                 >
                   <span className="relative z-10">Our Portfolio</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -95,10 +109,11 @@ export default function HeroAlternative() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto"
               >
                 <Link 
                   href="/contact" 
-                  className="group relative inline-flex items-center justify-center px-12 py-6 border-2 border-white/20 text-white font-bold uppercase tracking-wider hover:border-blue-500 transition-all overflow-hidden rounded-xl backdrop-blur-sm text-lg"
+                  className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-white/20 text-white font-bold uppercase tracking-wider hover:border-blue-500 transition-all overflow-hidden rounded-xl backdrop-blur-sm w-full sm:w-auto"
                 >
                   <span className="relative z-10">Contact Us</span>
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
