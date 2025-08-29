@@ -326,7 +326,7 @@ export default function AITrackerPage() {
                   step: 'STEP 02', 
                   title: 'Understand Your Habits',
                   subtitle: 'Smart Tracking',
-                  description: 'Our AI silently observes your usage patterns, creating a comprehensive picture of your digital behavior.',
+                  description: 'The app quietly monitors your AI tool usage, creating a comprehensive picture of your digital behavior patterns.',
                   icon: BarChart3,
                   gradient: 'from-pink-500 to-purple-500',
                   bg: 'from-pink-50 to-purple-50',

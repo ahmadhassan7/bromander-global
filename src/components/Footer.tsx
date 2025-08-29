@@ -177,6 +177,16 @@ export default function Footer() {
               <Link href="/cookies" className="text-gray-500 hover:text-white transition-colors">
                 Cookie Policy
               </Link>
+              <button 
+                onClick={() => {
+                  if (typeof window !== 'undefined' && (window as any).openCookieSettings) {
+                    (window as any).openCookieSettings();
+                  }
+                }}
+                className="text-gray-500 hover:text-white transition-colors"
+              >
+                Cookie Settings
+              </button>
             </div>
           </div>
         </motion.div>
