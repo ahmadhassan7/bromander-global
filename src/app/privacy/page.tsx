@@ -8,7 +8,7 @@ import SmoothScroll from '@/components/SmoothScroll';
 import { useState } from 'react';
 
 export default function PrivacyPolicyPage() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection] = useState('');
 
   return (
     <>
@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
                   <p className="text-gray-300 leading-relaxed">
                     This privacy policy is designed to comply with the General Data Protection Regulation (GDPR), 
                     Swedish Data Protection Act, and other applicable EU regulations. You have specific rights regarding 
-                    your personal data, and we're committed to protecting your privacy.
+                    your personal data, and we&apos;re committed to protecting your privacy.
                   </p>
                 </div>
               </div>
@@ -349,7 +349,7 @@ export default function PrivacyPolicyPage() {
 
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">Legal Requirements</h4>
-                        <p className="text-sm">We may disclose your data when required by law, court orders, or to protect our rights, users' safety, or comply with legal processes.</p>
+                        <p className="text-sm">We may disclose your data when required by law, court orders, or to protect our rights, users&apos; safety, or comply with legal processes.</p>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
@@ -406,7 +406,7 @@ export default function PrivacyPolicyPage() {
                           <AlertCircle className="w-4 h-4" />
                           Right to Erasure (Art. 17)
                         </h4>
-                        <p className="text-sm">Request deletion of your personal data ('right to be forgotten').</p>
+                        <p className="text-sm">Request deletion of your personal data (&apos;right to be forgotten&apos;).</p>
                       </div>
 
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
@@ -453,7 +453,7 @@ export default function PrivacyPolicyPage() {
                         </div>
                       </div>
                       <p className="text-sm mt-4 text-gray-400">
-                        We may need to verify your identity before processing your request. If we refuse your request, we'll explain why and inform you of your right to complain to the Swedish Authority for Privacy Protection (IMY).
+                        We may need to verify your identity before processing your request. If we refuse your request, we&apos;ll explain why and inform you of your right to complain to the Swedish Authority for Privacy Protection (IMY).
                       </p>
                     </div>
                   </div>
@@ -743,7 +743,7 @@ export default function PrivacyPolicyPage() {
                             File a Complaint
                           </h4>
                           <div className="text-sm space-y-2">
-                            <p>If you're unsatisfied with our response, you can file a complaint with:</p>
+                            <p>If you&apos;re unsatisfied with our response, you can file a complaint with:</p>
                             <div className="space-y-1">
                               <p><strong>Swedish Authority for Privacy Protection (IMY)</strong></p>
                               <p>Website: imy.se</p>

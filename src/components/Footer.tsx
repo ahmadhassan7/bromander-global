@@ -4,6 +4,12 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Mail, MapPin, Phone, Globe } from 'lucide-react';
 
+declare global {
+  interface Window {
+    openCookieSettings?: () => void;
+  }
+}
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -179,8 +185,8 @@ export default function Footer() {
               </Link>
               <button 
                 onClick={() => {
-                  if (typeof window !== 'undefined' && (window as any).openCookieSettings) {
-                    (window as any).openCookieSettings();
+                  if (typeof window !== 'undefined' && window.openCookieSettings) {
+                    window.openCookieSettings();
                   }
                 }}
                 className="text-gray-500 hover:text-white transition-colors"

@@ -4,6 +4,18 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, Settings, X, Check, AlertCircle, Shield, BarChart3, Users, Share } from 'lucide-react';
 
+declare global {
+  interface Window {
+    openCookieSettings?: () => void;
+    resetAllCookies?: () => void;
+    dataLayer?: unknown[];
+  }
+}
+
+interface GtagFunction {
+  (...args: unknown[]): void;
+}
+
 interface CookiePreferences {
   necessary: boolean;
   analytics: boolean;
@@ -89,10 +101,10 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
       script.async = true;
       document.head.appendChild(script);
       
-      (window as any).dataLayer = (window as any).dataLayer || [];
-      function gtag(...args: any[]) {
-        (window as any).dataLayer.push(args);
-      }
+      window.dataLayer = window.dataLayer || [];
+      const gtag: GtagFunction = (...args: unknown[]) => {
+        window.dataLayer?.push(args);
+      };
       gtag('js', new Date());
       gtag('config', 'GA_MEASUREMENT_ID', {
         anonymize_ip: true,
@@ -166,8 +178,10 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
 
   // Global function to open cookie settings from anywhere
   useEffect(() => {
-    (window as any).openCookieSettings = () => setShowSettings(true);
-    (window as any).resetAllCookies = resetAllCookies;
+    if (typeof window !== 'undefined') {
+      window.openCookieSettings = () => setShowSettings(true);
+      window.resetAllCookies = resetAllCookies;
+    }
   }, []);
 
   return (
@@ -189,7 +203,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                     <h3 className="text-white font-semibold mb-2">Cookie Consent</h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
                       We use cookies to enhance your browsing experience and analyze website traffic. 
-                      By clicking "Accept All", you consent to our use of cookies. You can manage your preferences or learn more in our{' '}
+                      By clicking &quot;Accept All&quot;, you consent to our use of cookies. You can manage your preferences or learn more in our{' '}
                       <button 
                         onClick={openSettings}
                         className="text-blue-500 hover:text-blue-400 underline"

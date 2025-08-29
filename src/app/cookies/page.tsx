@@ -1,15 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cookie, Settings, Eye, Shield, BarChart3, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Database, AlertCircle, Ban, Lock, FileText, Users, Building, BookOpen, Home, Share } from 'lucide-react';
+import { Cookie, Settings, Eye, Shield, BarChart3, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Database, AlertCircle, Ban, Lock, FileText, Building, Share } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
-import CookieConsent from '@/components/CookieConsent';
 import { useState } from 'react';
 
 export default function CookiePolicyPage() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection] = useState('');
 
   return (
     <>
@@ -247,8 +246,8 @@ export default function CookiePolicyPage() {
                         <h4 className="text-white font-semibold mb-2">Swedish Enforcement (2025)</h4>
                         <p className="text-sm">
                           Swedish authorities (IMY/PTS) actively enforce cookie consent requirements. 
-                          In April 2025, new guidelines prohibited "dark patterns" in consent interfaces, 
-                          requiring equal treatment of "Accept" and "Reject" options.
+                          In April 2025, new guidelines prohibited &quot;dark patterns&quot; in consent interfaces, 
+                          requiring equal treatment of &quot;Accept&quot; and &quot;Reject&quot; options.
                         </p>
                       </div>
                     </div>
@@ -360,7 +359,7 @@ export default function CookiePolicyPage() {
                           Compliant Consent Interface
                         </h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Equal prominence of "Accept" and "Reject" buttons</li>
+                          <li>Equal prominence of &quot;Accept&quot; and &quot;Reject&quot; buttons</li>
                           <li>No pre-checked boxes for non-essential cookies</li>
                           <li>Clear, plain language explanations</li>
                           <li>Granular control over cookie categories</li>
@@ -381,7 +380,7 @@ export default function CookiePolicyPage() {
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">Swedish Law Compliance (2025)</h4>
                         <p className="text-sm">
-                          Following IMY guidelines from April 2025, our consent mechanism avoids "dark patterns" 
+                          Following IMY guidelines from April 2025, our consent mechanism avoids &quot;dark patterns&quot; 
                           and ensures genuine user choice. All consent is documented and can be audited.
                         </p>
                       </div>
@@ -764,7 +763,7 @@ export default function CookiePolicyPage() {
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">Update Process</h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>Minor Changes:</strong> Updated immediately with new "last updated" date</p>
+                          <p><strong>Minor Changes:</strong> Updated immediately with new &quot;last updated&quot; date</p>
                           <p><strong>Material Changes:</strong> 30 days advance notice via email and website banner</p>
                           <p><strong>New Cookie Categories:</strong> Fresh consent required before deployment</p>
                           <p><strong>Version History:</strong> Previous versions archived for compliance audit</p>
@@ -881,8 +880,8 @@ export default function CookiePolicyPage() {
                         <div className="flex items-center gap-4">
                           <button 
                             onClick={() => {
-                              if (typeof window !== 'undefined' && (window as any).openCookieSettings) {
-                                (window as any).openCookieSettings();
+                              if (typeof window !== 'undefined' && (window as unknown as { openCookieSettings?: () => void }).openCookieSettings) {
+                                (window as unknown as { openCookieSettings: () => void }).openCookieSettings();
                               }
                             }}
                             className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white text-sm transition-colors flex items-center gap-2"
@@ -892,9 +891,9 @@ export default function CookiePolicyPage() {
                           </button>
                           <button 
                             onClick={() => {
-                              if (typeof window !== 'undefined' && (window as any).resetAllCookies) {
+                              if (typeof window !== 'undefined' && (window as unknown as { resetAllCookies?: () => void }).resetAllCookies) {
                                 if (confirm('This will reset all cookie preferences and reload the page. Continue?')) {
-                                  (window as any).resetAllCookies();
+                                  (window as unknown as { resetAllCookies: () => void }).resetAllCookies();
                                 }
                               }
                             }}

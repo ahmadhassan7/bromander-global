@@ -127,7 +127,7 @@ export default function InfiniteScroll({
       } else {
         return () => {
           observer.kill();
-          rafId && cancelAnimationFrame(rafId);
+          if (rafId) cancelAnimationFrame(rafId);
         };
       }
     }

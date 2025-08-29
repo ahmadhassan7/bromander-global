@@ -1,14 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FileText, Scale, Shield, Users, AlertTriangle, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Database, Settings, Share, CreditCard, Ban, Eye, Lock, BookOpen, Home, Building, AlertCircle } from 'lucide-react';
+import { Scale, Shield, AlertTriangle, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Ban, BookOpen, Building, AlertCircle, Settings } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
 import { useState } from 'react';
 
 export default function TermsOfServicePage() {
-  const [activeSection, setActiveSection] = useState('');
+  const [activeSection] = useState('');
 
   return (
     <>
@@ -145,7 +145,7 @@ export default function TermsOfServicePage() {
                       Bromander Global AB is a Swedish technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping. We provide corporate information services and act as a holding company for our portfolio of technology businesses.
                     </p>
                     <p>
-                      These Terms of Service ("Terms") constitute a legally binding agreement between you ("User," "you," or "your") and Bromander Global AB regarding your use of our website, services, and any related content or materials.
+                      These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;User,&quot; &quot;you,&quot; or &quot;your&quot;) and Bromander Global AB regarding your use of our website, services, and any related content or materials.
                     </p>
                   </div>
                 </motion.section>
@@ -165,19 +165,19 @@ export default function TermsOfServicePage() {
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <div className="grid gap-4">
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">"Company," "we," "us," "our"</h4>
+                        <h4 className="text-white font-semibold mb-2">&quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; &quot;our&quot;</h4>
                         <p className="text-sm">Refers to Bromander Global AB, a Swedish limited liability company.</p>
                       </div>
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">"Consumer"</h4>
+                        <h4 className="text-white font-semibold mb-2">&quot;Consumer&quot;</h4>
                         <p className="text-sm">A natural person acting for purposes outside their trade, business, craft, or profession (as defined by EU Consumer Rights Directive).</p>
                       </div>
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">"Services"</h4>
+                        <h4 className="text-white font-semibold mb-2">&quot;Services&quot;</h4>
                         <p className="text-sm">Our corporate website, information services, and any related digital services provided by Bromander Global AB.</p>
                       </div>
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">"Distance Contract"</h4>
+                        <h4 className="text-white font-semibold mb-2">&quot;Distance Contract&quot;</h4>
                         <p className="text-sm">Any contract concluded between us and a consumer under an organized distance sales scheme without simultaneous physical presence (per Swedish Distance Contracts Act).</p>
                       </div>
                     </div>
@@ -407,7 +407,7 @@ export default function TermsOfServicePage() {
                         <h4 className="text-white font-semibold mb-2">🏢 Our Ownership Rights</h4>
                         <p className="text-sm mb-2">All intellectual property rights in and to our services belong to Bromander Global AB or our licensors, including:</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Trademarks, service marks, and trade names ("Bromander Global," logos, etc.)</li>
+                          <li>Trademarks, service marks, and trade names (&quot;Bromander Global,&quot; logos, etc.)</li>
                           <li>Copyrights in website content, text, graphics, images, and software</li>
                           <li>Patents and patent applications</li>
                           <li>Trade secrets and proprietary business information</li>
@@ -524,7 +524,7 @@ export default function TermsOfServicePage() {
                     <div className="space-y-4">
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">Service Warranties</h4>
-                        <p className="text-sm mb-2">Our services are provided "as is" but we warrant that:</p>
+                        <p className="text-sm mb-2">Our services are provided &quot;as is&quot; but we warrant that:</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
                           <li>Services will be provided with reasonable skill and care</li>
                           <li>Information provided will be materially accurate when published</li>
@@ -621,7 +621,7 @@ export default function TermsOfServicePage() {
                     <div className="space-y-4">
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">Modification Rights</h4>
-                        <p className="text-sm">We may update these Terms to reflect changes in law, regulation, business practices, or service improvements. Updates will be published on this page with a revised "last updated" date.</p>
+                        <p className="text-sm">We may update these Terms to reflect changes in law, regulation, business practices, or service improvements. Updates will be published on this page with a revised &quot;last updated&quot; date.</p>
                       </div>
 
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
