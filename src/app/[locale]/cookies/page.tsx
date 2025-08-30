@@ -742,7 +742,7 @@ export default function CookiePolicyPage() {
                           <div className="space-y-2 text-sm">
                             <div className="flex items-center gap-3">
                               <Mail className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.cookieInquiries.email')}</span>
+                              <span>{t('contact.cookieInquiries.cookieEmail')}</span>
                             </div>
                             <div className="flex items-center gap-3">
                               <Mail className="w-4 h-4 text-blue-500" />
@@ -788,9 +788,10 @@ export default function CookiePolicyPage() {
                         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                           <h4 className="text-white font-semibold mb-3">{t('contact.responseTimes.title')}</h4>
                           <div className="text-sm space-y-1">
-                            {t.raw('contact.responseTimes.times').map((time: {type: string, duration: string}, index: number) => (
-                              <p key={index}><strong>{time.type}:</strong> {time.duration}</p>
-                            ))}
+                            <p><strong>Cookie questions:</strong> {t('contact.responseTimes.cookieQuestions')}</p>
+                            <p><strong>Consent issues:</strong> {t('contact.responseTimes.consentIssues')}</p>
+                            <p><strong>Technical problems:</strong> {t('contact.responseTimes.technicalProblems')}</p>
+                            <p><strong>Legal inquiries:</strong> {t('contact.responseTimes.legalInquiries')}</p>
                           </div>
                         </div>
                       </div>
