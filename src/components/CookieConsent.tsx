@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Cookie, Settings, X, Check, AlertCircle, Shield, BarChart3, Users, Share } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 declare global {
   interface Window {
@@ -28,6 +29,7 @@ interface CookieConsentProps {
 }
 
 export default function CookieConsent({ onPreferencesChange }: CookieConsentProps) {
+  const t = useTranslations('cookieConsent');
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<CookiePreferences>({
@@ -200,15 +202,14 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                 <div className="flex items-start gap-3 flex-1">
                   <Cookie className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-white font-semibold mb-2">Cookie Consent</h3>
+                    <h3 className="text-white font-semibold mb-2">{t('banner.title')}</h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
-                      We use cookies to enhance your browsing experience and analyze website traffic. 
-                      By clicking &quot;Accept All&quot;, you consent to our use of cookies. You can manage your preferences or learn more in our{' '}
+                      {t('banner.description')}{' '}
                       <button 
                         onClick={openSettings}
                         className="text-blue-500 hover:text-blue-400 underline"
                       >
-                        cookie policy
+                        {t('banner.policyLink')}
                       </button>.
                     </p>
                   </div>
@@ -220,19 +221,19 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                     className="flex items-center gap-2 px-4 py-2 border border-gray-600 text-gray-300 hover:text-white hover:border-gray-500 rounded transition-colors"
                   >
                     <Settings className="w-4 h-4" />
-                    Customize
+                    {t('banner.customize')}
                   </button>
                   <button
                     onClick={acceptNecessaryOnly}
                     className="px-4 py-2 border border-gray-600 text-gray-300 hover:text-white hover:border-gray-500 rounded transition-colors"
                   >
-                    Necessary Only
+                    {t('banner.necessaryOnly')}
                   </button>
                   <button
                     onClick={acceptAll}
                     className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors font-medium"
                   >
-                    Accept All
+                    {t('banner.acceptAll')}
                   </button>
                 </div>
               </div>
@@ -261,7 +262,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                   <Settings className="w-6 h-6 text-blue-500" />
-                  Cookie Preferences
+                  {t('settings.title')}
                 </h2>
                 <button
                   onClick={() => setShowSettings(false)}
@@ -275,11 +276,10 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                 <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <AlertCircle className="w-4 h-4 text-blue-500" />
-                    <span className="text-white font-semibold text-sm">Swedish Law Compliance</span>
+                    <span className="text-white font-semibold text-sm">{t('settings.compliance.title')}</span>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    This consent interface complies with Swedish Electronic Communications Act and 2025 IMY guidelines. 
-                    Your choices are respected and can be changed at any time.
+                    {t('settings.compliance.description')}
                   </p>
                 </div>
 
@@ -288,18 +288,17 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <Shield className="w-5 h-5 text-green-500" />
-                      <h3 className="text-white font-semibold">Strictly Necessary Cookies</h3>
+                      <h3 className="text-white font-semibold">{t('settings.categories.necessary.title')}</h3>
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="text-green-500 text-sm">Always Active</span>
+                      <span className="text-green-500 text-sm">{t('settings.categories.necessary.status')}</span>
                       <div className="w-10 h-5 bg-green-500 rounded-full relative">
                         <div className="w-4 h-4 bg-white rounded-full absolute right-0.5 top-0.5"></div>
                       </div>
                     </div>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    These cookies are essential for the website to function and cannot be disabled. 
-                    They include session management, security tokens, and load balancing.
+                    {t('settings.categories.necessary.description')}
                   </p>
                 </div>
 
@@ -308,7 +307,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <BarChart3 className="w-5 h-5 text-blue-500" />
-                      <h3 className="text-white font-semibold">Analytics Cookies</h3>
+                      <h3 className="text-white font-semibold">{t('settings.categories.analytics.title')}</h3>
                     </div>
                     <button
                       onClick={() => updatePreference('analytics', !preferences.analytics)}
@@ -324,8 +323,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                     </button>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    Help us understand how visitors interact with our website through Google Analytics. 
-                    Data is anonymized and used to improve user experience.
+                    {t('settings.categories.analytics.description')}
                   </p>
                 </div>
 
@@ -334,7 +332,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <Users className="w-5 h-5 text-purple-500" />
-                      <h3 className="text-white font-semibold">Functional Cookies</h3>
+                      <h3 className="text-white font-semibold">{t('settings.categories.functional.title')}</h3>
                     </div>
                     <button
                       onClick={() => updatePreference('functional', !preferences.functional)}
@@ -350,8 +348,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                     </button>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    Remember your preferences such as language selection, theme settings, and form data 
-                    to provide a personalized experience.
+                    {t('settings.categories.functional.description')}
                   </p>
                 </div>
 
@@ -360,7 +357,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
                       <Share className="w-5 h-5 text-orange-500" />
-                      <h3 className="text-white font-semibold">Marketing Cookies</h3>
+                      <h3 className="text-white font-semibold">{t('settings.categories.marketing.title')}</h3>
                     </div>
                     <button
                       onClick={() => updatePreference('marketing', !preferences.marketing)}
@@ -376,8 +373,7 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                     </button>
                   </div>
                   <p className="text-gray-300 text-sm">
-                    Used for advertising and social media integration. Help us deliver relevant content 
-                    and measure campaign effectiveness.
+                    {t('settings.categories.marketing.description')}
                   </p>
                 </div>
               </div>
@@ -387,14 +383,14 @@ export default function CookieConsent({ onPreferencesChange }: CookieConsentProp
                   onClick={acceptNecessaryOnly}
                   className="px-4 py-2 border border-gray-600 text-gray-300 hover:text-white hover:border-gray-500 rounded transition-colors"
                 >
-                  Necessary Only
+                  {t('settings.actions.necessaryOnly')}
                 </button>
                 <button
                   onClick={() => savePreferences(preferences)}
                   className="flex-1 px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors font-medium flex items-center justify-center gap-2"
                 >
                   <Check className="w-4 h-4" />
-                  Save Preferences
+                  {t('settings.actions.savePreferences')}
                 </button>
               </div>
             </motion.div>

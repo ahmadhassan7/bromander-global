@@ -1,0 +1,1778 @@
+{
+  "site": {
+    "title": "Bromander Global | Innovative Solutions for Modern Businesses",
+    "description": "Bromander Global delivers cutting-edge products including AI Reliance Tracker and Smart Bookkeeping app. Empowering businesses with technology that transforms how you work.",
+    "keywords": "Bromander Global, AI Reliance Tracker, Smart Bookkeeping, business solutions, digital wellness, automation"
+  },
+  "nav": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "english": "English",
+    "swedish": "Swedish"
+  },
+  "hero": {
+    "title": "BROMANDER",
+    "subtitle": "GLOBAL",
+    "description": "A technology holding company that owns and operates innovative digital products. We believe in creating solutions that enhance human potential and improve digital wellness.",
+    "features": {
+      "holding": "Technology Holding Company",
+      "portfolio": "Product Portfolio Management",
+      "innovation": "Innovation Investment"
+    },
+    "cta": {
+      "portfolio": "Our Portfolio",
+      "contact": "Contact Us"
+    }
+  },
+  "products": {
+    "title": "Owned By",
+    "subtitle": "Bromander Global",
+    "description": "Innovative digital products that enhance human potential and business efficiency through thoughtful technology and design.",
+    "values": {
+      "privacy": {
+        "title": "Privacy First",
+        "description": "All our products are built with privacy by design and robust security measures."
+      },
+      "human": {
+        "title": "Human-Centered",
+        "description": "We invest in products that genuinely enhance human capabilities and well-being."
+      },
+      "growth": {
+        "title": "Sustainable Growth",
+        "description": "Building lasting value for users through continuous innovation and improvement."
+      }
+    },
+    "learnMore": "Learn more about our mission",
+    "aiTracker": {
+      "name": "AI Reliance Tracker",
+      "tagline": "Digital Wellness Tool",
+      "description": "Monitor your AI usage patterns and maintain healthy technology relationships with our privacy-first tracking system.",
+      "shortDescription": "Digital wellness and mindful AI usage",
+      "tags": {
+        "analytics": "Analytics",
+        "privacy": "Privacy",
+        "insights": "Insights"
+      }
+    },
+    "bookkeeping": {
+      "name": "Smart Bookkeeping",
+      "shortName": "Bookkeeping AI",
+      "tagline": "Financial Assistant",
+      "description": "Intelligent financial management with automated categorization, real-time insights, and smart reporting.",
+      "shortDescription": "Intelligent financial management platform",
+      "tags": {
+        "ai": "AI-Powered",
+        "realtime": "Real-time",
+        "reports": "Reports"
+      }
+    }
+  },
+  "vision": {
+    "title": "Our",
+    "subtitle": "Vision",
+    "description": "Building the future through strategic technology ownership and responsible innovation",
+    "strategic": {
+      "title": "Strategic Ownership",
+      "description": "We identify and acquire innovative digital products with strong growth potential and user impact."
+    },
+    "operational": {
+      "title": "Operational Excellence", 
+      "description": "Our portfolio companies benefit from shared resources, expertise, and strategic guidance."
+    },
+    "sustainable": {
+      "title": "Sustainable Growth",
+      "description": "We focus on long-term value creation while maintaining the unique identity of each product."
+    }
+  },
+  "principles": {
+    "title": "Our",
+    "subtitle": "Principles",
+    "description": "The core values that guide our investment decisions and operational approach",
+    "humanCentered": {
+      "title": "Human-Centered Innovation",
+      "description": "We invest in products that genuinely enhance human capabilities and well-being."
+    },
+    "digitalWellness": {
+      "title": "Digital Wellness Focus",
+      "description": "Our portfolio prioritizes healthy technology relationships and cognitive independence."
+    },
+    "longTerm": {
+      "title": "Long-term Value Creation",
+      "description": "We build sustainable businesses that create lasting value for users and stakeholders."
+    },
+    "privacy": {
+      "title": "Privacy & Security First",
+      "description": "All our products are built with privacy by design and robust security measures."
+    },
+    "transparent": {
+      "title": "Transparent Operations",
+      "description": "We maintain clear communication about our ownership and operational practices."
+    },
+    "responsible": {
+      "title": "Responsible Growth",
+      "description": "We scale thoughtfully, ensuring our products remain true to their core mission."
+    }
+  },
+  "cta": {
+    "title": "READY TO",
+    "subtitle": "EXPLORE?",
+    "description": "Discover our innovative products and see how they can transform your digital experience",
+    "portfolio": "View Portfolio",
+    "about": "About Us"
+  },
+  "footer": {
+    "description": "A technology holding company that owns and operates innovative digital products focused on enhancing human potential and digital wellness.",
+    "contact": "GET IN TOUCH",
+    "products": "OUR PRODUCTS",
+    "company": "COMPANY",
+    "contactInfo": "CONTACT",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "contact": "Contact",
+      "aiTracker": "AI Reliance Tracker",
+      "bookkeeping": "Smart Bookkeeping"
+    },
+    "contactDetails": {
+      "email": "hello@bromanderglobal.com",
+      "phone": "+46 70 123 45 67",
+      "location": "Stockholm, Sweden"
+    },
+    "legal": {
+      "copyright": "All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service", 
+      "cookies": "Cookie Policy",
+      "cookieSettings": "Cookie Settings"
+    }
+  },
+  "scrollItems": {
+    "technologyHolding": "Technology Holding",
+    "aiTracker": "AI Tracker",
+    "smartBookkeeping": "Smart Bookkeeping",
+    "strategicOwnership": "Strategic Ownership",
+    "sustainableGrowth": "Sustainable Growth",
+    "privacyFirst": "Privacy First",
+    "humanCentered": "Human-Centered",
+    "innovationFocus": "Innovation Focus"
+  },
+  "aiTrackerPage": {
+    "badge": "Mindful Technology",
+    "hero": {
+      "title1": "Find Your Balance",
+      "title2": "with AI",
+      "description": "A gentle companion that helps you build a healthier relationship with AI. Track, understand, and improve your digital wellness journey.",
+      "download": {
+        "getItOn": "Get it on",
+        "googlePlay": "Google Play",
+        "downloadOn": "Download on the",
+        "appStore": "App Store",
+        "features": "Free to download • No ads • Privacy first"
+      }
+    },
+    "marquee": {
+      "item1": "Track Your AI Usage",
+      "item2": "Build Better Habits",
+      "item3": "Mindful Technology",
+      "item4": "Stay Focused",
+      "item5": "Weekly Insights",
+      "item6": "Privacy First",
+      "item7": "No Ads Ever",
+      "item8": "Boost Productivity"
+    },
+    "featuresSection": {
+      "title1": "Features that",
+      "title2": "Care",
+      "subtitle": "Designed with your wellbeing in mind, every feature promotes mindful technology use"
+    },
+    "features": [
+      {
+        "title": "Mindful AI Usage",
+        "description": "Track and understand your AI interactions with gentle insights"
+      },
+      {
+        "title": "Wellness First",
+        "description": "Prioritize mental health with usage limits and mindful breaks"
+      },
+      {
+        "title": "Privacy Protected",
+        "description": "Your data stays on your device, always secure and private"
+      },
+      {
+        "title": "Gentle Analytics",
+        "description": "Understand patterns without judgment, grow at your pace"
+      },
+      {
+        "title": "Mindful Reminders",
+        "description": "Soft nudges to maintain healthy AI boundaries"
+      },
+      {
+        "title": "Community Support",
+        "description": "Connect with others on their mindful tech journey"
+      }
+    ],
+    "howItWorks": {
+      "badge": "Your Path to Freedom",
+      "title1": "Journey to",
+      "title2": "Digital Balance",
+      "subtitle": "Four transformative steps to reclaim your cognitive independence",
+      "step1": {
+        "step": "STEP 01",
+        "title": "Begin Your Journey",
+        "subtitle": "Quick Setup",
+        "description": "Download our app and create your personalized wellness profile in just 2 minutes. Set your goals and preferences.",
+        "feature1": "2-minute setup",
+        "feature2": "Personalized goals",
+        "feature3": "Privacy-first approach"
+      },
+      "step2": {
+        "step": "STEP 02",
+        "title": "Understand Your Habits",
+        "subtitle": "Smart Tracking",
+        "description": "The app quietly monitors your AI tool usage, creating a comprehensive picture of your digital behavior patterns.",
+        "feature1": "Passive monitoring",
+        "feature2": "Pattern recognition",
+        "feature3": "Zero judgment"
+      },
+      "step3": {
+        "step": "STEP 03",
+        "title": "Gain Clear Insights",
+        "subtitle": "Personalized Analytics",
+        "description": "Receive weekly insights tailored to your unique patterns, helping you understand your relationship with AI.",
+        "feature1": "Weekly reports",
+        "feature2": "Trend analysis",
+        "feature3": "Actionable insights"
+      },
+      "step4": {
+        "step": "STEP 04",
+        "title": "Transform Your Life",
+        "subtitle": "Mindful Growth",
+        "description": "Build lasting habits with our gentle guidance system, designed to help you grow at your own pace.",
+        "feature1": "Gentle nudges",
+        "feature2": "Habit building",
+        "feature3": "Community support"
+      }
+    },
+    "benefits": {
+      "badge": "Life-Changing Benefits",
+      "title1": "Transform Your",
+      "title2": "Digital Life",
+      "subtitle": "Discover the profound impact of mindful AI usage on every aspect of your life",
+      "mainBenefit": {
+        "title": "Reclaim Your Cognitive Freedom",
+        "description": "Break free from AI dependency and rediscover your natural problem-solving abilities. Our users report 73% improvement in creative thinking within just 4 weeks.",
+        "tag1": "Better Focus",
+        "tag2": "Enhanced Creativity",
+        "tag3": "Clearer Thinking"
+      },
+      "stat1": {
+        "value": "2.5x",
+        "label": "Productivity Boost",
+        "subtitle": "Without constant AI interruptions"
+      },
+      "stat2": {
+        "value": "85%",
+        "label": "Less Digital Anxiety",
+        "subtitle": "Reported by active users"
+      },
+      "benefit1": {
+        "title": "Improved Focus",
+        "description": "Stay in deep work longer without AI distractions"
+      },
+      "benefit2": {
+        "title": "Better Relationships",
+        "description": "More present in real-world interactions"
+      },
+      "benefit3": {
+        "title": "Quality Sleep",
+        "description": "Reduced screen time improves rest patterns"
+      },
+      "benefit4": {
+        "title": "Creative Renaissance",
+        "description": "Rediscover your natural creative abilities"
+      }
+    },
+    "cta": {
+      "title": "Start Your Mindful Journey Today",
+      "subtitle": "Download the app and take the first step towards a balanced digital life",
+      "download": {
+        "googlePlay": {
+          "getItOn": "Get it on",
+          "storeName": "Google Play"
+        },
+        "appStore": {
+          "downloadOn": "Download on the",
+          "storeName": "App Store"
+        }
+      },
+      "feature1": "Privacy First",
+      "feature2": "No Ads",
+      "feature3": "Free to Download"
+    }
+  },
+  "bookkeepingPage": {
+    "badge": "Smart Finance",
+    "hero": {
+      "title1": "Intelligent",
+      "title2": "Bookkeeping",
+      "description": "Streamline your financial management with AI-powered automation, real-time insights, and intelligent reporting.",
+      "cta": {
+        "primary": "Start Free Trial",
+        "secondary": "Watch Demo"
+      }
+    },
+    "marquee": {
+      "aiPowered": "AI-POWERED",
+      "automatedBookkeeping": "AUTOMATED BOOKKEEPING",
+      "smartCategorization": "SMART CATEGORIZATION",
+      "realtimeSync": "REAL-TIME SYNC",
+      "bankLevelSecurity": "BANK-LEVEL SECURITY",
+      "predictiveInsights": "PREDICTIVE INSIGHTS",
+      "accuracy": "99% ACCURACY",
+      "timeSaving": "SAVE 10+ HOURS WEEKLY"
+    },
+    "features": {
+      "badge": "Next Generation",
+      "title1": "INTELLIGENT",
+      "title2": "FEATURES",
+      "subtitle": "Powered by advanced AI that learns, adapts, and evolves with your business",
+      "aiCategorization": {
+        "title": "AI-Powered Categorization",
+        "description": "Our machine learning engine analyzes patterns across millions of transactions to automatically categorize with 99.9% accuracy. No more manual sorting.",
+        "stats": {
+          "accuracy": "Accuracy",
+          "timeSaved": "Time Saved",
+          "autoLearn": "Auto-Learn",
+          "accuracyValue": "99.9%",
+          "timeSavedValue": "15hrs/week",
+          "autoLearnValue": "Always"
+        }
+      },
+      "realtimeSync": {
+        "title": "Real-time Sync",
+        "description": "Instant synchronization across all your accounts and devices. See changes as they happen."
+      },
+      "bankSecurity": {
+        "title": "Bank-Level Security",
+        "description": "256-bit encryption, SOC 2 certified, and GDPR compliant. Your data is fortress-protected."
+      },
+      "smartInsights": {
+        "title": "Smart Insights",
+        "description": "Predictive analytics that help you make better financial decisions before problems arise."
+      },
+      "receiptScanning": {
+        "title": "Receipt Scanning",
+        "description": "Point, shoot, done. Our OCR technology extracts every detail from receipts instantly."
+      },
+      "timeSaving": {
+        "title": "Save 10+ Hours",
+        "description": "Every week. Guaranteed. Focus on growth, not paperwork.",
+        "value": "10h",
+        "unit": "per week"
+      }
+    },
+    "comingSoon": {
+      "title1": "SOMETHING",
+      "title2": "BIG IS COMING",
+      "subtitle": "The future of bookkeeping is being reimagined",
+      "stats": {
+        "earlyAccess": {
+          "number": "500+",
+          "label": "Early Access Requests"
+        },
+        "launchYear": {
+          "number": "2025",
+          "label": "Launch Year"
+        },
+        "possibilities": {
+          "number": "∞",
+          "label": "Possibilities"
+        }
+      },
+      "thinking": {
+        "title": "Imagine Bookkeeping That Thinks",
+        "description": "What if your bookkeeping system understood your business better than you do? What if it could predict, optimize, and evolve with you?",
+        "features": {
+          "automation": "Beyond Automation",
+          "security": "Unbreakable Security",
+          "intelligence": "Pure Intelligence"
+        }
+      },
+      "waitlist": {
+        "subtitle": "Be among the first to experience the revolution",
+        "cta": "Reserve Your Spot"
+      }
+    },
+    "finalCta": {
+      "title1": "BE THE FIRST TO",
+      "title2": "EXPERIENCE",
+      "subtitle": "Join our exclusive waitlist and help shape the future of bookkeeping",
+      "cta": "Join Waitlist Now"
+    },
+    "waitlistModal": {
+      "quick": {
+        "badge": "LIMITED EARLY ACCESS",
+        "title1": "Be Part of the",
+        "title2": "Revolution",
+        "description": "Join thousands of forward-thinking businesses waiting for the future of bookkeeping. Get exclusive early access and lifetime benefits.",
+        "benefits": [
+          "Exclusive access before public launch",
+          "Priority onboarding and support", 
+          "Shape the product with your feedback"
+        ],
+        "form": {
+          "title": "Join the Waitlist",
+          "subtitle": "No spam, just important updates.",
+          "emailLabel": "Email Address",
+          "emailPlaceholder": "your@email.com",
+          "submitting": "Joining...",
+          "submit": "Reserve My Spot",
+          "moreOptions": "Want more options?",
+          "customize": "Custom Tailor Your Experience",
+          "security": "Your data is protected with 256-bit encryption"
+        }
+      },
+      "custom": {
+        "title": "Custom Tailor Your Experience",
+        "subtitle": "Help us build the perfect bookkeeping solution for you",
+        "tabs": {
+          "survey": "1. Tell Us About You",
+          "rules": "2. Customize Rules"
+        },
+        "contact": {
+          "title": "Contact Information",
+          "name": "Name *",
+          "namePlaceholder": "John Doe",
+          "email": "Email *",
+          "emailPlaceholder": "john@company.com",
+          "company": "Company",
+          "companyPlaceholder": "Your Company Name"
+        },
+        "business": {
+          "title": "Business Information",
+          "businessType": "Business Type",
+          "businessSize": "Business Size",
+          "currentSolution": "Current Solution",
+          "solutionPlaceholder": "QuickBooks, Excel, etc.",
+          "monthlyTransactions": "Monthly Transactions",
+          "businessTypes": {
+            "selectType": "Select type",
+            "saas": "SaaS",
+            "ecommerce": "E-commerce",
+            "agency": "Agency",
+            "freelance": "Freelance",
+            "retail": "Retail",
+            "other": "Other"
+          },
+          "businessSizes": {
+            "selectSize": "Select size",
+            "solo": "Solo (1 person)",
+            "small": "Small (2-10)",
+            "medium": "Medium (11-50)",
+            "large": "Large (50+)"
+          },
+          "transactionRanges": {
+            "selectRange": "Select range",
+            "range1": "0-100",
+            "range2": "100-500",
+            "range3": "500-1,000",
+            "range4": "1,000+"
+          }
+        },
+        "painPoints": {
+          "title": "Current Pain Points",
+          "items": [
+            "Manual data entry",
+            "Categorization errors", 
+            "Time-consuming reconciliation",
+            "Complex tax preparation",
+            "Poor cash flow visibility",
+            "Multiple disconnected tools",
+            "Expensive accountant fees",
+            "Compliance concerns"
+          ]
+        },
+        "features": {
+          "title": "Features You Need",
+          "items": [
+            "Automatic categorization",
+            "Multi-currency support",
+            "Invoice management",
+            "Expense tracking",
+            "Tax optimization",
+            "Financial reporting",
+            "Team collaboration",
+            "API integrations",
+            "Mobile app",
+            "Custom rules engine"
+          ]
+        },
+        "rules": {
+          "templatesTitle": "Pre-built Rule Templates",
+          "templatesSubtitle": "Select templates that match your business needs",
+          "builderTitle": "Custom Rules Builder",
+          "builderSubtitle": "Create your own transaction categorization rules",
+          "whenContains": "When transaction contains",
+          "containsPlaceholder": "e.g., 'Stripe', 'AWS', 'Salary'",
+          "transactionType": "Transaction type",
+          "categorizeAs": "Categorize as",
+          "addRule": "Add Rule",
+          "customRulesTitle": "Your Custom Rules",
+          "whenContainsLabel": "When contains"
+        },
+        "actions": {
+          "previous": "Previous",
+          "nextRules": "Next: Customize Rules",
+          "joinWaitlist": "Join Waitlist",
+          "submitting": "Submitting..."
+        }
+      },
+      "success": {
+        "title": "You're on the list!",
+        "message": "Thank you for your interest in Smart Bookkeeping. We'll notify you as soon as we launch with exclusive early access benefits.",
+        "close": "Close"
+      }
+    }
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Cookie Consent",
+      "description": "We use cookies to enhance your browsing experience and analyze website traffic. By clicking \"Accept All\", you consent to our use of cookies. You can manage your preferences or learn more in our",
+      "policyLink": "cookie policy",
+      "customize": "Customize",
+      "necessaryOnly": "Necessary Only",
+      "acceptAll": "Accept All"
+    },
+    "settings": {
+      "title": "Cookie Preferences",
+      "compliance": {
+        "title": "Swedish Law Compliance",
+        "description": "This consent interface complies with Swedish Electronic Communications Act and 2025 IMY guidelines. Your choices are respected and can be changed at any time."
+      },
+      "categories": {
+        "necessary": {
+          "title": "Strictly Necessary Cookies",
+          "status": "Always Active",
+          "description": "These cookies are essential for the website to function and cannot be disabled. They include session management, security tokens, and load balancing."
+        },
+        "analytics": {
+          "title": "Analytics Cookies",
+          "description": "Help us understand how visitors interact with our website through Google Analytics. Data is anonymized and used to improve user experience."
+        },
+        "functional": {
+          "title": "Functional Cookies",
+          "description": "Remember your preferences such as language selection, theme settings, and form data to provide a personalized experience."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "description": "Used for advertising and social media integration. Help us deliver relevant content and measure campaign effectiveness."
+        }
+      },
+      "actions": {
+        "necessaryOnly": "Necessary Only",
+        "savePreferences": "Save Preferences"
+      }
+    }
+  },
+  "privacyPolicy": {
+    "navigation": {
+      "title": "Quick Navigation",
+      "overview": "Overview",
+      "legalBasis": "Legal Basis",
+      "dataCollection": "Data Collection",
+      "dataUsage": "How We Use Data",
+      "dataSharing": "Data Sharing",
+      "yourRights": "Your Rights",
+      "dataRetention": "Data Retention",
+      "security": "Security",
+      "cookies": "Cookies",
+      "contact": "Contact"
+    },
+    "header": {
+      "title1": "PRIVACY",
+      "title2": "POLICY",
+      "subtitle": "Comprehensive data protection in compliance with GDPR, EU regulations, and Swedish law",
+      "lastUpdated": "Last updated: August 29, 2025",
+      "gdprCompliant": "GDPR Compliant",
+      "importantTitle": "Important Information",
+      "importantDescription": "This privacy policy is designed to comply with the General Data Protection Regulation (GDPR), Swedish Data Protection Act, and other applicable EU regulations. You have specific rights regarding your personal data, and we're committed to protecting your privacy."
+    },
+    "overview": {
+      "title": "Data Controller & Overview",
+      "controllerTitle": "Data Controller",
+      "company": "Company:",
+      "companyName": "Bromander Global AB",
+      "address": "Address:",
+      "addressValue": "Stockholm, Sweden",
+      "contact": "Contact:",
+      "contactEmail": "privacy@bromanderglobal.com",
+      "dpo": "DPO Contact:",
+      "dpoEmail": "dpo@bromanderglobal.com",
+      "description1": "Bromander Global AB (\"we,\" \"our,\" or \"us\") is a Swedish technology holding company registered in Stockholm, Sweden. We own and operate digital products including AI Reliance Tracker and Smart Bookkeeping. As the data controller, we determine the purposes and means of processing your personal data.",
+      "description2": "This Privacy Policy complies with the General Data Protection Regulation (GDPR), the Swedish Data Protection Act (2018:218), and other applicable EU and Swedish regulations. Each of our portfolio companies maintains its own specific privacy policy for their respective products and services."
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Processing",
+      "description": "We process your personal data based on the following legal grounds under GDPR Article 6:",
+      "legitimateInterest": {
+        "title": "🟢 Legitimate Interest (Art. 6(1)(f))",
+        "description": "Website analytics, security monitoring, and business communications"
+      },
+      "consent": {
+        "title": "🔵 Consent (Art. 6(1)(a))",
+        "description": "Marketing communications, non-essential cookies, and newsletter subscriptions"
+      },
+      "contract": {
+        "title": "🟣 Contract Performance (Art. 6(1)(b))",
+        "description": "Service delivery, customer support, and account management"
+      },
+      "legal": {
+        "title": "🟠 Legal Obligation (Art. 6(1)(c))",
+        "description": "Tax reporting, regulatory compliance, and law enforcement requests"
+      }
+    },
+    "dataCollection": {
+      "title": "Data We Collect",
+      "description": "We collect personal data in the following categories:",
+      "identity": {
+        "title": "Identity & Contact Information",
+        "items": [
+          "Full name, email address, phone number",
+          "Company name, job title, professional information",
+          "Address, postal code, country of residence",
+          "Account credentials and authentication data"
+        ]
+      },
+      "technical": {
+        "title": "Technical & Usage Data",
+        "items": [
+          "IP address, browser type, device identifiers",
+          "Operating system, screen resolution, language preferences",
+          "Website navigation patterns, page views, time spent",
+          "Referral sources, search terms, click patterns",
+          "Session recordings (anonymized), heatmap data"
+        ]
+      },
+      "communication": {
+        "title": "Communication & Content",
+        "items": [
+          "Email correspondence, chat messages, support tickets",
+          "Feedback, surveys, reviews, and testimonials",
+          "Marketing preferences and communication history",
+          "Meeting notes, call recordings (with consent)"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies & Tracking Technologies",
+        "items": [
+          "Essential cookies for website functionality",
+          "Analytics cookies (Google Analytics, Mixpanel)",
+          "Marketing cookies (with consent)",
+          "Social media pixels and tracking beacons",
+          "Local storage data and session information"
+        ]
+      },
+      "specialData": {
+        "title": "Special Categories of Data",
+        "description": "We do not intentionally collect special categories of personal data (health, racial/ethnic origin, political opinions, religious beliefs, biometric data) unless explicitly required and with your explicit consent."
+      }
+    },
+    "dataUsage": {
+      "title": "How We Use Your Data",
+      "description": "We process your personal data for the following purposes, always based on a valid legal ground:",
+      "serviceDelivery": {
+        "title": "Service Delivery & Customer Support",
+        "items": [
+          "Providing and maintaining our services",
+          "Processing transactions and managing accounts",
+          "Responding to inquiries and providing support",
+          "Troubleshooting and technical assistance"
+        ]
+      },
+      "analytics": {
+        "title": "Analytics & Improvements",
+        "items": [
+          "Analyzing website usage and performance",
+          "Improving user experience and functionality",
+          "Conducting research and development",
+          "A/B testing and feature optimization"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing & Communication",
+        "items": [
+          "Sending newsletters and product updates (with consent)",
+          "Personalized marketing communications",
+          "Event invitations and industry insights",
+          "Social media engagement and advertising"
+        ]
+      },
+      "legal": {
+        "title": "Legal & Security",
+        "items": [
+          "Compliance with legal obligations",
+          "Fraud prevention and security monitoring",
+          "Protecting our rights and interests",
+          "Law enforcement cooperation when required"
+        ]
+      }
+    },
+    "dataSharing": {
+      "title": "Data Sharing & Third Parties",
+      "description": "We may share your personal data with the following categories of recipients:",
+      "serviceProviders": {
+        "title": "Service Providers & Processors",
+        "items": [
+          "Cloud Infrastructure: AWS, Google Cloud (data hosting)",
+          "Analytics: Google Analytics, Mixpanel (website analytics)",
+          "Communication: Mailchimp, SendGrid (email services)",
+          "Support: Intercom, Zendesk (customer service)",
+          "Payment Processing: Stripe, PayPal (transactions)"
+        ]
+      },
+      "legalRequirements": {
+        "title": "Legal Requirements",
+        "description": "We may disclose your data when required by law, court orders, or to protect our rights, users' safety, or comply with legal processes."
+      },
+      "businessTransfers": {
+        "title": "Business Transfers",
+        "description": "In case of merger, acquisition, or sale, your data may be transferred as part of the business assets, with continued protection under this privacy policy."
+      },
+      "weDoNot": {
+        "title": "We Do NOT:",
+        "items": [
+          "Sell your personal data to third parties",
+          "Share data for third-party marketing without consent",
+          "Transfer data outside EU/EEA without adequate protections"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Your Data Protection Rights",
+      "description": "Under GDPR and Swedish law, you have the following rights regarding your personal data:",
+      "access": {
+        "title": "Right of Access (Art. 15)",
+        "description": "Request access to your personal data and information about how we process it."
+      },
+      "rectification": {
+        "title": "Right to Rectification (Art. 16)",
+        "description": "Request correction of inaccurate or incomplete personal data."
+      },
+      "erasure": {
+        "title": "Right to Erasure (Art. 17)",
+        "description": "Request deletion of your personal data ('right to be forgotten')."
+      },
+      "restrict": {
+        "title": "Right to Restrict Processing (Art. 18)",
+        "description": "Request limitation of processing in certain circumstances."
+      },
+      "portability": {
+        "title": "Right to Data Portability (Art. 20)",
+        "description": "Receive your data in a structured, machine-readable format."
+      },
+      "object": {
+        "title": "Right to Object (Art. 21)",
+        "description": "Object to processing based on legitimate interests or direct marketing."
+      },
+      "howToExercise": {
+        "title": "How to Exercise Your Rights",
+        "email": "Email: privacy@bromanderglobal.com",
+        "phone": "Phone: +46 70 123 45 67",
+        "responseTime": "Response Time: Within 30 days (may be extended to 60 days for complex requests)",
+        "verification": "We may need to verify your identity before processing your request. If we refuse your request, we'll explain why and inform you of your right to complain to the Swedish Authority for Privacy Protection (IMY)."
+      }
+    },
+    "dataRetention": {
+      "title": "Data Retention",
+      "description": "We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy:",
+      "accountData": {
+        "title": "Account Data",
+        "active": "Active accounts: Until account deletion + 30 days for backup recovery",
+        "inactive": "Inactive accounts: 3 years from last login, then automatic deletion"
+      },
+      "communication": {
+        "title": "Communication Data",
+        "support": "Customer support: 7 years (Swedish business record requirements)",
+        "marketing": "Marketing communications: Until consent withdrawal + 30 days"
+      },
+      "analytics": {
+        "title": "Analytics Data",
+        "website": "Website analytics: 26 months (Google Analytics default)",
+        "performance": "Performance data: 12 months for optimization purposes"
+      },
+      "legalFinancial": {
+        "title": "Legal & Financial",
+        "financial": "Financial records: 7 years (Swedish Bookkeeping Act)",
+        "legal": "Legal documentation: As required by applicable law"
+      }
+    },
+    "security": {
+      "title": "Security Measures",
+      "description": "We implement comprehensive technical and organizational measures to protect your personal data:",
+      "technical": {
+        "title": "Technical Safeguards",
+        "items": [
+          "TLS 1.3 encryption for data in transit",
+          "AES-256 encryption for data at rest",
+          "Multi-factor authentication (MFA)",
+          "Regular security audits and penetration testing",
+          "Automated threat detection and monitoring",
+          "Secure cloud infrastructure (SOC 2 compliant)"
+        ]
+      },
+      "access": {
+        "title": "Access Controls",
+        "items": [
+          "Role-based access control (RBAC)",
+          "Principle of least privilege",
+          "Regular access reviews and audits",
+          "Secure authentication protocols",
+          "Employee background checks"
+        ]
+      },
+      "organizational": {
+        "title": "Organizational Measures",
+        "items": [
+          "Regular staff training on data protection",
+          "Incident response and breach procedures",
+          "Privacy by design and by default",
+          "Data Processing Impact Assessments (DPIA)",
+          "Vendor security assessments"
+        ]
+      },
+      "compliance": {
+        "title": "Compliance",
+        "items": [
+          "ISO 27001 security framework",
+          "GDPR compliance monitoring",
+          "Swedish data protection standards",
+          "Regular compliance audits",
+          "Third-party security certifications"
+        ]
+      },
+      "breach": {
+        "title": "Data Breach Response",
+        "description": "In the unlikely event of a data breach, we will notify the Swedish Authority for Privacy Protection (IMY) within 72 hours and affected individuals without undue delay, as required by GDPR Article 33-34."
+      }
+    },
+    "cookies": {
+      "title": "Cookies & Tracking",
+      "description": "We use cookies and similar tracking technologies to enhance your browsing experience. You can manage your cookie preferences at any time.",
+      "essential": {
+        "title": "Essential Cookies (Required)",
+        "description": "These cookies are necessary for the website to function and cannot be switched off.",
+        "items": [
+          "Authentication and session management",
+          "Security and fraud prevention",
+          "Load balancing and performance"
+        ]
+      },
+      "analytics": {
+        "title": "Analytics Cookies (Opt-in)",
+        "description": "Help us understand how visitors interact with our website.",
+        "items": [
+          "Google Analytics (anonymized IP)",
+          "Page views and user journey tracking",
+          "Performance monitoring"
+        ]
+      },
+      "marketing": {
+        "title": "Marketing Cookies (Consent Required)",
+        "description": "Used to deliver personalized content and advertisements.",
+        "items": [
+          "LinkedIn Insight Tag",
+          "Google Ads conversion tracking",
+          "Social media integration"
+        ]
+      },
+      "management": {
+        "title": "Cookie Management",
+        "description": "You can control cookies through:",
+        "items": [
+          "Our cookie banner and preference center",
+          "Browser settings (may affect website functionality)",
+          "Opt-out links for specific services",
+          "Contact us at privacy@bromanderglobal.com"
+        ]
+      }
+    },
+    "portfolioCompanies": {
+      "title": "Portfolio Company Privacy Policies",
+      "description": "Each of our portfolio companies operates independently and maintains its own comprehensive privacy policy for their specific products and services. These policies follow the same high standards as this policy.",
+      "aiTracker": {
+        "title": "AI Reliance Tracker",
+        "description": "Privacy-first digital wellness platform with local data storage and zero tracking philosophy.",
+        "link": "View Privacy Policy"
+      },
+      "smartBookkeeping": {
+        "title": "Smart Bookkeeping",
+        "description": "Financial management platform with bank-level security and encrypted data processing.",
+        "link": "View Privacy Policy"
+      }
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "description": "For questions about this Privacy Policy, data processing, or to exercise your rights, please contact us:",
+      "privacy": {
+        "title": "Privacy & Data Protection",
+        "email": "privacy@bromanderglobal.com",
+        "dpo": "dpo@bromanderglobal.com (Data Protection Officer)"
+      },
+      "general": {
+        "title": "General Contact",
+        "phone": "+46 70 123 45 67",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sweden"
+      },
+      "complaint": {
+        "title": "File a Complaint",
+        "description": "If you're unsatisfied with our response, you can file a complaint with:",
+        "authority": "Swedish Authority for Privacy Protection (IMY)",
+        "website": "imy.se",
+        "email": "imy@imy.se",
+        "phone": "+46 8 657 61 00"
+      },
+      "policyUpdates": {
+        "title": "Policy Updates",
+        "description": "We may update this Privacy Policy periodically. Material changes will be communicated via email and prominently displayed on our website. Continued use after changes constitutes acceptance."
+      },
+      "quickResponse": {
+        "title": "Quick Response Guarantee",
+        "description": "We aim to respond to all privacy-related inquiries within 5 business days and fulfill data subject requests within the GDPR-mandated 30 days (extendable to 60 days for complex requests)."
+      }
+    }
+  },
+  "termsOfService": {
+    "navigation": {
+      "title": "Quick Navigation",
+      "overview": "Overview",
+      "definitions": "Definitions",
+      "acceptance": "Acceptance",
+      "services": "Our Services",
+      "userObligations": "User Obligations",
+      "prohibitedUse": "Prohibited Use",
+      "intellectualProperty": "Intellectual Property",
+      "consumerRights": "Consumer Rights",
+      "liability": "Liability",
+      "termination": "Termination",
+      "governingLaw": "Governing Law",
+      "contact": "Contact"
+    },
+    "header": {
+      "title1": "TERMS OF",
+      "title2": "SERVICE",
+      "subtitle": "Comprehensive terms governing our services in compliance with EU consumer protection and Swedish law",
+      "lastUpdated": "Last updated: August 29, 2025",
+      "euCompliant": "EU Compliant",
+      "swedishLaw": "Swedish Law",
+      "importantTitle": "Important Legal Information",
+      "importantDescription": "These terms comply with EU Consumer Protection Directives, the Swedish Consumer Contracts Act, and are supervised by Konsumentverket (Swedish Consumer Agency). Your consumer rights are protected under Swedish and EU law."
+    },
+    "overview": {
+      "title": "Company Information & Overview",
+      "serviceProvider": "Service Provider",
+      "company": "Company:",
+      "companyName": "Bromander Global AB",
+      "registrationNumber": "Registration Number:",
+      "registrationValue": "[Swedish Corporate Registration Number]",
+      "address": "Address:",
+      "addressValue": "Stockholm, Sweden",
+      "email": "Email:",
+      "emailValue": "legal@bromanderglobal.com",
+      "phone": "Phone:",
+      "phoneValue": "+46 70 123 45 67",
+      "vatNumber": "VAT Number:",
+      "vatValue": "SE[VAT Number]",
+      "description1": "Bromander Global AB is a Swedish technology holding company that owns and operates digital products including AI Reliance Tracker and Smart Bookkeeping. We provide corporate information services and act as a holding company for our portfolio of technology businesses.",
+      "description2": "These Terms of Service (\"Terms\") constitute a legally binding agreement between you (\"User,\" \"you,\" or \"your\") and Bromander Global AB regarding your use of our website, services, and any related content or materials."
+    },
+    "definitions": {
+      "title": "Definitions",
+      "company": {
+        "term": "\"Company,\" \"we,\" \"us,\" \"our\"",
+        "definition": "Refers to Bromander Global AB, a Swedish limited liability company."
+      },
+      "consumer": {
+        "term": "\"Consumer\"",
+        "definition": "A natural person acting for purposes outside their trade, business, craft, or profession (as defined by EU Consumer Rights Directive)."
+      },
+      "services": {
+        "term": "\"Services\"",
+        "definition": "Our corporate website, information services, and any related digital services provided by Bromander Global AB."
+      },
+      "distanceContract": {
+        "term": "\"Distance Contract\"",
+        "definition": "Any contract concluded between us and a consumer under an organized distance sales scheme without simultaneous physical presence (per Swedish Distance Contracts Act)."
+      }
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "legalAgreement": {
+        "title": "Legal Agreement",
+        "description": "By accessing or using our website and services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy."
+      },
+      "ageRequirements": {
+        "title": "Age and Capacity Requirements",
+        "items": [
+          "You must be at least 18 years old to enter into these Terms",
+          "For users under 18, a parent or legal guardian must accept these Terms on your behalf",
+          "You must have the legal capacity to enter into binding contracts under Swedish law",
+          "If you represent a business, you confirm you have authority to bind that entity to these Terms"
+        ]
+      },
+      "consumerRights": {
+        "title": "Consumer Rights Notice (EU/Sweden)",
+        "description": "If you are a consumer (natural person acting outside your business), you have specific rights under EU and Swedish consumer protection laws that cannot be waived by these Terms. These rights take precedence over any conflicting terms."
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Bromander Global AB provides the following services through our corporate website:",
+      "corporate": {
+        "title": "🏢 Corporate Information Services",
+        "items": [
+          "Company information and investor relations",
+          "Portfolio company overviews and updates",
+          "Business contact and inquiry handling",
+          "News and announcements"
+        ]
+      },
+      "communication": {
+        "title": "📧 Communication Services",
+        "items": [
+          "Contact forms and inquiry processing",
+          "Email communications and newsletters (with consent)",
+          "Customer support and assistance"
+        ]
+      },
+      "gateway": {
+        "title": "🔗 Portfolio Company Gateway",
+        "items": [
+          "Links and redirects to portfolio company services",
+          "Integration points for subsidiary platforms",
+          "Consolidated privacy and legal information"
+        ]
+      },
+      "portfolioCompanies": {
+        "title": "Portfolio Companies",
+        "description": "Each portfolio company operates independently with separate terms:",
+        "aiTracker": "AI Reliance Tracker: Digital wellness platform",
+        "smartBookkeeping": "Smart Bookkeeping: Financial management platform",
+        "termsLink": "Terms"
+      }
+    },
+    "userObligations": {
+      "title": "User Obligations",
+      "description": "As a user of our services, you agree to comply with the following obligations:",
+      "permitted": {
+        "title": "✅ Permitted Uses",
+        "items": [
+          "Access and use our services for legitimate business or personal purposes",
+          "Provide accurate and complete information when requested",
+          "Maintain the confidentiality of any access credentials",
+          "Respect intellectual property rights and applicable laws",
+          "Use our services in good faith and in accordance with these Terms"
+        ]
+      },
+      "accuracy": {
+        "title": "📋 Information Accuracy",
+        "description": "You warrant that all information you provide is accurate, complete, and up-to-date. You must promptly notify us of any changes to your information."
+      },
+      "security": {
+        "title": "🔐 Security Responsibilities",
+        "items": [
+          "Maintain reasonable security measures for your devices and connections",
+          "Immediately report any suspected unauthorized access",
+          "Do not share access credentials with unauthorized parties",
+          "Use updated and secure browsers and software"
+        ]
+      }
+    },
+    "prohibitedUse": {
+      "title": "Prohibited Use",
+      "description": "You are strictly prohibited from using our services for the following purposes:",
+      "illegal": {
+        "title": "Illegal Activities",
+        "items": [
+          "Any illegal activity under Swedish, EU, or applicable international law",
+          "Fraud, money laundering, or financial crimes",
+          "Harassment, threats, or intimidation of individuals",
+          "Violation of intellectual property rights",
+          "Distribution of illegal or harmful content"
+        ]
+      },
+      "technical": {
+        "title": "⚠️ Technical Misuse",
+        "items": [
+          "Attempting to gain unauthorized access to our systems",
+          "Interfering with or disrupting our services or servers",
+          "Reverse engineering, decompiling, or disassembling our software",
+          "Using automated systems (bots, scrapers) without permission",
+          "Transmitting malware, viruses, or harmful code"
+        ]
+      },
+      "commercial": {
+        "title": "⚡ Commercial Restrictions",
+        "items": [
+          "Commercial use without explicit written permission",
+          "Reselling or redistributing our services",
+          "Using our services to compete with our business",
+          "Bulk data extraction or systematic downloading"
+        ]
+      },
+      "enforcement": {
+        "title": "Enforcement",
+        "description": "Violation of these prohibitions may result in immediate termination of your access, legal action, and cooperation with law enforcement authorities."
+      }
+    },
+    "intellectualProperty": {
+      "title": "Intellectual Property Rights",
+      "ownership": {
+        "title": "🏢 Our Ownership Rights",
+        "description": "All intellectual property rights in and to our services belong to Bromander Global AB or our licensors, including:",
+        "items": [
+          "Trademarks, service marks, and trade names (\"Bromander Global,\" logos, etc.)",
+          "Copyrights in website content, text, graphics, images, and software",
+          "Patents and patent applications",
+          "Trade secrets and proprietary business information",
+          "Database rights and compilation rights"
+        ]
+      },
+      "license": {
+        "title": "✅ Your License Rights",
+        "description": "We grant you a limited, non-exclusive, non-transferable, revocable license to:",
+        "items": [
+          "Access and view our website content for personal or business purposes",
+          "Download and print content for non-commercial use (with attribution)",
+          "Contact us using provided communication channels",
+          "Link to our website from your own website (no deep-linking without permission)"
+        ]
+      },
+      "restrictions": {
+        "title": "🚫 Restrictions",
+        "items": [
+          "No modification, reproduction, or creation of derivative works",
+          "No commercial use without explicit written permission",
+          "No reverse engineering of any software or systems",
+          "No removal of copyright notices or attribution",
+          "No use of our trademarks without authorization"
+        ]
+      },
+      "userContent": {
+        "title": "User Content & Feedback",
+        "description": "Any content, feedback, or suggestions you provide to us become our property and may be used freely for any purpose without compensation or attribution."
+      }
+    },
+    "consumerRights": {
+      "title": "EU Consumer Rights",
+      "description": "If you are a consumer under EU/Swedish law, you have specific rights that cannot be waived:",
+      "withdrawal": {
+        "title": "Right of Withdrawal (14 Days)",
+        "description": "For distance contracts, you have the right to cancel within 14 days without giving reasons.",
+        "howTo": "How to withdraw: Send clear notice to legal@bromanderglobal.com",
+        "deadline": "Deadline: 14 days from contract conclusion or service commencement",
+        "effects": "Effects: We will reimburse payments within 14 days of receiving withdrawal"
+      },
+      "preContractual": {
+        "title": "Pre-Contractual Information Rights",
+        "description": "Before entering any contract, you have the right to receive:",
+        "items": [
+          "Main characteristics of services",
+          "Total price including taxes and fees",
+          "Duration and termination conditions",
+          "Complaint handling and dispute resolution information"
+        ]
+      },
+      "unfairTerms": {
+        "title": "Unfair Terms Protection",
+        "description": "Any terms that create significant imbalance in your disadvantage may be deemed unfair under EU Directive 93/13/EEC and Swedish Consumer Contracts Act. Such terms are not binding on you."
+      },
+      "disputes": {
+        "title": "Consumer Disputes",
+        "description": "For consumer disputes, you may contact:",
+        "swedishConsumerAgency": "Swedish Consumer Agency: konsumentverket.se",
+        "euODR": "EU Online Dispute Resolution: ec.europa.eu/consumers/odr",
+        "arn": "National Board for Consumer Disputes: arn.se"
+      }
+    },
+    "liability": {
+      "title": "Liability & Warranties",
+      "consumerRightsOverride": {
+        "title": "Consumer Rights Override",
+        "description": "Nothing in these Terms limits your statutory consumer rights under Swedish or EU law. In case of conflict, consumer protection laws take precedence."
+      },
+      "serviceWarranties": {
+        "title": "Service Warranties",
+        "description": "Our services are provided \"as is\" but we warrant that:",
+        "items": [
+          "Services will be provided with reasonable skill and care",
+          "Information provided will be materially accurate when published",
+          "We have the right to provide the services described",
+          "Services will comply with applicable Swedish and EU laws"
+        ]
+      },
+      "businessLimitations": {
+        "title": "Liability Limitations (Business Users)",
+        "description": "For business users (non-consumers), our liability is limited as follows:",
+        "items": [
+          "Total liability capped at fees paid in 12 months preceding the claim",
+          "No liability for indirect, consequential, or special damages",
+          "No liability for business interruption or lost profits",
+          "Claims must be brought within 2 years of the cause of action"
+        ]
+      },
+      "unlimitedLiability": {
+        "title": "Unlimited Liability",
+        "description": "We do not limit liability for death, personal injury, fraud, or any other liability that cannot be limited under Swedish law."
+      },
+      "thirdPartyContent": {
+        "title": "Third-Party Content",
+        "description": "We are not responsible for third-party websites, content, or services accessible through our platform. Links are provided for convenience only."
+      }
+    },
+    "termination": {
+      "title": "Termination",
+      "terminationByUs": {
+        "title": "Termination by Us",
+        "description": "We may terminate or suspend your access immediately for:",
+        "items": [
+          "Violation of these Terms or applicable laws",
+          "Fraudulent, abusive, or harmful behavior",
+          "Technical or security reasons",
+          "Court orders or legal requirements"
+        ],
+        "consumerNotice": "For consumers, we will provide reasonable notice except in urgent situations."
+      },
+      "terminationByYou": {
+        "title": "Termination by You",
+        "description": "You may terminate your use of our services at any time by:",
+        "items": [
+          "Discontinuing use of our website and services",
+          "Sending written notice to legal@bromanderglobal.com",
+          "Exercising withdrawal rights (consumers only)"
+        ]
+      },
+      "effects": {
+        "title": "Effects of Termination",
+        "items": [
+          "All rights and licenses granted to you will cease",
+          "Outstanding obligations remain in effect",
+          "We may retain information as required by law or policy",
+          "Certain provisions survive termination (IP, liability, governing law)"
+        ]
+      }
+    },
+    "changes": {
+      "title": "Changes to Terms",
+      "modification": {
+        "title": "Modification Rights",
+        "description": "We may update these Terms to reflect changes in law, regulation, business practices, or service improvements. Updates will be published on this page with a revised \"last updated\" date."
+      },
+      "consumerProtection": {
+        "title": "Consumer Protection (EU/Swedish Law)",
+        "minorChanges": "Minor Changes: Take effect immediately upon posting",
+        "substantialChanges": "Substantial Changes: 30 days advance notice via email or prominent website notice",
+        "unfavorableChanges": "Unfavorable Changes: You have the right to terminate without penalty",
+        "continuedUse": "Continued Use: Constitutes acceptance, but does not waive consumer rights"
+      },
+      "businessUsers": {
+        "title": "Business Users",
+        "description": "For business users, continued use after posting constitutes acceptance of revised Terms. We recommend reviewing Terms periodically."
+      },
+      "versionControl": {
+        "title": "Version Control",
+        "description": "Previous versions are archived and available upon request. The current version is always available at this URL with the effective date clearly displayed."
+      }
+    },
+    "governingLaw": {
+      "title": "Governing Law & Dispute Resolution",
+      "applicableLaw": {
+        "title": "🇸🇪 Applicable Law",
+        "description": "These Terms are governed by and construed in accordance with:",
+        "items": [
+          "Swedish law (primarily the Contracts Act and Consumer Contracts Act)",
+          "EU Directives and Regulations (where applicable)",
+          "GDPR and other data protection regulations",
+          "Swedish Consumer Protection legislation"
+        ]
+      },
+      "consumerDisputes": {
+        "title": "Consumer Dispute Resolution",
+        "firstStep": "First Step: Contact us directly at legal@bromanderglobal.com",
+        "swedishConsumers": "Swedish Consumers: National Board for Consumer Disputes (ARN) - arn.se",
+        "euConsumers": "EU Consumers: EU Online Dispute Resolution Platform - ec.europa.eu/consumers/odr",
+        "generalConsumers": "General Consumers: Swedish Consumer Agency - konsumentverket.se"
+      },
+      "businessDisputes": {
+        "title": "Business Disputes",
+        "jurisdiction": "Jurisdiction: Swedish courts, with Stockholm District Court as first instance",
+        "alternativeResolution": "Alternative Resolution: Stockholm Chamber of Commerce Arbitration Institute",
+        "language": "Language: Proceedings in Swedish or English as agreed"
+      },
+      "limitationPeriod": {
+        "title": "Limitation Period",
+        "description": "Claims must be brought within the limitation periods specified by Swedish law (generally 3 years for consumer claims, 10 years for contractual claims)."
+      },
+      "consumerRightsOverride": {
+        "title": "Consumer Rights Override",
+        "description": "Nothing in these dispute resolution provisions limits your statutory consumer rights, including rights to bring proceedings in your country of residence."
+      }
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "description": "For questions about these Terms of Service or legal matters, please contact us:",
+      "legal": {
+        "title": "Legal & Terms",
+        "email": "legal@bromanderglobal.com",
+        "phone": "+46 70 123 45 67 (Business hours)"
+      },
+      "general": {
+        "title": "General Inquiries",
+        "email": "hello@bromanderglobal.com",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sweden"
+      },
+      "consumerAssistance": {
+        "title": "Consumer Assistance",
+        "description": "For consumer complaints and disputes:",
+        "swedishConsumerAgency": "Swedish Consumer Agency: konsumentverket.se",
+        "euODR": "EU ODR Platform: ec.europa.eu/consumers/odr",
+        "arn": "ARN (Consumer Disputes): arn.se"
+      },
+      "responseTimes": {
+        "title": "Response Times",
+        "legal": "Legal inquiries: 5 business days",
+        "general": "General questions: 2 business days",
+        "consumer": "Consumer complaints: 10 business days"
+      },
+      "regulatoryInfo": {
+        "title": "Regulatory Information",
+        "companyRegistration": "Company Registration: Swedish Companies Registration Office",
+        "vatRegistration": "VAT Registration: Swedish Tax Agency",
+        "dataProtection": "Data Protection: Swedish Authority for Privacy Protection (IMY)"
+      },
+      "termsEffective": {
+        "title": "Terms Effective",
+        "description": "These Terms are effective as of the last updated date and remain in effect until modified or terminated in accordance with these provisions."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "If you need these Terms in an alternative format for accessibility reasons, please contact us and we will provide them in a suitable format within 5 business days."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "navigation": {
+      "title": "Quick Navigation",
+      "overview": "Overview",
+      "whatAreCookies": "What Are Cookies",
+      "legalBasis": "Legal Basis",
+      "cookieTypes": "Cookie Types",
+      "consentManagement": "Consent Management",
+      "thirdParty": "Third-Party Services",
+      "yourRights": "Your Rights",
+      "cookieTable": "Cookie Table",
+      "contact": "Contact"
+    },
+    "header": {
+      "title1": "COOKIE",
+      "title2": "POLICY",
+      "subtitle": "Comprehensive cookie usage and consent management in compliance with EU ePrivacy Directive and Swedish law",
+      "lastUpdated": "Last updated: August 29, 2025",
+      "ePrivacyCompliant": "ePrivacy Compliant",
+      "ptsApproved": "PTS Approved",
+      "importantTitle": "Cookie Consent Notice",
+      "importantDescription": "This policy complies with the EU ePrivacy Directive and Swedish Electronic Communications Act (ECA). The Swedish Post and Telecom Authority (PTS) supervises compliance. Your consent choices are respected and can be changed at any time."
+    },
+    "overview": {
+      "title": "Controller Information & Overview",
+      "controllerTitle": "Cookie Controller",
+      "company": "Company:",
+      "companyName": "Bromander Global AB",
+      "address": "Address:",
+      "addressValue": "Stockholm, Sweden",
+      "contact": "Contact:",
+      "contactEmail": "cookies@bromanderglobal.com",
+      "dpo": "DPO:",
+      "dpoEmail": "dpo@bromanderglobal.com",
+      "supervisoryAuthority": "Supervisory Authority:",
+      "supervisoryValue": "Swedish Post and Telecom Authority (PTS)",
+      "description1": "This Cookie Policy explains how Bromander Global AB uses cookies and similar technologies on our corporate website. We are committed to transparency and compliance with the EU ePrivacy Directive and Swedish Electronic Communications Act.",
+      "description2": "Each of our portfolio companies (AI Reliance Tracker, Smart Bookkeeping) maintains its own cookie policy for their respective services. This policy covers only the Bromander Global corporate website."
+    },
+    "whatAreCookies": {
+      "title": "What Are Cookies & Similar Technologies?",
+      "description": "Cookies are small text files stored on your device when you visit our website. Similar technologies include pixels, web beacons, local storage, and other tracking technologies that collect information about your interaction with our services.",
+      "types": {
+        "httpCookies": {
+          "title": "🍪 HTTP Cookies",
+          "description": "Small text files stored in your browser that contain information about your visit and preferences."
+        },
+        "pixels": {
+          "title": "📊 Pixels & Web Beacons",
+          "description": "Tiny invisible images that track when emails are opened or pages are viewed."
+        },
+        "localStorage": {
+          "title": "💾 Local Storage",
+          "description": "Browser storage that persists data locally on your device for enhanced functionality."
+        },
+        "sessionStorage": {
+          "title": "🔍 Session Storage",
+          "description": "Temporary storage that expires when you close your browser tab or window."
+        }
+      },
+      "importantNotice": {
+        "title": "Important Notice",
+        "description": "Under Swedish law, we need your consent before placing most cookies on your device. This policy explains which cookies require consent and how you can manage your preferences."
+      }
+    },
+    "legalBasis": {
+      "title": "Legal Basis for Cookie Use",
+      "description": "We process cookies based on the following legal grounds under EU and Swedish law:",
+      "strictlyNecessary": {
+        "title": "Strictly Necessary (No Consent Required)",
+        "subtitle": "Swedish ECA § 28 exemption for cookies that are strictly necessary for service provision:",
+        "items": [
+          "Authentication and session management",
+          "Security and fraud prevention",
+          "Load balancing and performance",
+          "Shopping cart functionality (if applicable)"
+        ]
+      },
+      "consentRequired": {
+        "title": "Prior Consent Required (ePrivacy Directive)",
+        "subtitle": "All other cookies require explicit consent before placement:",
+        "items": [
+          "Analytics and performance cookies",
+          "Marketing and advertising cookies",
+          "Social media integration cookies",
+          "Third-party tracking cookies"
+        ]
+      },
+      "enforcement": {
+        "title": "Swedish Enforcement (2025)",
+        "description": "Swedish authorities (IMY/PTS) actively enforce cookie consent requirements. In April 2025, new guidelines prohibited \"dark patterns\" in consent interfaces, requiring equal treatment of \"Accept\" and \"Reject\" options."
+      }
+    },
+    "cookieTypes": {
+      "title": "Cookie Categories We Use",
+      "description": "We use cookies in the following categories:",
+      "necessary": {
+        "title": "Strictly Necessary Cookies",
+        "status": "Always Active",
+        "description": "Essential for basic website functionality and security. Cannot be disabled.",
+        "purpose": "Purpose: Authentication, security, load balancing",
+        "duration": "Duration: Session to 1 year",
+        "examples": "Examples: PHPSESSID, _csrf_token, lb_cookie"
+      },
+      "analytics": {
+        "title": "Analytics & Performance Cookies",
+        "status": "Consent Required",
+        "description": "Help us understand website usage and improve performance. Require consent.",
+        "purpose": "Purpose: Usage analytics, performance monitoring",
+        "duration": "Duration: 13-26 months",
+        "examples": "Examples: _ga, _gid, _gat, _hjSessionUser",
+        "providers": "Providers: Google Analytics, Hotjar"
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "status": "Consent Required",
+        "description": "Remember preferences and enhance user experience. Require consent.",
+        "purpose": "Purpose: Preferences, language, theme settings",
+        "duration": "Duration: 30 days to 1 year",
+        "examples": "Examples: lang_preference, theme_mode, cookie_preferences"
+      },
+      "marketing": {
+        "title": "Marketing & Social Media Cookies",
+        "status": "Explicit Consent Required",
+        "description": "Used for advertising and social media integration. Require explicit consent.",
+        "purpose": "Purpose: Advertising, social sharing, remarketing",
+        "duration": "Duration: 30 days to 2 years",
+        "examples": "Examples: _fbp, li_sugr, ads_data, social_share",
+        "providers": "Providers: LinkedIn, Google Ads"
+      }
+    },
+    "consentManagement": {
+      "title": "Cookie Consent Management",
+      "description": "We comply with Swedish and EU requirements for cookie consent, following 2025 enforcement guidelines:",
+      "compliantInterface": {
+        "title": "Compliant Consent Interface",
+        "items": [
+          "Equal prominence of \"Accept\" and \"Reject\" buttons",
+          "No pre-checked boxes for non-essential cookies",
+          "Clear, plain language explanations",
+          "Granular control over cookie categories",
+          "Easy withdrawal of consent"
+        ]
+      },
+      "management": {
+        "title": "How to Manage Your Consent",
+        "initialVisit": "Initial Visit: Cookie banner appears with clear accept/reject options",
+        "changePreferences": "Change Preferences: Access cookie settings at any time via footer link",
+        "withdrawConsent": "Withdraw Consent: Disable any non-essential cookies instantly",
+        "browserSettings": "Browser Settings: Additional control through browser preferences"
+      },
+      "swedishCompliance": {
+        "title": "Swedish Law Compliance (2025)",
+        "description": "Following IMY guidelines from April 2025, our consent mechanism avoids \"dark patterns\" and ensures genuine user choice. All consent is documented and can be audited."
+      },
+      "ageRequirements": {
+        "title": "Age Requirements",
+        "description": "The digital age of consent in Sweden is 13 years. Users under 13 require parental consent for any data processing, including cookies that collect personal information."
+      }
+    },
+    "thirdPartyServices": {
+      "title": "Third-Party Services & Cookies",
+      "description": "We carefully select third-party services and ensure they comply with EU/Swedish data protection laws:",
+      "googleAnalytics": {
+        "title": "Google Analytics 4 (GA4)",
+        "purpose": "Purpose: Website analytics and performance monitoring",
+        "dataProcessing": "Data Processing: EU servers, IP anonymization enabled",
+        "consentRequired": "Consent Required: Yes - Analytics category",
+        "cookiesSet": "Cookies Set: _ga, _ga_*, _gid, _gat_gtag_*",
+        "duration": "Duration: 13-24 months",
+        "privacyPolicy": "Google Privacy Policy"
+      },
+      "linkedinInsight": {
+        "title": "LinkedIn Insight Tag",
+        "purpose": "Purpose: B2B marketing analytics and audience insights",
+        "dataProcessing": "Data Processing: EU/US with Standard Contractual Clauses",
+        "consentRequired": "Consent Required: Yes - Marketing category",
+        "cookiesSet": "Cookies Set: li_sugr, lidc, UserMatchHistory",
+        "duration": "Duration: 30 days to 2 years",
+        "privacyPolicy": "LinkedIn Privacy Policy"
+      },
+      "cloudflare": {
+        "title": "CloudFlare CDN",
+        "purpose": "Purpose: Performance, security, and DDoS protection",
+        "dataProcessing": "Data Processing: EU servers, essential functionality",
+        "consentRequired": "Consent Required: No - Strictly necessary",
+        "cookiesSet": "Cookies Set: __cflb, __cf_bm, cf_clearance",
+        "duration": "Duration: Session to 1 year",
+        "privacyPolicy": "CloudFlare Privacy Policy"
+      },
+      "weDoNotUse": {
+        "title": "We Do NOT Use",
+        "items": [
+          "Cross-site tracking without consent",
+          "Fingerprinting technologies",
+          "Data brokers or audience networks",
+          "Undisclosed third-party cookies"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Your Cookie Rights & Controls",
+      "description": "Under Swedish and EU law, you have comprehensive rights regarding cookies and tracking:",
+      "consentRights": {
+        "title": "Consent Rights",
+        "items": [
+          "Give or refuse consent for non-essential cookies",
+          "Withdraw consent at any time without penalty",
+          "Granular control over different cookie categories",
+          "Consent choices respected across all visits"
+        ]
+      },
+      "browserControls": {
+        "title": "Browser Controls",
+        "chrome": "Chrome: Settings → Privacy and security → Cookies and other site data",
+        "firefox": "Firefox: Preferences → Privacy & Security → Cookies and Site Data",
+        "safari": "Safari: Preferences → Privacy → Manage Website Data",
+        "edge": "Edge: Settings → Cookies and site permissions"
+      },
+      "transparencyRights": {
+        "title": "Transparency Rights",
+        "items": [
+          "Clear information about all cookies we use",
+          "Purpose and duration of each cookie",
+          "Identity of third parties setting cookies",
+          "Data transfer information for international cookies"
+        ]
+      },
+      "cookieImpact": {
+        "title": "Impact of Cookie Controls",
+        "essential": "Essential Cookies: Cannot be disabled; may prevent basic website functions",
+        "analytics": "Analytics Cookies: Website remains functional; we cannot improve user experience",
+        "functional": "Functional Cookies: May require re-entering preferences on each visit",
+        "marketing": "Marketing Cookies: Less relevant content and advertising"
+      },
+      "preferenceCenter": {
+        "title": "Cookie Preference Center",
+        "description": "Access your cookie preferences at any time:",
+        "buttonText": "Manage Cookie Preferences",
+        "availability": "Available in footer on every page"
+      }
+    },
+    "cookieTable": {
+      "title": "Complete Cookie Inventory",
+      "description": "Comprehensive list of all cookies used on our website, as required by Swedish transparency obligations:",
+      "necessaryTable": {
+        "title": "Strictly Necessary Cookies",
+        "headers": {
+          "cookieName": "Cookie Name",
+          "purpose": "Purpose", 
+          "duration": "Duration",
+          "provider": "Provider"
+        },
+        "cookies": [
+          {
+            "name": "PHPSESSID",
+            "purpose": "Session management",
+            "duration": "Session",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "_csrf_token",
+            "purpose": "Security protection",
+            "duration": "Session",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "__cf_bm",
+            "purpose": "Bot management",
+            "duration": "30 minutes",
+            "provider": "CloudFlare"
+          }
+        ]
+      },
+      "analyticsTable": {
+        "title": "Analytics Cookies (Consent Required)",
+        "cookies": [
+          {
+            "name": "_ga",
+            "purpose": "User identification",
+            "duration": "24 months",
+            "provider": "Google Analytics"
+          },
+          {
+            "name": "_ga_*",
+            "purpose": "Session data",
+            "duration": "24 months",
+            "provider": "Google Analytics"
+          },
+          {
+            "name": "_gid",
+            "purpose": "User identification",
+            "duration": "24 hours",
+            "provider": "Google Analytics"
+          }
+        ]
+      },
+      "functionalTable": {
+        "title": "Functional Cookies (Consent Required)",
+        "cookies": [
+          {
+            "name": "cookie_preferences",
+            "purpose": "Remember consent choices",
+            "duration": "1 year",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "lang_preference",
+            "purpose": "Language selection",
+            "duration": "30 days",
+            "provider": "Bromander Global"
+          }
+        ]
+      }
+    },
+    "dataSecurity": {
+      "title": "Cookie Security & Data Retention",
+      "securityMeasures": {
+        "title": "Security Measures",
+        "items": [
+          "Secure (HTTPS-only) cookie transmission",
+          "HttpOnly flags to prevent JavaScript access where appropriate",
+          "SameSite attributes to prevent CSRF attacks",
+          "Regular security audits of cookie implementation",
+          "Encryption of sensitive cookie data"
+        ]
+      },
+      "dataRetention": {
+        "title": "Data Retention",
+        "sessionCookies": "Session Cookies: Deleted when you close your browser",
+        "persistentCookies": "Persistent Cookies: Automatically expire after specified duration",
+        "analyticsData": "Analytics Data: Aggregated and anonymized after 26 months",
+        "consentRecords": "Consent Records: Maintained for 3 years for compliance purposes"
+      },
+      "dataMinimization": {
+        "title": "Data Minimization",
+        "description": "We follow GDPR data minimization principles, collecting only necessary cookie data and retaining it for the shortest time required for its stated purpose."
+      },
+      "internationalTransfers": {
+        "title": "International Transfers",
+        "description": "Some third-party cookies (Google Analytics, LinkedIn) may transfer data outside the EU. We ensure adequate protections through Standard Contractual Clauses and adequacy decisions."
+      }
+    },
+    "policyUpdates": {
+      "title": "Policy Updates & Compliance",
+      "updateProcess": {
+        "title": "Update Process",
+        "minorChanges": "Minor Changes: Updated immediately with new \"last updated\" date",
+        "materialChanges": "Material Changes: 30 days advance notice via email and website banner",
+        "newCookieCategories": "New Cookie Categories: Fresh consent required before deployment",
+        "versionHistory": "Version History: Previous versions archived for compliance audit"
+      },
+      "regulatoryCompliance": {
+        "title": "Regulatory Compliance",
+        "ePrivacyDirective": "EU ePrivacy Directive: Implemented via Swedish ECA",
+        "gdpr": "GDPR: Article 6 legal basis and Article 7 consent requirements",
+        "swedishAuthorities": "Swedish Authorities: PTS (technical) and IMY (data protection) oversight",
+        "guidelines2025": "2025 Guidelines: Compliant with IMY dark patterns guidance"
+      },
+      "regularReviews": {
+        "title": "Regular Reviews",
+        "description": "We conduct quarterly reviews of our cookie inventory, consent mechanisms, and compliance with evolving Swedish and EU requirements to ensure ongoing legal compliance."
+      },
+      "technologyUpdates": {
+        "title": "Technology Updates",
+        "description": "As cookie technology evolves (e.g., Topics API, Privacy Sandbox), we will update this policy and obtain fresh consent as required by Swedish law."
+      }
+    },
+    "contact": {
+      "title": "Contact & Cookie Support",
+      "description": "For questions about cookies, consent management, or this policy, please contact us:",
+      "cookieInquiries": {
+        "title": "Cookie & Privacy Inquiries",
+        "cookieEmail": "cookies@bromanderglobal.com",
+        "dpoEmail": "dpo@bromanderglobal.com (Data Protection Officer)",
+        "phone": "+46 70 123 45 67"
+      },
+      "generalSupport": {
+        "title": "General Support",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sweden"
+      },
+      "regulatoryAuthorities": {
+        "title": "Regulatory Authorities",
+        "description": "For cookie-related complaints in Sweden:",
+        "pts": "Swedish Post & Telecom Authority (PTS): pts.se | Email: pts@pts.se",
+        "imy": "Swedish Authority for Privacy Protection (IMY): imy.se | Email: imy@imy.se"
+      },
+      "responseTimes": {
+        "title": "Response Times",
+        "cookieQuestions": "Cookie questions: 3 business days",
+        "consentIssues": "Consent issues: Same day",
+        "technicalProblems": "Technical problems: 24 hours",
+        "legalInquiries": "Legal inquiries: 5 business days"
+      },
+      "cookieManagement": {
+        "title": "Cookie Preference Management",
+        "openSettings": "Open Cookie Settings",
+        "resetCookies": "Reset All Cookies",
+        "resetConfirm": "This will reset all cookie preferences and reload the page. Continue?"
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "If you need this Cookie Policy in an alternative format for accessibility reasons, please contact us and we will provide it in a suitable format within 3 business days."
+      },
+      "policyEffective": {
+        "title": "Cookie Policy Effective",
+        "description": "This Cookie Policy is effective as of the last updated date and applies to all visitors to our website. By continuing to use our website after reading this policy, you acknowledge understanding of our cookie practices."
+      }
+    }
+  }
+}

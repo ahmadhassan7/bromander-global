@@ -3,10 +3,13 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
 import LightRays from '@/components/LightRays';
 
 export default function HeroAlternative() {
   const [isMobile, setIsMobile] = useState(false);
+  const t = useTranslations('hero');
+  const locale = useLocale();
 
   useEffect(() => {
     const checkMobile = () => {
@@ -63,7 +66,7 @@ export default function HeroAlternative() {
                 transition={{ delay: 0.6, duration: 0.8 }}
                 className="block text-white mb-2"
               >
-                BROMANDER
+                {t('title')}
               </motion.span>
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
@@ -71,7 +74,7 @@ export default function HeroAlternative() {
                 transition={{ delay: 0.8, duration: 0.8 }}
                 className="block gradient-text-blue"
               >
-                GLOBAL
+                {t('subtitle')}
               </motion.span>
             </h1>
             
@@ -81,8 +84,7 @@ export default function HeroAlternative() {
               transition={{ delay: 1, duration: 1 }}
               className="text-lg md:text-xl lg:text-2xl text-gray-400 leading-relaxed max-w-3xl mx-auto"
             >
-              A technology holding company that owns and operates innovative digital products. 
-              We believe in creating solutions that enhance human potential and improve digital wellness.
+              {t('description')}
             </motion.p>
 
             {/* CTA Buttons */}
@@ -101,7 +103,7 @@ export default function HeroAlternative() {
                   href="#products" 
                   className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider overflow-hidden rounded-xl w-full sm:w-auto"
                 >
-                  <span className="relative z-10">Our Portfolio</span>
+                  <span className="relative z-10">{t('cta.portfolio')}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Link>
               </motion.div>
@@ -112,10 +114,10 @@ export default function HeroAlternative() {
                 className="w-full sm:w-auto"
               >
                 <Link 
-                  href="/contact" 
+                  href={`/${locale}/contact`} 
                   className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-white/20 text-white font-bold uppercase tracking-wider hover:border-blue-500 transition-all overflow-hidden rounded-xl backdrop-blur-sm w-full sm:w-auto"
                 >
-                  <span className="relative z-10">Contact Us</span>
+                  <span className="relative z-10">{t('cta.contact')}</span>
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </Link>
               </motion.div>

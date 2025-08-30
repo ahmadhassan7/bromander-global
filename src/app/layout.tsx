@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
+import {NextIntlClientProvider} from 'next-intl';
+import {getLocale, getMessages} from 'next-intl/server';
+import {notFound} from 'next/navigation';
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
-import CookieConsent from "@/components/CookieConsent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,42 +14,25 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-export const metadata: Metadata = {
-  title: "Bromander Global | Innovative Solutions for Modern Businesses",
-  description: "Bromander Global delivers cutting-edge products including AI Reliance Tracker and Smart Bookkeeping app. Empowering businesses with technology that transforms how you work.",
-  keywords: "Bromander Global, AI Reliance Tracker, Smart Bookkeeping, business solutions, digital wellness, automation",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  openGraph: {
-    title: "Bromander Global",
-    description: "Innovative solutions for modern businesses",
-    type: "website",
-    locale: "en_US",
-    siteName: "Bromander Global",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Bromander Global",
-    description: "Innovative solutions for modern businesses",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const locale = await getLocale();
+  
+  if (locale !== 'en' && locale !== 'sv') {
+    notFound();
+  }
+
+  const messages = await getMessages();
+
   return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}
-      >
-        <CustomCursor />
-        {children}
-        <CookieConsent />
+    <html lang={locale}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

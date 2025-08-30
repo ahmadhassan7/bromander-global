@@ -2,7 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguageSwitcher } from '@/hooks/useLanguageSwitcher';
+import LanguageIcon from '@/components/LanguageIcon';
 import { 
   Menu, 
   X, 
@@ -16,31 +19,105 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-const navigation = [
-  { name: 'Home', href: '/', icon: Home },
-  {
-    name: 'Portfolio',
-    icon: Zap,
-    dropdown: [
-      { 
-        name: 'AI Reliance Tracker', 
-        href: '/products/ai-tracker', 
-        icon: Brain,
-        description: 'Digital wellness and mindful AI usage'
-      },
-      { 
-        name: 'Smart Bookkeeping', 
-        href: '/products/bookkeeping', 
-        icon: Calculator,
-        description: 'Intelligent financial management platform'
-      },
-    ],
-  },
-  { name: 'About', href: '/about', icon: Building },
-  { name: 'Contact', href: '/contact', icon: Mail },
-];
+const useNavigation = () => {
+  const t = useTranslations('nav');
+  const tProducts = useTranslations('products');
+  const locale = useLocale();
+  
+  return [
+    { name: t('home'), href: `/${locale}`, icon: Home },
+    {
+      name: t('portfolio'),
+      icon: Zap,
+      dropdown: [
+        { 
+          name: tProducts('aiTracker.name'), 
+          href: `/${locale}/products/ai-tracker`, 
+          icon: Brain,
+          description: tProducts('aiTracker.shortDescription')
+        },
+        { 
+          name: tProducts('bookkeeping.name'), 
+          href: `/${locale}/products/bookkeeping`, 
+          icon: Calculator,
+          description: tProducts('bookkeeping.shortDescription')
+        },
+      ],
+    },
+    { name: t('about'), href: `/${locale}/about`, icon: Building },
+    { name: t('contact'), href: `/${locale}/contact`, icon: Mail },
+  ];
+};
+
+const LanguageSwitcher = () => {
+  const { switchLanguage, currentLocale } = useLanguageSwitcher();
+  const t = useTranslations('nav');
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const handleLanguageSwitch = (newLocale: string) => {
+    if (newLocale === currentLocale) {
+      setIsOpen(false);
+      return;
+    }
+    
+    setIsOpen(false);
+    switchLanguage(newLocale);
+  };
+
+  const getCurrentLanguageCode = () => {
+    return currentLocale as 'en' | 'sv';
+  };
+
+  const getCurrentLanguage = () => {
+    return currentLocale === 'sv' ? t('swedish') : t('english');
+  };
+  
+  return (
+    <div className="relative">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors font-medium uppercase tracking-wider text-sm"
+      >
+        <LanguageIcon language={getCurrentLanguageCode()} className="w-5 h-4" />
+        <span>{getCurrentLanguage()}</span>
+        <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            transition={{ duration: 0.2 }}
+            className="absolute top-full left-0 mt-2 w-44 glass-dark p-2 rounded-lg border border-white/10"
+          >
+            <button
+              onClick={() => handleLanguageSwitch('en')}
+              className={`w-full flex items-center space-x-3 px-4 py-3 rounded-md hover:bg-white/10 transition-colors ${currentLocale === 'en' ? 'text-blue-400 bg-blue-500/10' : 'text-white'}`}
+            >
+              <LanguageIcon language="en" className="w-5 h-4" />
+              <span>{t('english')}</span>
+              {currentLocale === 'en' && <div className="w-2 h-2 bg-blue-400 rounded-full ml-auto" />}
+            </button>
+            <button
+              onClick={() => handleLanguageSwitch('sv')}
+              className={`w-full flex items-center space-x-3 px-4 py-3 rounded-md hover:bg-white/10 transition-colors ${currentLocale === 'sv' ? 'text-blue-400 bg-blue-500/10' : 'text-white'}`}
+            >
+              <LanguageIcon language="sv" className="w-5 h-4" />
+              <span>{t('swedish')}</span>
+              {currentLocale === 'sv' && <div className="w-2 h-2 bg-blue-400 rounded-full ml-auto" />}
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 export default function Navbar() {
+  const navigation = useNavigation();
+  const locale = useLocale();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -69,7 +146,7 @@ export default function Navbar() {
       <div className="container-custom px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href={`/${locale}`} className="flex items-center space-x-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center">
               <span className="text-white font-black text-2xl">B</span>
             </div>
@@ -133,6 +210,7 @@ export default function Navbar() {
                 )}
               </div>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -227,6 +305,13 @@ export default function Navbar() {
                   )}
                 </div>
               ))}
+              
+              {/* Mobile Language Switcher */}
+              <div className="pt-4 border-t border-white/10">
+                <div className="px-4 py-3">
+                  <LanguageSwitcher />
+                </div>
+              </div>
             </div>
           </motion.div>
         )}

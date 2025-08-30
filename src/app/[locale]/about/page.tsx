@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { 
   Globe, 
@@ -458,13 +459,13 @@ export default function AboutPage() {
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto"
               >
-                <a 
+                <Link 
                   href="/products/ai-tracker" 
                   className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider overflow-hidden rounded-xl w-full sm:w-auto"
                 >
                   <span className="relative z-10">View Portfolio</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
+                </Link>
               </motion.div>
               
               <motion.div
@@ -472,13 +473,13 @@ export default function AboutPage() {
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto"
               >
-                <a 
+                <Link 
                   href="/contact" 
                   className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 border-2 border-white/20 text-white font-bold uppercase tracking-wider hover:border-blue-500 transition-all overflow-hidden rounded-xl w-full sm:w-auto"
                 >
                   <span className="relative z-10">Contact Us</span>
                   <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

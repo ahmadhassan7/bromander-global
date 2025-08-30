@@ -1,7 +1,10 @@
 'use client';
 
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import { useLanguageSwitcher } from '@/hooks/useLanguageSwitcher';
+import LanguageIcon from '@/components/LanguageIcon';
 import { ArrowUpRight, Mail, MapPin, Phone, Globe } from 'lucide-react';
 
 declare global {
@@ -11,6 +14,9 @@ declare global {
 }
 
 export default function Footer() {
+  const t = useTranslations('footer');
+  const locale = useLocale();
+  const { switchLanguage } = useLanguageSwitcher();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -67,15 +73,15 @@ export default function Footer() {
                 </div>
               </div>
               <p className="text-gray-400 text-lg mb-8 max-w-md">
-                A technology holding company that owns and operates innovative digital products focused on enhancing human potential and digital wellness.
+                {t('description')}
               </p>
               
               {/* CTA */}
               <Link 
-                href="/contact" 
+                href={`/${locale}/contact`} 
                 className="inline-flex items-center gap-3 text-white hover:text-blue-500 transition-colors group"
               >
-                <span className="text-xl font-bold">GET IN TOUCH</span>
+                <span className="text-xl font-bold">{t('contact')}</span>
                 <ArrowUpRight className="w-6 h-6 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
             </motion.div>
@@ -90,17 +96,17 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                <h3 className="text-white font-bold text-sm tracking-wider mb-6">OUR PRODUCTS</h3>
+                <h3 className="text-white font-bold text-sm tracking-wider mb-6">{t('products')}</h3>
                 <ul className="space-y-4">
                   <li>
-                    <Link href="/products/ai-tracker" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                      AI Reliance Tracker
+                    <Link href={`/${locale}/products/ai-tracker`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                      {t('links.aiTracker')}
                       <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
                   <li>
-                    <Link href="/products/bookkeeping" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                      Smart Bookkeeping
+                    <Link href={`/${locale}/products/bookkeeping`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                      {t('links.bookkeeping')}
                       <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
@@ -113,21 +119,21 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                <h3 className="text-white font-bold text-sm tracking-wider mb-6">COMPANY</h3>
+                <h3 className="text-white font-bold text-sm tracking-wider mb-6">{t('company')}</h3>
                 <ul className="space-y-4">
                   <li>
-                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
-                      Home
+                    <Link href={`/${locale}`} className="text-gray-400 hover:text-white transition-colors">
+                      {t('links.home')}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                      About Us
+                    <Link href={`/${locale}/about`} className="text-gray-400 hover:text-white transition-colors">
+                      {t('links.about')}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
-                      Contact
+                    <Link href={`/${locale}/contact`} className="text-gray-400 hover:text-white transition-colors">
+                      {t('links.contact')}
                     </Link>
                   </li>
                 </ul>
@@ -139,19 +145,19 @@ export default function Footer() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                <h3 className="text-white font-bold text-sm tracking-wider mb-6">CONTACT</h3>
+                <h3 className="text-white font-bold text-sm tracking-wider mb-6">{t('contactInfo')}</h3>
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-start gap-3">
                     <Mail className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
-                    <span>hello@bromanderglobal.com</span>
+                    <span>{t('contactDetails.email')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Phone className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
-                    <span>+46 70 123 45 67</span>
+                    <span>{t('contactDetails.phone')}</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
-                    <span>Stockholm, Sweden</span>
+                    <span>{t('contactDetails.location')}</span>
                   </li>
                 </ul>
               </motion.div>
@@ -169,19 +175,19 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-8">
               <p className="text-gray-500 text-sm">
-                © {currentYear} Bromander Global. All rights reserved.
+                © {currentYear} Bromander Global. {t('legal.copyright')}
               </p>
             </div>
             
             <div className="flex items-center gap-6 text-sm">
-              <Link href="/privacy" className="text-gray-500 hover:text-white transition-colors">
-                Privacy Policy
+              <Link href={`/${locale}/privacy`} className="text-gray-500 hover:text-white transition-colors">
+                {t('legal.privacy')}
               </Link>
-              <Link href="/terms" className="text-gray-500 hover:text-white transition-colors">
-                Terms of Service
+              <Link href={`/${locale}/terms`} className="text-gray-500 hover:text-white transition-colors">
+                {t('legal.terms')}
               </Link>
-              <Link href="/cookies" className="text-gray-500 hover:text-white transition-colors">
-                Cookie Policy
+              <Link href={`/${locale}/cookies`} className="text-gray-500 hover:text-white transition-colors">
+                {t('legal.cookies')}
               </Link>
               <button 
                 onClick={() => {
@@ -191,8 +197,26 @@ export default function Footer() {
                 }}
                 className="text-gray-500 hover:text-white transition-colors"
               >
-                Cookie Settings
+                {t('legal.cookieSettings')}
               </button>
+              <div className="flex items-center gap-3">
+                <Globe className="w-4 h-4 text-gray-500" />
+                <button 
+                  onClick={() => switchLanguage('en')}
+                  className={`flex items-center gap-2 text-sm transition-colors px-2 py-1 rounded ${locale === 'en' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
+                >
+                  <LanguageIcon language="en" className="w-4 h-3" />
+                  <span>EN</span>
+                </button>
+                <span className="text-gray-600">|</span>
+                <button 
+                  onClick={() => switchLanguage('sv')}
+                  className={`flex items-center gap-2 text-sm transition-colors px-2 py-1 rounded ${locale === 'sv' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
+                >
+                  <LanguageIcon language="sv" className="w-4 h-3" />
+                  <span>SV</span>
+                </button>
+              </div>
             </div>
           </div>
         </motion.div>

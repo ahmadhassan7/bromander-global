@@ -6,8 +6,10 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function PrivacyPolicyPage() {
+  const t = useTranslations('privacyPolicy');
   const [activeSection] = useState('');
 
   return (
@@ -23,19 +25,19 @@ export default function PrivacyPolicyPage() {
           transition={{ delay: 1 }}
           className="bg-black/80 backdrop-blur-sm border border-white/10 rounded-lg p-4 max-w-xs"
         >
-          <h3 className="text-white font-semibold text-sm mb-3">Quick Navigation</h3>
+          <h3 className="text-white font-semibold text-sm mb-3">{t('navigation.title')}</h3>
           <nav className="space-y-2 text-xs">
             {[
-              { id: 'overview', title: 'Overview' },
-              { id: 'legal-basis', title: 'Legal Basis' },
-              { id: 'data-collection', title: 'Data Collection' },
-              { id: 'data-usage', title: 'How We Use Data' },
-              { id: 'data-sharing', title: 'Data Sharing' },
-              { id: 'your-rights', title: 'Your Rights' },
-              { id: 'data-retention', title: 'Data Retention' },
-              { id: 'security', title: 'Security' },
-              { id: 'cookies', title: 'Cookies' },
-              { id: 'contact', title: 'Contact' }
+              { id: 'overview', title: t('navigation.overview') },
+              { id: 'legal-basis', title: t('navigation.legalBasis') },
+              { id: 'data-collection', title: t('navigation.dataCollection') },
+              { id: 'data-usage', title: t('navigation.dataUsage') },
+              { id: 'data-sharing', title: t('navigation.dataSharing') },
+              { id: 'your-rights', title: t('navigation.yourRights') },
+              { id: 'data-retention', title: t('navigation.dataRetention') },
+              { id: 'security', title: t('navigation.security') },
+              { id: 'cookies', title: t('navigation.cookies') },
+              { id: 'contact', title: t('navigation.contact') }
             ].map((item) => (
               <a
                 key={item.id}
@@ -71,20 +73,20 @@ export default function PrivacyPolicyPage() {
                 </div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6">
-                <span className="text-white">PRIVACY </span>
-                <span className="gradient-text-blue">POLICY</span>
+                <span className="text-white">{t('header.title1')} </span>
+                <span className="gradient-text-blue">{t('header.title2')}</span>
               </h1>
               <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-                Comprehensive data protection in compliance with GDPR, EU regulations, and Swedish law
+                {t('header.subtitle')}
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
                 <div className="flex items-center gap-2 text-gray-500">
                   <Clock className="w-4 h-4" />
-                  <span>Last updated: August 29, 2025</span>
+                  <span>{t('header.lastUpdated')}</span>
                 </div>
                 <div className="flex items-center gap-2 text-green-500">
                   <CheckCircle className="w-4 h-4" />
-                  <span>GDPR Compliant</span>
+                  <span>{t('header.gdprCompliant')}</span>
                 </div>
               </div>
             </motion.div>
@@ -99,11 +101,9 @@ export default function PrivacyPolicyPage() {
               <div className="flex items-start gap-4">
                 <AlertCircle className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-white font-semibold mb-2">Important Information</h3>
+                  <h3 className="text-white font-semibold mb-2">{t('header.importantTitle')}</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    This privacy policy is designed to comply with the General Data Protection Regulation (GDPR), 
-                    Swedish Data Protection Act, and other applicable EU regulations. You have specific rights regarding 
-                    your personal data, and we&apos;re committed to protecting your privacy.
+                    {t('header.importantDescription')}
                   </p>
                 </div>
               </div>
@@ -122,23 +122,23 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Eye className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Data Controller & Overview</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('overview.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                      <h3 className="text-white font-semibold mb-2">Data Controller</h3>
+                      <h3 className="text-white font-semibold mb-2">{t('overview.controllerTitle')}</h3>
                       <div className="text-sm space-y-1">
-                        <p><strong>Company:</strong> Bromander Global AB</p>
-                        <p><strong>Address:</strong> Stockholm, Sweden</p>
-                        <p><strong>Contact:</strong> privacy@bromanderglobal.com</p>
-                        <p><strong>DPO Contact:</strong> dpo@bromanderglobal.com</p>
+                        <p><strong>{t('overview.company')}</strong> {t('overview.companyName')}</p>
+                        <p><strong>{t('overview.address')}</strong> {t('overview.addressValue')}</p>
+                        <p><strong>{t('overview.contact')}</strong> {t('overview.contactEmail')}</p>
+                        <p><strong>{t('overview.dpo')}</strong> {t('overview.dpoEmail')}</p>
                       </div>
                     </div>
                     <p>
-                      Bromander Global AB (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is a Swedish technology holding company registered in Stockholm, Sweden. We own and operate digital products including AI Reliance Tracker and Smart Bookkeeping. As the data controller, we determine the purposes and means of processing your personal data.
+                      {t('overview.description1')}
                     </p>
                     <p>
-                      This Privacy Policy complies with the General Data Protection Regulation (GDPR), the Swedish Data Protection Act (2018:218), and other applicable EU and Swedish regulations. Each of our portfolio companies maintains its own specific privacy policy for their respective products and services.
+                      {t('overview.description2')}
                     </p>
                   </div>
                 </motion.section>
@@ -153,26 +153,26 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Gavel className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Legal Basis for Processing</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('legalBasis.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-4">
-                    <p>We process your personal data based on the following legal grounds under GDPR Article 6:</p>
+                    <p>{t('legalBasis.description')}</p>
                     <div className="grid gap-4">
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">🟢 Legitimate Interest (Art. 6(1)(f))</h4>
-                        <p className="text-sm">Website analytics, security monitoring, and business communications</p>
+                        <h4 className="text-white font-semibold mb-2">{t('legalBasis.legitimateInterest.title')}</h4>
+                        <p className="text-sm">{t('legalBasis.legitimateInterest.description')}</p>
                       </div>
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">🔵 Consent (Art. 6(1)(a))</h4>
-                        <p className="text-sm">Marketing communications, non-essential cookies, and newsletter subscriptions</p>
+                        <h4 className="text-white font-semibold mb-2">{t('legalBasis.consent.title')}</h4>
+                        <p className="text-sm">{t('legalBasis.consent.description')}</p>
                       </div>
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">🟣 Contract Performance (Art. 6(1)(b))</h4>
-                        <p className="text-sm">Service delivery, customer support, and account management</p>
+                        <h4 className="text-white font-semibold mb-2">{t('legalBasis.contract.title')}</h4>
+                        <p className="text-sm">{t('legalBasis.contract.description')}</p>
                       </div>
                       <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">🟠 Legal Obligation (Art. 6(1)(c))</h4>
-                        <p className="text-sm">Tax reporting, regulatory compliance, and law enforcement requests</p>
+                        <h4 className="text-white font-semibold mb-2">{t('legalBasis.legal.title')}</h4>
+                        <p className="text-sm">{t('legalBasis.legal.description')}</p>
                       </div>
                     </div>
                   </div>
@@ -188,63 +188,57 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Database className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Data We Collect</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('dataCollection.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We collect personal data in the following categories:</p>
+                    <p>{t('dataCollection.description')}</p>
                     
                     <div className="space-y-4">
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                           <UserCheck className="w-5 h-5 text-blue-500" />
-                          Identity & Contact Information
+                          {t('dataCollection.identity.title')}
                         </h3>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Full name, email address, phone number</li>
-                          <li>Company name, job title, professional information</li>
-                          <li>Address, postal code, country of residence</li>
-                          <li>Account credentials and authentication data</li>
+                          {t.raw('dataCollection.identity.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                           <Globe className="w-5 h-5 text-blue-500" />
-                          Technical & Usage Data
+                          {t('dataCollection.technical.title')}
                         </h3>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>IP address, browser type, device identifiers</li>
-                          <li>Operating system, screen resolution, language preferences</li>
-                          <li>Website navigation patterns, page views, time spent</li>
-                          <li>Referral sources, search terms, click patterns</li>
-                          <li>Session recordings (anonymized), heatmap data</li>
+                          {t.raw('dataCollection.technical.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                           <FileText className="w-5 h-5 text-blue-500" />
-                          Communication & Content
+                          {t('dataCollection.communication.title')}
                         </h3>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Email correspondence, chat messages, support tickets</li>
-                          <li>Feedback, surveys, reviews, and testimonials</li>
-                          <li>Marketing preferences and communication history</li>
-                          <li>Meeting notes, call recordings (with consent)</li>
+                          {t.raw('dataCollection.communication.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
                         <h3 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                           <Settings className="w-5 h-5 text-blue-500" />
-                          Cookies & Tracking Technologies
+                          {t('dataCollection.cookies.title')}
                         </h3>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Essential cookies for website functionality</li>
-                          <li>Analytics cookies (Google Analytics, Mixpanel)</li>
-                          <li>Marketing cookies (with consent)</li>
-                          <li>Social media pixels and tracking beacons</li>
-                          <li>Local storage data and session information</li>
+                          {t.raw('dataCollection.cookies.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -252,10 +246,10 @@ export default function PrivacyPolicyPage() {
                     <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
                       <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                         <AlertCircle className="w-4 h-4" />
-                        Special Categories of Data
+                        {t('dataCollection.specialData.title')}
                       </h4>
                       <p className="text-sm">
-                        We do not intentionally collect special categories of personal data (health, racial/ethnic origin, political opinions, religious beliefs, biometric data) unless explicitly required and with your explicit consent.
+                        {t('dataCollection.specialData.description')}
                       </p>
                     </div>
                   </div>
@@ -271,49 +265,45 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Users className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">How We Use Your Data</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('dataUsage.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We process your personal data for the following purposes, always based on a valid legal ground:</p>
+                    <p>{t('dataUsage.description')}</p>
                     
                     <div className="grid gap-4">
                       <div className="bg-blue-500/5 border-l-4 border-blue-500 pl-4">
-                        <h4 className="text-white font-semibold mb-2">Service Delivery & Customer Support</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('dataUsage.serviceDelivery.title')}</h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Providing and maintaining our services</li>
-                          <li>Processing transactions and managing accounts</li>
-                          <li>Responding to inquiries and providing support</li>
-                          <li>Troubleshooting and technical assistance</li>
+                          {t.raw('dataUsage.serviceDelivery.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="bg-green-500/5 border-l-4 border-green-500 pl-4">
-                        <h4 className="text-white font-semibold mb-2">Analytics & Improvements</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('dataUsage.analytics.title')}</h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Analyzing website usage and performance</li>
-                          <li>Improving user experience and functionality</li>
-                          <li>Conducting research and development</li>
-                          <li>A/B testing and feature optimization</li>
+                          {t.raw('dataUsage.analytics.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="bg-purple-500/5 border-l-4 border-purple-500 pl-4">
-                        <h4 className="text-white font-semibold mb-2">Marketing & Communication</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('dataUsage.marketing.title')}</h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Sending newsletters and product updates (with consent)</li>
-                          <li>Personalized marketing communications</li>
-                          <li>Event invitations and industry insights</li>
-                          <li>Social media engagement and advertising</li>
+                          {t.raw('dataUsage.marketing.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="bg-orange-500/5 border-l-4 border-orange-500 pl-4">
-                        <h4 className="text-white font-semibold mb-2">Legal & Security</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('dataUsage.legal.title')}</h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Compliance with legal obligations</li>
-                          <li>Fraud prevention and security monitoring</li>
-                          <li>Protecting our rights and interests</li>
-                          <li>Law enforcement cooperation when required</li>
+                          {t.raw('dataUsage.legal.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
                     </div>
@@ -330,40 +320,38 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Share className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Data Sharing & Third Parties</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('dataSharing.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We may share your personal data with the following categories of recipients:</p>
+                    <p>{t('dataSharing.description')}</p>
                     
                     <div className="space-y-4">
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Service Providers & Processors</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('dataSharing.serviceProviders.title')}</h4>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li><strong>Cloud Infrastructure:</strong> AWS, Google Cloud (data hosting)</li>
-                          <li><strong>Analytics:</strong> Google Analytics, Mixpanel (website analytics)</li>
-                          <li><strong>Communication:</strong> Mailchimp, SendGrid (email services)</li>
-                          <li><strong>Support:</strong> Intercom, Zendesk (customer service)</li>
-                          <li><strong>Payment Processing:</strong> Stripe, PayPal (transactions)</li>
+                          {t.raw('dataSharing.serviceProviders.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Legal Requirements</h4>
-                        <p className="text-sm">We may disclose your data when required by law, court orders, or to protect our rights, users&apos; safety, or comply with legal processes.</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataSharing.legalRequirements.title')}</h4>
+                        <p className="text-sm">{t('dataSharing.legalRequirements.description')}</p>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Business Transfers</h4>
-                        <p className="text-sm">In case of merger, acquisition, or sale, your data may be transferred as part of the business assets, with continued protection under this privacy policy.</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataSharing.businessTransfers.title')}</h4>
+                        <p className="text-sm">{t('dataSharing.businessTransfers.description')}</p>
                       </div>
                     </div>
 
                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">We Do NOT:</h4>
+                      <h4 className="text-white font-semibold mb-2">{t('dataSharing.weDoNot.title')}</h4>
                       <ul className="text-sm space-y-1 list-disc list-inside">
-                        <li>Sell your personal data to third parties</li>
-                        <li>Share data for third-party marketing without consent</li>
-                        <li>Transfer data outside EU/EEA without adequate protections</li>
+                        {t.raw('dataSharing.weDoNot.items').map((item: string, index: number) => (
+                          <li key={index}>{item}</li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -379,81 +367,81 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <UserCheck className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Your Data Protection Rights</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('yourRights.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>Under GDPR and Swedish law, you have the following rights regarding your personal data:</p>
+                    <p>{t('yourRights.description')}</p>
                     
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Eye className="w-4 h-4" />
-                          Right of Access (Art. 15)
+                          {t('yourRights.access.title')}
                         </h4>
-                        <p className="text-sm">Request access to your personal data and information about how we process it.</p>
+                        <p className="text-sm">{t('yourRights.access.description')}</p>
                       </div>
 
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Settings className="w-4 h-4" />
-                          Right to Rectification (Art. 16)
+                          {t('yourRights.rectification.title')}
                         </h4>
-                        <p className="text-sm">Request correction of inaccurate or incomplete personal data.</p>
+                        <p className="text-sm">{t('yourRights.rectification.description')}</p>
                       </div>
 
                       <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <AlertCircle className="w-4 h-4" />
-                          Right to Erasure (Art. 17)
+                          {t('yourRights.erasure.title')}
                         </h4>
-                        <p className="text-sm">Request deletion of your personal data (&apos;right to be forgotten&apos;).</p>
+                        <p className="text-sm">{t('yourRights.erasure.description')}</p>
                       </div>
 
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Lock className="w-4 h-4" />
-                          Right to Restrict Processing (Art. 18)
+                          {t('yourRights.restrict.title')}
                         </h4>
-                        <p className="text-sm">Request limitation of processing in certain circumstances.</p>
+                        <p className="text-sm">{t('yourRights.restrict.description')}</p>
                       </div>
 
                       <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <FileText className="w-4 h-4" />
-                          Right to Data Portability (Art. 20)
+                          {t('yourRights.portability.title')}
                         </h4>
-                        <p className="text-sm">Receive your data in a structured, machine-readable format.</p>
+                        <p className="text-sm">{t('yourRights.portability.description')}</p>
                       </div>
 
                       <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Shield className="w-4 h-4" />
-                          Right to Object (Art. 21)
+                          {t('yourRights.object.title')}
                         </h4>
-                        <p className="text-sm">Object to processing based on legitimate interests or direct marketing.</p>
+                        <p className="text-sm">{t('yourRights.object.description')}</p>
                       </div>
                     </div>
 
                     <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-500/20 rounded-lg p-6">
-                      <h4 className="text-white font-semibold mb-4">How to Exercise Your Rights</h4>
+                      <h4 className="text-white font-semibold mb-4">{t('yourRights.howToExercise.title')}</h4>
                       <div className="space-y-3">
                         <div className="flex items-center gap-3">
                           <Mail className="w-5 h-5 text-blue-500" />
-                          <span><strong>Email:</strong> privacy@bromanderglobal.com</span>
+                          <span>{t('yourRights.howToExercise.email')}</span>
                         </div>
                         <div className="flex items-center gap-3">
                           <Phone className="w-5 h-5 text-blue-500" />
-                          <span><strong>Phone:</strong> +46 70 123 45 67</span>
+                          <span>{t('yourRights.howToExercise.phone')}</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Clock className="w-5 h-5 text-blue-500 mt-0.5" />
                           <div>
-                            <p><strong>Response Time:</strong> Within 30 days (may be extended to 60 days for complex requests)</p>
+                            <p>{t('yourRights.howToExercise.responseTime')}</p>
                           </div>
                         </div>
                       </div>
                       <p className="text-sm mt-4 text-gray-400">
-                        We may need to verify your identity before processing your request. If we refuse your request, we&apos;ll explain why and inform you of your right to complain to the Swedish Authority for Privacy Protection (IMY).
+                        {t('yourRights.howToExercise.verification')}
                       </p>
                     </div>
                   </div>
@@ -469,34 +457,34 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Clock className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Data Retention</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('dataRetention.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy:</p>
+                    <p>{t('dataRetention.description')}</p>
                     
                     <div className="space-y-4">
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Account Data</h4>
-                        <p className="text-sm">Active accounts: Until account deletion + 30 days for backup recovery</p>
-                        <p className="text-sm">Inactive accounts: 3 years from last login, then automatic deletion</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataRetention.accountData.title')}</h4>
+                        <p className="text-sm">{t('dataRetention.accountData.active')}</p>
+                        <p className="text-sm">{t('dataRetention.accountData.inactive')}</p>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Communication Data</h4>
-                        <p className="text-sm">Customer support: 7 years (Swedish business record requirements)</p>
-                        <p className="text-sm">Marketing communications: Until consent withdrawal + 30 days</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataRetention.communication.title')}</h4>
+                        <p className="text-sm">{t('dataRetention.communication.support')}</p>
+                        <p className="text-sm">{t('dataRetention.communication.marketing')}</p>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Analytics Data</h4>
-                        <p className="text-sm">Website analytics: 26 months (Google Analytics default)</p>
-                        <p className="text-sm">Performance data: 12 months for optimization purposes</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataRetention.analytics.title')}</h4>
+                        <p className="text-sm">{t('dataRetention.analytics.website')}</p>
+                        <p className="text-sm">{t('dataRetention.analytics.performance')}</p>
                       </div>
 
                       <div className="border border-gray-700 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">Legal & Financial</h4>
-                        <p className="text-sm">Financial records: 7 years (Swedish Bookkeeping Act)</p>
-                        <p className="text-sm">Legal documentation: As required by applicable law</p>
+                        <h4 className="text-white font-semibold mb-2">{t('dataRetention.legalFinancial.title')}</h4>
+                        <p className="text-sm">{t('dataRetention.legalFinancial.financial')}</p>
+                        <p className="text-sm">{t('dataRetention.legalFinancial.legal')}</p>
                       </div>
                     </div>
                   </div>
@@ -512,57 +500,48 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Lock className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Security Measures</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('security.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We implement comprehensive technical and organizational measures to protect your personal data:</p>
+                    <p>{t('security.description')}</p>
                     
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="space-y-4">
                         <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Technical Safeguards</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('security.technical.title')}</h4>
                           <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li>TLS 1.3 encryption for data in transit</li>
-                            <li>AES-256 encryption for data at rest</li>
-                            <li>Multi-factor authentication (MFA)</li>
-                            <li>Regular security audits and penetration testing</li>
-                            <li>Automated threat detection and monitoring</li>
-                            <li>Secure cloud infrastructure (SOC 2 compliant)</li>
+                            {t.raw('security.technical.items').map((item: string, index: number) => (
+                              <li key={index}>{item}</li>
+                            ))}
                           </ul>
                         </div>
 
                         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Access Controls</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('security.access.title')}</h4>
                           <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li>Role-based access control (RBAC)</li>
-                            <li>Principle of least privilege</li>
-                            <li>Regular access reviews and audits</li>
-                            <li>Secure authentication protocols</li>
-                            <li>Employee background checks</li>
+                            {t.raw('security.access.items').map((item: string, index: number) => (
+                              <li key={index}>{item}</li>
+                            ))}
                           </ul>
                         </div>
                       </div>
 
                       <div className="space-y-4">
                         <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Organizational Measures</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('security.organizational.title')}</h4>
                           <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li>Regular staff training on data protection</li>
-                            <li>Incident response and breach procedures</li>
-                            <li>Privacy by design and by default</li>
-                            <li>Data Processing Impact Assessments (DPIA)</li>
-                            <li>Vendor security assessments</li>
+                            {t.raw('security.organizational.items').map((item: string, index: number) => (
+                              <li key={index}>{item}</li>
+                            ))}
                           </ul>
                         </div>
 
                         <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Compliance</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('security.compliance.title')}</h4>
                           <ul className="text-sm space-y-1 list-disc list-inside">
-                            <li>ISO 27001 security framework</li>
-                            <li>GDPR compliance monitoring</li>
-                            <li>Swedish data protection standards</li>
-                            <li>Regular compliance audits</li>
-                            <li>Third-party security certifications</li>
+                            {t.raw('security.compliance.items').map((item: string, index: number) => (
+                              <li key={index}>{item}</li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -571,10 +550,10 @@ export default function PrivacyPolicyPage() {
                     <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-4">
                       <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                         <AlertCircle className="w-4 h-4" />
-                        Data Breach Response
+                        {t('security.breach.title')}
                       </h4>
                       <p className="text-sm">
-                        In the unlikely event of a data breach, we will notify the Swedish Authority for Privacy Protection (IMY) within 72 hours and affected individuals without undue delay, as required by GDPR Article 33-34.
+                        {t('security.breach.description')}
                       </p>
                     </div>
                   </div>
@@ -590,60 +569,59 @@ export default function PrivacyPolicyPage() {
                 >
                   <div className="flex items-center gap-3 mb-6">
                     <Settings className="w-6 h-6 text-blue-500" />
-                    <h2 className="text-2xl font-bold text-white">Cookies & Tracking</h2>
+                    <h2 className="text-2xl font-bold text-white">{t('cookies.title')}</h2>
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
-                    <p>We use cookies and similar tracking technologies to enhance your browsing experience. You can manage your cookie preferences at any time.</p>
+                    <p>{t('cookies.description')}</p>
                     
                     <div className="grid gap-4">
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <CheckCircle className="w-4 h-4" />
-                          Essential Cookies (Required)
+                          {t('cookies.essential.title')}
                         </h4>
-                        <p className="text-sm mb-2">These cookies are necessary for the website to function and cannot be switched off.</p>
+                        <p className="text-sm mb-2">{t('cookies.essential.description')}</p>
                         <ul className="text-sm list-disc list-inside space-y-1">
-                          <li>Authentication and session management</li>
-                          <li>Security and fraud prevention</li>
-                          <li>Load balancing and performance</li>
+                          {t.raw('cookies.essential.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Eye className="w-4 h-4" />
-                          Analytics Cookies (Opt-in)
+                          {t('cookies.analytics.title')}
                         </h4>
-                        <p className="text-sm mb-2">Help us understand how visitors interact with our website.</p>
+                        <p className="text-sm mb-2">{t('cookies.analytics.description')}</p>
                         <ul className="text-sm list-disc list-inside space-y-1">
-                          <li>Google Analytics (anonymized IP)</li>
-                          <li>Page views and user journey tracking</li>
-                          <li>Performance monitoring</li>
+                          {t.raw('cookies.analytics.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <Share className="w-4 h-4" />
-                          Marketing Cookies (Consent Required)
+                          {t('cookies.marketing.title')}
                         </h4>
-                        <p className="text-sm mb-2">Used to deliver personalized content and advertisements.</p>
+                        <p className="text-sm mb-2">{t('cookies.marketing.description')}</p>
                         <ul className="text-sm list-disc list-inside space-y-1">
-                          <li>LinkedIn Insight Tag</li>
-                          <li>Google Ads conversion tracking</li>
-                          <li>Social media integration</li>
+                          {t.raw('cookies.marketing.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
                     </div>
 
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">Cookie Management</h4>
-                      <p className="text-sm mb-3">You can control cookies through:</p>
+                      <h4 className="text-white font-semibold mb-2">{t('cookies.management.title')}</h4>
+                      <p className="text-sm mb-3">{t('cookies.management.description')}</p>
                       <ul className="text-sm list-disc list-inside space-y-1">
-                        <li>Our cookie banner and preference center</li>
-                        <li>Browser settings (may affect website functionality)</li>
-                        <li>Opt-out links for specific services</li>
-                        <li>Contact us at privacy@bromanderglobal.com</li>
+                        {t.raw('cookies.management.items').map((item: string, index: number) => (
+                          <li key={index}>{item}</li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -658,26 +636,26 @@ export default function PrivacyPolicyPage() {
                 >
                   <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                     <Globe className="w-6 h-6 text-blue-500" />
-                    Portfolio Company Privacy Policies
+                    {t('portfolioCompanies.title')}
                   </h2>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <p>
-                      Each of our portfolio companies operates independently and maintains its own comprehensive privacy policy for their specific products and services. These policies follow the same high standards as this policy.
+                      {t('portfolioCompanies.description')}
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 mt-6">
                       <div className="bg-white/[0.02] border border-white/10 rounded-lg p-6">
-                        <h3 className="font-semibold text-white mb-2 text-lg">AI Reliance Tracker</h3>
-                        <p className="text-sm text-gray-400 mb-4">Privacy-first digital wellness platform with local data storage and zero tracking philosophy.</p>
+                        <h3 className="font-semibold text-white mb-2 text-lg">{t('portfolioCompanies.aiTracker.title')}</h3>
+                        <p className="text-sm text-gray-400 mb-4">{t('portfolioCompanies.aiTracker.description')}</p>
                         <a href="#" className="text-blue-500 hover:text-blue-400 transition-colors text-sm flex items-center gap-2">
-                          View Privacy Policy
+                          {t('portfolioCompanies.aiTracker.link')}
                           <ExternalLink className="w-3 h-3" />
                         </a>
                       </div>
                       <div className="bg-white/[0.02] border border-white/10 rounded-lg p-6">
-                        <h3 className="font-semibold text-white mb-2 text-lg">Smart Bookkeeping</h3>
-                        <p className="text-sm text-gray-400 mb-4">Financial management platform with bank-level security and encrypted data processing.</p>
+                        <h3 className="font-semibold text-white mb-2 text-lg">{t('portfolioCompanies.smartBookkeeping.title')}</h3>
+                        <p className="text-sm text-gray-400 mb-4">{t('portfolioCompanies.smartBookkeeping.description')}</p>
                         <a href="#" className="text-blue-500 hover:text-blue-400 transition-colors text-sm flex items-center gap-2">
-                          View Privacy Policy
+                          {t('portfolioCompanies.smartBookkeeping.link')}
                           <ExternalLink className="w-3 h-3" />
                         </a>
                       </div>
@@ -695,41 +673,41 @@ export default function PrivacyPolicyPage() {
                 >
                   <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                     <Mail className="w-6 h-6 text-blue-500" />
-                    Contact & Support
+                    {t('contact.title')}
                   </h2>
                   <div className="text-gray-300 leading-relaxed space-y-6">
                     <p>
-                      For questions about this Privacy Policy, data processing, or to exercise your rights, please contact us:
+                      {t('contact.description')}
                     </p>
                     
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div className="bg-white/[0.02] border border-white/10 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Privacy & Data Protection</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('contact.privacy.title')}</h4>
                           <div className="space-y-2 text-sm">
                             <div className="flex items-center gap-3">
                               <Mail className="w-4 h-4 text-blue-500" />
-                              <span>privacy@bromanderglobal.com</span>
+                              <span>{t('contact.privacy.email')}</span>
                             </div>
                             <div className="flex items-center gap-3">
                               <Mail className="w-4 h-4 text-blue-500" />
-                              <span>dpo@bromanderglobal.com (Data Protection Officer)</span>
+                              <span>{t('contact.privacy.dpo')}</span>
                             </div>
                           </div>
                         </div>
 
                         <div className="bg-white/[0.02] border border-white/10 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">General Contact</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('contact.general.title')}</h4>
                           <div className="space-y-2 text-sm">
                             <div className="flex items-center gap-3">
                               <Phone className="w-4 h-4 text-blue-500" />
-                              <span>+46 70 123 45 67</span>
+                              <span>{t('contact.general.phone')}</span>
                             </div>
                             <div className="flex items-start gap-3">
                               <MapPin className="w-4 h-4 text-blue-500 mt-0.5" />
                               <div>
-                                <p>Bromander Global AB</p>
-                                <p>Stockholm, Sweden</p>
+                                <p>{t('contact.general.company')}</p>
+                                <p>{t('contact.general.address')}</p>
                               </div>
                             </div>
                           </div>
@@ -740,32 +718,32 @@ export default function PrivacyPolicyPage() {
                         <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
                           <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
                             <Gavel className="w-4 h-4" />
-                            File a Complaint
+                            {t('contact.complaint.title')}
                           </h4>
                           <div className="text-sm space-y-2">
-                            <p>If you&apos;re unsatisfied with our response, you can file a complaint with:</p>
+                            <p>{t('contact.complaint.description')}</p>
                             <div className="space-y-1">
-                              <p><strong>Swedish Authority for Privacy Protection (IMY)</strong></p>
-                              <p>Website: imy.se</p>
-                              <p>Email: imy@imy.se</p>
-                              <p>Phone: +46 8 657 61 00</p>
+                              <p><strong>{t('contact.complaint.authority')}</strong></p>
+                              <p>Website: {t('contact.complaint.website')}</p>
+                              <p>Email: {t('contact.complaint.email')}</p>
+                              <p>Phone: {t('contact.complaint.phone')}</p>
                             </div>
                           </div>
                         </div>
 
                         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">Policy Updates</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('contact.policyUpdates.title')}</h4>
                           <p className="text-sm">
-                            We may update this Privacy Policy periodically. Material changes will be communicated via email and prominently displayed on our website. Continued use after changes constitutes acceptance.
+                            {t('contact.policyUpdates.description')}
                           </p>
                         </div>
                       </div>
                     </div>
 
                     <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">Quick Response Guarantee</h4>
+                      <h4 className="text-white font-semibold mb-2">{t('contact.quickResponse.title')}</h4>
                       <p className="text-sm">
-                        We aim to respond to all privacy-related inquiries within 5 business days and fulfill data subject requests within the GDPR-mandated 30 days (extendable to 60 days for complex requests).
+                        {t('contact.quickResponse.description')}
                       </p>
                     </div>
                   </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { 
   ArrowRight,
   Calculator,
@@ -62,6 +63,7 @@ const transactionTypes = [
 ];
 
 export default function BookkeepingPage() {
+  const t = useTranslations('bookkeepingPage');
   const [showWaitlist, setShowWaitlist] = useState(false);
   const [waitlistMode, setWaitlistMode] = useState<'quick' | 'custom'>('quick');
   const [activeTab, setActiveTab] = useState('survey');
@@ -280,16 +282,16 @@ export default function BookkeepingPage() {
               className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-blue-500/10 border border-blue-500/30 rounded-full mb-4 sm:mb-6 md:mb-8"
             >
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" />
-              <span className="text-xs sm:text-sm font-medium text-blue-300">AI-Powered Bookkeeping</span>
+              <span className="text-xs sm:text-sm font-medium text-blue-300">{t('badge')}</span>
             </motion.div>
 
             <h1 className="font-black mb-4 sm:mb-6">
-              <span className="block text-white mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">SMART</span>
-              <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">BOOKKEEPING</span>
+              <span className="block text-white mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">{t('hero.title1')}</span>
+              <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">{t('hero.title2')}</span>
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto px-4 sm:px-0">
-              Revolutionary AI-driven bookkeeping that learns your business patterns and automates 95% of your accounting work. Join the waitlist for early access.
+              {t('hero.description')}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
@@ -299,11 +301,11 @@ export default function BookkeepingPage() {
                 whileTap={{ scale: 0.95 }}
                 className="w-full sm:w-auto px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/25 rounded-lg text-xs sm:text-sm md:text-base"
               >
-                Join Waitlist
+                {t('hero.cta.primary')}
                 <ArrowRight className="inline-block ml-2 w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
               </motion.button>
               <Link href="#features" className="w-full sm:w-auto px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 border border-blue-500/30 text-white font-bold uppercase tracking-wider hover:bg-blue-500/10 transition-all rounded-lg text-xs sm:text-sm md:text-base flex items-center justify-center">
-                Learn More
+                {t('hero.cta.secondary')}
               </Link>
             </div>
           </motion.div>
@@ -323,40 +325,40 @@ export default function BookkeepingPage() {
             >
               {/* First set of items */}
               <div className="flex items-center gap-8 px-8">
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">AI-POWERED</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.aiPowered')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">AUTOMATED BOOKKEEPING</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.automatedBookkeeping')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-teal-400 font-bold uppercase tracking-wider">SMART CATEGORIZATION</span>
+                <span className="text-teal-400 font-bold uppercase tracking-wider">{t('marquee.smartCategorization')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">REAL-TIME SYNC</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.realtimeSync')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">BANK-LEVEL SECURITY</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.bankLevelSecurity')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-teal-400 font-bold uppercase tracking-wider">PREDICTIVE INSIGHTS</span>
+                <span className="text-teal-400 font-bold uppercase tracking-wider">{t('marquee.predictiveInsights')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">99% ACCURACY</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.accuracy')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">SAVE 10+ HOURS WEEKLY</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.timeSaving')}</span>
                 <span className="text-gray-500">•</span>
               </div>
               {/* Duplicate set for seamless loop */}
               <div className="flex items-center gap-8 px-8">
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">AI-POWERED</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.aiPowered')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">AUTOMATED BOOKKEEPING</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.automatedBookkeeping')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-teal-400 font-bold uppercase tracking-wider">SMART CATEGORIZATION</span>
+                <span className="text-teal-400 font-bold uppercase tracking-wider">{t('marquee.smartCategorization')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">REAL-TIME SYNC</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.realtimeSync')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">BANK-LEVEL SECURITY</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.bankLevelSecurity')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-teal-400 font-bold uppercase tracking-wider">PREDICTIVE INSIGHTS</span>
+                <span className="text-teal-400 font-bold uppercase tracking-wider">{t('marquee.predictiveInsights')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-cyan-400 font-bold uppercase tracking-wider">99% ACCURACY</span>
+                <span className="text-cyan-400 font-bold uppercase tracking-wider">{t('marquee.accuracy')}</span>
                 <span className="text-gray-500">•</span>
-                <span className="text-blue-400 font-bold uppercase tracking-wider">SAVE 10+ HOURS WEEKLY</span>
+                <span className="text-blue-400 font-bold uppercase tracking-wider">{t('marquee.timeSaving')}</span>
                 <span className="text-gray-500">•</span>
               </div>
             </motion.div>
@@ -387,16 +389,16 @@ export default function BookkeepingPage() {
               className="inline-block mb-6"
             >
               <div className="px-6 py-2 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 border border-blue-500/30 rounded-full">
-                <span className="text-sm font-medium text-cyan-400 uppercase tracking-wider">Next Generation</span>
+                <span className="text-sm font-medium text-cyan-400 uppercase tracking-wider">{t('features.badge')}</span>
               </div>
             </motion.div>
             
             <h2 className="text-5xl md:text-6xl font-black mb-6">
-              <span className="text-white">INTELLIGENT</span>{' '}
-              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">FEATURES</span>
+              <span className="text-white">{t('features.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent">{t('features.title2')}</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Powered by advanced AI that learns, adapts, and evolves with your business
+              {t('features.subtitle')}
             </p>
           </motion.div>
 
@@ -427,17 +429,17 @@ export default function BookkeepingPage() {
                     />
                   </div>
                   
-                  <h3 className="text-3xl font-bold text-white mb-4">AI-Powered Categorization</h3>
+                  <h3 className="text-3xl font-bold text-white mb-4">{t('features.aiCategorization.title')}</h3>
                   <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                    Our machine learning engine analyzes patterns across millions of transactions to automatically categorize with 99.9% accuracy. No more manual sorting.
+                    {t('features.aiCategorization.description')}
                   </p>
                   
                   {/* Visual Stats */}
                   <div className="grid grid-cols-3 gap-4">
                     {[
-                      { label: 'Accuracy', value: '99.9%' },
-                      { label: 'Time Saved', value: '15hrs/week' },
-                      { label: 'Auto-Learn', value: 'Always' }
+                      { label: t('features.aiCategorization.stats.accuracy'), value: t('features.aiCategorization.stats.accuracyValue') },
+                      { label: t('features.aiCategorization.stats.timeSaved'), value: t('features.aiCategorization.stats.timeSavedValue') },
+                      { label: t('features.aiCategorization.stats.autoLearn'), value: t('features.aiCategorization.stats.autoLearnValue') }
                     ].map((stat) => (
                       <div key={stat.label} className="text-center p-4 bg-blue-500/5 rounded-lg border border-blue-500/10">
                         <div className="text-2xl font-bold text-cyan-400">{stat.value}</div>
@@ -466,9 +468,9 @@ export default function BookkeepingPage() {
                     <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-xl flex items-center justify-center mb-4">
                       <Zap className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Real-time Sync</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">{t('features.realtimeSync.title')}</h3>
                     <p className="text-gray-400">
-                      Instant synchronization across all your accounts and devices. See changes as they happen.
+                      {t('features.realtimeSync.description')}
                     </p>
                   </div>
                 </div>
@@ -489,9 +491,9 @@ export default function BookkeepingPage() {
                     <div className="w-14 h-14 bg-gradient-to-br from-teal-500 to-blue-500 rounded-xl flex items-center justify-center mb-4">
                       <Shield className="w-7 h-7 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-3">Bank-Level Security</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">{t('features.bankSecurity.title')}</h3>
                     <p className="text-gray-400">
-                      256-bit encryption, SOC 2 certified, and GDPR compliant. Your data is fortress-protected.
+                      {t('features.bankSecurity.description')}
                     </p>
                   </div>
                 </div>
@@ -516,9 +518,9 @@ export default function BookkeepingPage() {
                   <ChartBar className="w-7 h-7 text-white" />
                 </motion.div>
                 
-                <h3 className="text-xl font-bold text-white mb-3">Smart Insights</h3>
+                <h3 className="text-xl font-bold text-white mb-3">{t('features.smartInsights.title')}</h3>
                 <p className="text-gray-400">
-                  Predictive analytics that help you make better financial decisions before problems arise.
+                  {t('features.smartInsights.description')}
                 </p>
                 
                 {/* Mini visualization */}
@@ -553,9 +555,9 @@ export default function BookkeepingPage() {
                     <Receipt className="w-7 h-7 text-white" />
                   </div>
                   
-                  <h3 className="text-xl font-bold text-white mb-3">Receipt Scanning</h3>
+                  <h3 className="text-xl font-bold text-white mb-3">{t('features.receiptScanning.title')}</h3>
                   <p className="text-gray-400">
-                    Point, shoot, done. Our OCR technology extracts every detail from receipts instantly.
+                    {t('features.receiptScanning.description')}
                   </p>
                 </div>
               </div>
@@ -575,16 +577,16 @@ export default function BookkeepingPage() {
                       <Clock className="w-7 h-7 text-white" />
                     </div>
                     
-                    <h3 className="text-xl font-bold text-white mb-3">Save 10+ Hours</h3>
+                    <h3 className="text-xl font-bold text-white mb-3">{t('features.timeSaving.title')}</h3>
                     <p className="text-gray-400">
-                      Every week. Guaranteed. Focus on growth, not paperwork.
+                      {t('features.timeSaving.description')}
                     </p>
                   </div>
                   
                   {/* Time saved counter */}
                   <div className="text-right">
-                    <div className="text-3xl font-black text-teal-400">10h</div>
-                    <div className="text-xs text-gray-500">per week</div>
+                    <div className="text-3xl font-black text-teal-400">{t('features.timeSaving.value')}</div>
+                    <div className="text-xs text-gray-500">{t('features.timeSaving.unit')}</div>
                   </div>
                 </div>
               </div>
@@ -603,11 +605,11 @@ export default function BookkeepingPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              <span className="text-white">SOMETHING</span>{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">BIG IS COMING</span>
+              <span className="text-white">{t('comingSoon.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">{t('comingSoon.title2')}</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              The future of bookkeeping is being reimagined
+              {t('comingSoon.subtitle')}
             </p>
           </motion.div>
 
@@ -615,9 +617,9 @@ export default function BookkeepingPage() {
             {/* Mysterious Countdown or Stats */}
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               {[
-                { number: '500+', label: 'Early Access Requests', color: 'from-blue-500 to-cyan-500' },
-                { number: '2025', label: 'Launch Year', color: 'from-cyan-500 to-teal-500' },
-                { number: '∞', label: 'Possibilities', color: 'from-teal-500 to-blue-500' }
+                { number: t('comingSoon.stats.earlyAccess.number'), label: t('comingSoon.stats.earlyAccess.label'), color: 'from-blue-500 to-cyan-500' },
+                { number: t('comingSoon.stats.launchYear.number'), label: t('comingSoon.stats.launchYear.label'), color: 'from-cyan-500 to-teal-500' },
+                { number: t('comingSoon.stats.possibilities.number'), label: t('comingSoon.stats.possibilities.label'), color: 'from-teal-500 to-blue-500' }
               ].map((stat, i) => (
                 <motion.div
                   key={stat.label}
@@ -667,19 +669,18 @@ export default function BookkeepingPage() {
                 </motion.div>
 
                 <h3 className="text-3xl font-bold text-white mb-4">
-                  Imagine Bookkeeping That Thinks
+                  {t('comingSoon.thinking.title')}
                 </h3>
                 <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  What if your bookkeeping system understood your business better than you do? 
-                  What if it could predict, optimize, and evolve with you?
+                  {t('comingSoon.thinking.description')}
                 </p>
                 
                 {/* Teaser Points */}
                 <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
                   {[
-                    { icon: Zap, text: 'Beyond Automation' },
-                    { icon: Shield, text: 'Unbreakable Security' },
-                    { icon: Sparkles, text: 'Pure Intelligence' }
+                    { icon: Zap, text: t('comingSoon.thinking.features.automation') },
+                    { icon: Shield, text: t('comingSoon.thinking.features.security') },
+                    { icon: Sparkles, text: t('comingSoon.thinking.features.intelligence') }
                   ].map((item, i) => (
                     <motion.div
                       key={item.text}
@@ -707,7 +708,7 @@ export default function BookkeepingPage() {
               className="text-center mt-12"
             >
               <p className="text-gray-400 mb-6">
-                Be among the first to experience the revolution
+                {t('comingSoon.waitlist.subtitle')}
               </p>
               <motion.button
                 onClick={() => setShowWaitlist(true)}
@@ -715,7 +716,7 @@ export default function BookkeepingPage() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/25 rounded-lg"
               >
-                Reserve Your Spot
+                {t('comingSoon.waitlist.cta')}
                 <ArrowRight className="inline-block ml-2 w-5 h-5" />
               </motion.button>
             </motion.div>
@@ -733,11 +734,11 @@ export default function BookkeepingPage() {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-4xl md:text-5xl font-black mb-6">
-              <span className="text-white">BE THE FIRST TO</span>{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">EXPERIENCE</span>
+              <span className="text-white">{t('finalCta.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{t('finalCta.title2')}</span>
             </h2>
             <p className="text-xl text-gray-400 mb-8">
-              Join our exclusive waitlist and help shape the future of bookkeeping
+              {t('finalCta.subtitle')}
             </p>
             <motion.button
               onClick={() => setShowWaitlist(true)}
@@ -745,7 +746,7 @@ export default function BookkeepingPage() {
               whileTap={{ scale: 0.95 }}
               className="px-12 py-5 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold text-lg uppercase tracking-wider hover:from-blue-700 hover:to-cyan-700 transition-all shadow-xl shadow-blue-500/25 rounded-lg"
             >
-              Join Waitlist Now
+              {t('finalCta.cta')}
               <ArrowRight className="inline-block ml-3 w-6 h-6" />
             </motion.button>
           </motion.div>

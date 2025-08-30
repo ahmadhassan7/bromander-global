@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 import { 
   Brain,
   Heart,
@@ -26,42 +27,43 @@ import SmoothScroll from '@/components/SmoothScroll';
 
 export default function AITrackerPage() {
   const [activeFeature, setActiveFeature] = useState(0);
+  const t = useTranslations('aiTrackerPage');
 
   const features = [
     {
       icon: Brain,
-      title: 'Mindful AI Usage',
-      description: 'Track and understand your AI interactions with gentle insights',
+      title: t('features.0.title'),
+      description: t('features.0.description'),
       color: 'from-purple-400 to-pink-400'
     },
     {
       icon: Heart,
-      title: 'Wellness First',
-      description: 'Prioritize mental health with usage limits and mindful breaks',
+      title: t('features.1.title'),
+      description: t('features.1.description'),
       color: 'from-pink-400 to-rose-400'
     },
     {
       icon: Shield,
-      title: 'Privacy Protected',
-      description: 'Your data stays on your device, always secure and private',
+      title: t('features.2.title'),
+      description: t('features.2.description'),
       color: 'from-blue-400 to-cyan-400'
     },
     {
       icon: BarChart3,
-      title: 'Gentle Analytics',
-      description: 'Understand patterns without judgment, grow at your pace',
+      title: t('features.3.title'),
+      description: t('features.3.description'),
       color: 'from-green-400 to-emerald-400'
     },
     {
       icon: Bell,
-      title: 'Mindful Reminders',
-      description: 'Soft nudges to maintain healthy AI boundaries',
+      title: t('features.4.title'),
+      description: t('features.4.description'),
       color: 'from-yellow-400 to-orange-400'
     },
     {
       icon: Users,
-      title: 'Community Support',
-      description: 'Connect with others on their mindful tech journey',
+      title: t('features.5.title'),
+      description: t('features.5.description'),
       color: 'from-indigo-400 to-purple-400'
     }
   ];
@@ -120,19 +122,18 @@ export default function AITrackerPage() {
               className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-white/60 backdrop-blur-sm border border-purple-200 rounded-full mb-4 sm:mb-6 md:mb-8"
             >
               <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-purple-500" />
-              <span className="text-xs sm:text-sm font-medium text-purple-700">Mindful Technology</span>
+              <span className="text-xs sm:text-sm font-medium text-purple-700">{t('badge')}</span>
             </motion.div>
 
             <h1 className="font-bold mb-4 sm:mb-6">
-              <span className="block text-gray-800 mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">Find Your Balance</span>
+              <span className="block text-gray-800 mb-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">{t('hero.title1')}</span>
               <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
-                with AI
+                {t('hero.title2')}
               </span>
             </h1>
 
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-relaxed max-w-xs sm:max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto px-4 sm:px-0">
-              A gentle companion that helps you build a healthier relationship with AI. 
-              Track, understand, and improve your digital wellness journey.
+              {t('hero.description')}
             </p>
 
             {/* Download Buttons */}
@@ -147,8 +148,8 @@ export default function AITrackerPage() {
               >
                 <Play className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 <div className="text-left">
-                  <div className="text-[10px] sm:text-xs opacity-80">Get it on</div>
-                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">Google Play</div>
+                  <div className="text-[10px] sm:text-xs opacity-80">{t('hero.download.getItOn')}</div>
+                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">{t('hero.download.googlePlay')}</div>
                 </div>
               </motion.a>
               
@@ -162,13 +163,13 @@ export default function AITrackerPage() {
               >
                 <Apple className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
                 <div className="text-left">
-                  <div className="text-[10px] sm:text-xs opacity-80">Download on the</div>
-                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">App Store</div>
+                  <div className="text-[10px] sm:text-xs opacity-80">{t('hero.download.downloadOn')}</div>
+                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold">{t('hero.download.appStore')}</div>
                 </div>
               </motion.a>
             </div>
 
-            <p className="text-[10px] sm:text-xs md:text-sm text-gray-500">Free to download • No ads • Privacy first</p>
+            <p className="text-[10px] sm:text-xs md:text-sm text-gray-500">{t('hero.download.features')}</p>
           </motion.div>
         </div>
       </section>
@@ -186,24 +187,24 @@ export default function AITrackerPage() {
             className="flex items-center space-x-12 whitespace-nowrap"
           >
             {/* First set */}
-            <span className="text-2xl font-bold text-purple-600">Track Your AI Usage</span>
-            <span className="text-2xl font-bold text-pink-600">Build Better Habits</span>
-            <span className="text-2xl font-bold text-blue-600">Mindful Technology</span>
-            <span className="text-2xl font-bold text-purple-600">Stay Focused</span>
-            <span className="text-2xl font-bold text-pink-600">Weekly Insights</span>
-            <span className="text-2xl font-bold text-blue-600">Privacy First</span>
-            <span className="text-2xl font-bold text-purple-600">No Ads Ever</span>
-            <span className="text-2xl font-bold text-pink-600">Boost Productivity</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item1')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item2')}</span>
+            <span className="text-2xl font-bold text-blue-600">{t('marquee.item3')}</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item4')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item5')}</span>
+            <span className="text-2xl font-bold text-blue-600">{t('marquee.item6')}</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item7')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item8')}</span>
             
             {/* Duplicate set for seamless loop */}
-            <span className="text-2xl font-bold text-purple-600">Track Your AI Usage</span>
-            <span className="text-2xl font-bold text-pink-600">Build Better Habits</span>
-            <span className="text-2xl font-bold text-blue-600">Mindful Technology</span>
-            <span className="text-2xl font-bold text-purple-600">Stay Focused</span>
-            <span className="text-2xl font-bold text-pink-600">Weekly Insights</span>
-            <span className="text-2xl font-bold text-blue-600">Privacy First</span>
-            <span className="text-2xl font-bold text-purple-600">No Ads Ever</span>
-            <span className="text-2xl font-bold text-pink-600">Boost Productivity</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item1')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item2')}</span>
+            <span className="text-2xl font-bold text-blue-600">{t('marquee.item3')}</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item4')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item5')}</span>
+            <span className="text-2xl font-bold text-blue-600">{t('marquee.item6')}</span>
+            <span className="text-2xl font-bold text-purple-600">{t('marquee.item7')}</span>
+            <span className="text-2xl font-bold text-pink-600">{t('marquee.item8')}</span>
           </motion.div>
         </div>
       </section>
@@ -218,11 +219,11 @@ export default function AITrackerPage() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-gray-800">Features that</span>{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Care</span>
+              <span className="text-gray-800">{t('featuresSection.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{t('featuresSection.title2')}</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Designed with your wellbeing in mind, every feature promotes mindful technology use
+              {t('featuresSection.subtitle')}
             </p>
           </motion.div>
 
@@ -287,13 +288,13 @@ export default function AITrackerPage() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-white/80 backdrop-blur-sm rounded-full shadow-lg mb-8"
             >
               <TreePine className="w-5 h-5 text-green-600" />
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">Your Path to Freedom</span>
+              <span className="text-sm font-bold text-gray-700 uppercase tracking-wide">{t('howItWorks.badge')}</span>
             </motion.div>
             <h2 className="text-5xl md:text-7xl font-bold mb-8">
-              <span className="block text-gray-800 mb-3">Journey to</span>
+              <span className="block text-gray-800 mb-3">{t('howItWorks.title1')}</span>
               <span className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-                  Digital Balance
+                  {t('howItWorks.title2')}
                 </span>
                 <motion.div
                   animate={{ rotate: [0, 5, 0] }}
@@ -303,7 +304,7 @@ export default function AITrackerPage() {
               </span>
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Four transformative steps to reclaim your cognitive independence
+              {t('howItWorks.subtitle')}
             </p>
           </motion.div>
 
@@ -376,7 +377,7 @@ export default function AITrackerPage() {
                       {/* Step Badge */}
                       <div className="flex items-center justify-between mb-6">
                         <span className={`inline-flex px-4 py-2 bg-gradient-to-r ${item.gradient} text-white text-xs font-bold rounded-full shadow-lg`}>
-                          {item.step}
+                          {t(`howItWorks.step${i + 1}.step`)}
                         </span>
                         <motion.div
                           whileHover={{ rotate: 360 }}
@@ -389,16 +390,16 @@ export default function AITrackerPage() {
                       
                       {/* Text Content */}
                       <h3 className="text-3xl font-bold text-gray-800 mb-2">
-                        {item.title}
+                        {t(`howItWorks.step${i + 1}.title`)}
                       </h3>
-                      <p className="text-lg font-medium text-gray-600 mb-4">{item.subtitle}</p>
+                      <p className="text-lg font-medium text-gray-600 mb-4">{t(`howItWorks.step${i + 1}.subtitle`)}</p>
                       <p className="text-gray-600 leading-relaxed mb-6">
-                        {item.description}
+                        {t(`howItWorks.step${i + 1}.description`)}
                       </p>
                       
                       {/* Features */}
                       <div className="space-y-3">
-                        {item.features.map((feature) => (
+                        {[t(`howItWorks.step${i + 1}.feature1`), t(`howItWorks.step${i + 1}.feature2`), t(`howItWorks.step${i + 1}.feature3`)].map((feature) => (
                           <div key={feature} className="flex items-center gap-3">
                             <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${item.gradient}`} />
                             <span className="text-sm font-medium text-gray-700">{feature}</span>
@@ -454,14 +455,14 @@ export default function AITrackerPage() {
               className="inline-flex items-center gap-2 px-5 py-2 bg-blue-100 rounded-full mb-6"
             >
               <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-sm font-semibold text-blue-600">Life-Changing Benefits</span>
+              <span className="text-sm font-semibold text-blue-600">{t('benefits.badge')}</span>
             </motion.div>
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-gray-800">Transform Your</span>{' '}
-              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Digital Life</span>
+              <span className="text-gray-800">{t('benefits.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{t('benefits.title2')}</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Discover the profound impact of mindful AI usage on every aspect of your life
+              {t('benefits.subtitle')}
             </p>
           </motion.div>
 
@@ -477,13 +478,12 @@ export default function AITrackerPage() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl group-hover:scale-150 transition-transform duration-700" />
               <div className="relative z-10">
                 <Brain className="w-16 h-16 mb-6 text-white/90" />
-                <h3 className="text-3xl font-bold mb-4">Reclaim Your Cognitive Freedom</h3>
+                <h3 className="text-3xl font-bold mb-4">{t('benefits.mainBenefit.title')}</h3>
                 <p className="text-lg opacity-90 leading-relaxed mb-8">
-                  Break free from AI dependency and rediscover your natural problem-solving abilities. 
-                  Our users report 73% improvement in creative thinking within just 4 weeks.
+                  {t('benefits.mainBenefit.description')}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  {['Better Focus', 'Enhanced Creativity', 'Clearer Thinking'].map((tag) => (
+                  {[t('benefits.mainBenefit.tag1'), t('benefits.mainBenefit.tag2'), t('benefits.mainBenefit.tag3')].map((tag) => (
                     <span key={tag} className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium">
                       {tag}
                     </span>
@@ -503,9 +503,9 @@ export default function AITrackerPage() {
               >
                 <div className="absolute -top-8 -right-8 w-32 h-32 bg-purple-200/30 rounded-full blur-2xl group-hover:scale-150 transition-transform" />
                 <Zap className="w-10 h-10 text-purple-600 mb-4" />
-                <div className="text-4xl font-bold text-gray-800 mb-2">2.5x</div>
-                <div className="text-gray-600 font-medium">Productivity Boost</div>
-                <p className="text-sm text-gray-500 mt-2">Without constant AI interruptions</p>
+                <div className="text-4xl font-bold text-gray-800 mb-2">{t('benefits.stat1.value')}</div>
+                <div className="text-gray-600 font-medium">{t('benefits.stat1.label')}</div>
+                <p className="text-sm text-gray-500 mt-2">{t('benefits.stat1.subtitle')}</p>
               </motion.div>
 
               <motion.div
@@ -517,9 +517,9 @@ export default function AITrackerPage() {
               >
                 <div className="absolute -top-8 -right-8 w-32 h-32 bg-pink-200/30 rounded-full blur-2xl group-hover:scale-150 transition-transform" />
                 <Heart className="w-10 h-10 text-pink-600 mb-4" />
-                <div className="text-4xl font-bold text-gray-800 mb-2">85%</div>
-                <div className="text-gray-600 font-medium">Less Digital Anxiety</div>
-                <p className="text-sm text-gray-500 mt-2">Reported by active users</p>
+                <div className="text-4xl font-bold text-gray-800 mb-2">{t('benefits.stat2.value')}</div>
+                <div className="text-gray-600 font-medium">{t('benefits.stat2.label')}</div>
+                <p className="text-sm text-gray-500 mt-2">{t('benefits.stat2.subtitle')}</p>
               </motion.div>
             </div>
 
@@ -528,35 +528,32 @@ export default function AITrackerPage() {
               {[
                 { 
                   icon: Target, 
-                  title: 'Improved Focus', 
-                  desc: 'Stay in deep work longer without AI distractions',
                   color: 'from-purple-50 to-pink-50',
                   iconColor: 'text-purple-600'
                 },
                 { 
                   icon: Users, 
-                  title: 'Better Relationships', 
-                  desc: 'More present in real-world interactions',
                   color: 'from-pink-50 to-purple-50',
                   iconColor: 'text-pink-600'
                 },
                 { 
                   icon: Moon, 
-                  title: 'Quality Sleep', 
-                  desc: 'Reduced screen time improves rest patterns',
                   color: 'from-blue-50 to-purple-50',
                   iconColor: 'text-blue-600'
                 },
                 { 
                   icon: Sparkles, 
-                  title: 'Creative Renaissance', 
-                  desc: 'Rediscover your natural creative abilities',
                   color: 'from-purple-50 to-blue-50',
                   iconColor: 'text-purple-600'
                 }
-              ].map((item, i) => (
+              ].map((item, i) => {
+                const benefitData = {
+                  title: t(`benefits.benefit${i + 1}.title`),
+                  description: t(`benefits.benefit${i + 1}.description`)
+                };
+                return (
                 <motion.div
-                  key={item.title}
+                  key={benefitData.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
@@ -567,11 +564,12 @@ export default function AITrackerPage() {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-white/30 rounded-full blur-2xl opacity-60" />
                   <div className="relative z-10">
                     <item.icon className={`w-8 h-8 ${item.iconColor} mb-3`} />
-                    <h4 className="text-lg font-bold text-gray-800 mb-2">{item.title}</h4>
-                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                    <h4 className="text-lg font-bold text-gray-800 mb-2">{benefitData.title}</h4>
+                    <p className="text-gray-600 text-sm">{benefitData.description}</p>
                   </div>
                 </motion.div>
-              ))}
+              );
+              })}
             </div>
           </div>
         </div>
@@ -593,10 +591,10 @@ export default function AITrackerPage() {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Start Your Mindful Journey Today
+              {t('cta.title')}
             </h2>
             <p className="text-xl text-white/90 mb-8">
-              Download the app and take the first step towards a balanced digital life
+              {t('cta.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -610,8 +608,8 @@ export default function AITrackerPage() {
               >
                 <Play className="w-6 h-6" />
                 <div className="text-left">
-                  <div className="text-xs opacity-80">Get it on</div>
-                  <div className="text-lg font-semibold">Google Play</div>
+                  <div className="text-xs opacity-80">{t('cta.download.googlePlay.getItOn')}</div>
+                  <div className="text-lg font-semibold">{t('cta.download.googlePlay.storeName')}</div>
                 </div>
               </motion.a>
               
@@ -625,25 +623,23 @@ export default function AITrackerPage() {
               >
                 <Apple className="w-6 h-6" />
                 <div className="text-left">
-                  <div className="text-xs opacity-80">Download on the</div>
-                  <div className="text-lg font-semibold">App Store</div>
+                  <div className="text-xs opacity-80">{t('cta.download.appStore.downloadOn')}</div>
+                  <div className="text-lg font-semibold">{t('cta.download.appStore.storeName')}</div>
                 </div>
               </motion.a>
             </div>
 
             <div className="mt-12 flex items-center justify-center gap-8 text-white/80">
-              <div className="flex items-center gap-2">
-                <Shield className="w-5 h-5" />
-                <span>Privacy First</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Heart className="w-5 h-5" />
-                <span>No Ads</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Download className="w-5 h-5" />
-                <span>Free to Download</span>
-              </div>
+              {[
+                { icon: Shield, text: t('cta.feature1') },
+                { icon: Heart, text: t('cta.feature2') },
+                { icon: Download, text: t('cta.feature3') }
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <item.icon className="w-5 h-5" />
+                  <span>{item.text}</span>
+                </div>
+              ))}
             </div>
           </motion.div>
         </div>

@@ -1,0 +1,1778 @@
+{
+  "site": {
+    "title": "Bromander Global | Innovativa Lösningar för Moderna Företag",
+    "description": "Bromander Global levererar banbrytande produkter inklusive AI Reliance Tracker och Smart Bookkeeping-app. Ger företag kraft genom teknik som transformerar hur du arbetar.",
+    "keywords": "Bromander Global, AI Reliance Tracker, Smart Bookkeeping, företagslösningar, digital hälsa, automatisering"
+  },
+  "nav": {
+    "home": "Hem",
+    "portfolio": "Portfölj",
+    "about": "Om Oss",
+    "contact": "Kontakt",
+    "language": "Språk",
+    "english": "Engelska",
+    "swedish": "Svenska"
+  },
+  "hero": {
+    "title": "BROMANDER",
+    "subtitle": "GLOBAL",
+    "description": "Ett teknikholdingbolag som äger och driver innovativa digitala produkter. Vi tror på att skapa lösningar som förbättrar mänsklig potential och digital hälsa.",
+    "features": {
+      "holding": "Teknikholdingbolag",
+      "portfolio": "Produktportföljhantering",
+      "innovation": "Innovationsinvestering"
+    },
+    "cta": {
+      "portfolio": "Vår Portfölj",
+      "contact": "Kontakta Oss"
+    }
+  },
+  "products": {
+    "title": "Ägs Av",
+    "subtitle": "Bromander Global",
+    "description": "Innovativa digitala produkter som förbättrar mänsklig potential och företagseffektivitet genom genomtänkt teknik och design.",
+    "values": {
+      "privacy": {
+        "title": "Integritet Först",
+        "description": "Alla våra produkter byggs med integritet i designen och robusta säkerhetsåtgärder."
+      },
+      "human": {
+        "title": "Människocentrerad",
+        "description": "Vi investerar i produkter som genuint förbättrar mänskliga förmågor och välbefinnande."
+      },
+      "growth": {
+        "title": "Hållbar Tillväxt",
+        "description": "Bygger bestående värde för användare genom kontinuerlig innovation och förbättring."
+      }
+    },
+    "learnMore": "Läs mer om vårt uppdrag",
+    "aiTracker": {
+      "name": "AI Reliance Tracker",
+      "tagline": "Digital Hälsoverktyg",
+      "description": "Övervaka dina AI-användningsmönster och upprätthåll hälsosamma teknikrelationer med vårt integritetscentrerade spårningssystem.",
+      "shortDescription": "Digital hälsa och medveten AI-användning",
+      "tags": {
+        "analytics": "Analys",
+        "privacy": "Integritet",
+        "insights": "Insikter"
+      }
+    },
+    "bookkeeping": {
+      "name": "Smart Bookkeeping",
+      "shortName": "Bokförings-AI",
+      "tagline": "Finansiell Assistent",
+      "description": "Intelligent ekonomihantering med automatisk kategorisering, realtidsinsikter och smart rapportering.",
+      "shortDescription": "Intelligent ekonomihanteringsplattform",
+      "tags": {
+        "ai": "AI-driven",
+        "realtime": "Realtid",
+        "reports": "Rapporter"
+      }
+    }
+  },
+  "vision": {
+    "title": "Vår",
+    "subtitle": "Vision",
+    "description": "Bygga framtiden genom strategiskt teknikägande och ansvarsfull innovation",
+    "strategic": {
+      "title": "Strategiskt Ägande",
+      "description": "Vi identifierar och förvärvar innovativa digitala produkter med stark tillväxtpotential och användareffekt."
+    },
+    "operational": {
+      "title": "Operationell Excellens", 
+      "description": "Våra portföljbolag drar nytta av delade resurser, expertis och strategisk vägledning."
+    },
+    "sustainable": {
+      "title": "Hållbar Tillväxt",
+      "description": "Vi fokuserar på långsiktig värdeskapande samtidigt som vi behåller den unika identiteten hos varje produkt."
+    }
+  },
+  "principles": {
+    "title": "Våra",
+    "subtitle": "Principer",
+    "description": "Kärnvärdena som styr våra investeringsbeslut och operativa tillvägagångssätt",
+    "humanCentered": {
+      "title": "Människocentrerad Innovation",
+      "description": "Vi investerar i produkter som genuint förbättrar mänskliga förmågor och välbefinnande."
+    },
+    "digitalWellness": {
+      "title": "Digital Hälsofokus",
+      "description": "Vår portfölj prioriterar hälsosamma teknikrelationer och kognitiv självständighet."
+    },
+    "longTerm": {
+      "title": "Långsiktig Värdeskapande",
+      "description": "Vi bygger hållbara företag som skapar bestående värde för användare och intressenter."
+    },
+    "privacy": {
+      "title": "Integritet & Säkerhet Först",
+      "description": "Alla våra produkter byggs med integritet i designen och robusta säkerhetsåtgärder."
+    },
+    "transparent": {
+      "title": "Transparenta Verksamheter",
+      "description": "Vi upprätthåller tydlig kommunikation om vårt ägande och operativa metoder."
+    },
+    "responsible": {
+      "title": "Ansvarsfull Tillväxt",
+      "description": "Vi skalar genomtänkt och säkerställer att våra produkter förblir trogna sin kärnmission."
+    }
+  },
+  "cta": {
+    "title": "REDO ATT",
+    "subtitle": "UTFORSKA?",
+    "description": "Upptäck våra innovativa produkter och se hur de kan transformera din digitala upplevelse",
+    "portfolio": "Visa Portfölj",
+    "about": "Om Oss"
+  },
+  "footer": {
+    "description": "Ett teknikholdingbolag som äger och driver innovativa digitala produkter fokuserade på att förbättra mänsklig potential och digital hälsa.",
+    "contact": "KONTAKTA OSS",
+    "products": "VÅRA PRODUKTER",
+    "company": "FÖRETAGET",
+    "contactInfo": "KONTAKT",
+    "links": {
+      "home": "Hem",
+      "about": "Om Oss",
+      "contact": "Kontakt",
+      "aiTracker": "AI Reliance Tracker",
+      "bookkeeping": "Smart Bookkeeping"
+    },
+    "contactDetails": {
+      "email": "hello@bromanderglobal.com",
+      "phone": "+46 70 123 45 67",
+      "location": "Stockholm, Sverige"
+    },
+    "legal": {
+      "copyright": "Alla rättigheter förbehållna.",
+      "privacy": "Integritetspolicy",
+      "terms": "Användarvillkor", 
+      "cookies": "Cookie-policy",
+      "cookieSettings": "Cookie-inställningar"
+    }
+  },
+  "scrollItems": {
+    "technologyHolding": "Teknikholdingbolag",
+    "aiTracker": "AI Tracker",
+    "smartBookkeeping": "Smart Bokföring",
+    "strategicOwnership": "Strategiskt Ägande",
+    "sustainableGrowth": "Hållbar Tillväxt",
+    "privacyFirst": "Integritet Först",
+    "humanCentered": "Människocentrerad",
+    "innovationFocus": "Innovationsfokus"
+  },
+  "aiTrackerPage": {
+    "badge": "Medveten Teknik",
+    "hero": {
+      "title1": "Hitta Din Balans",
+      "title2": "med AI",
+      "description": "En mild följeslagare som hjälper dig bygga en hälsosammare relation med AI. Spåra, förstå och förbättra din digitala hälsresa.",
+      "download": {
+        "getItOn": "Hämta på",
+        "googlePlay": "Google Play",
+        "downloadOn": "Ladda ner på",
+        "appStore": "App Store",
+        "features": "Gratis att ladda ner • Ingen reklam • Integritet först"
+      }
+    },
+    "marquee": {
+      "item1": "Spåra Din AI-Användning",
+      "item2": "Bygg Bättre Vanor",
+      "item3": "Medveten Teknik",
+      "item4": "Håll Fokus",
+      "item5": "Veckoinsikter",
+      "item6": "Integritet Först",
+      "item7": "Aldrig Reklam",
+      "item8": "Höj Produktivitet"
+    },
+    "featuresSection": {
+      "title1": "Funktioner som",
+      "title2": "Bryr Sig",
+      "subtitle": "Designade med ditt välbefinnande i åtanke, varje funktion främjar medveten teknikanvändning"
+    },
+    "features": [
+      {
+        "title": "Medveten AI-användning",
+        "description": "Spåra och förstå dina AI-interaktioner med milda insikter"
+      },
+      {
+        "title": "Hälsa Först",
+        "description": "Prioritera mental hälsa med användningsgränser och medvetna pauser"
+      },
+      {
+        "title": "Integritetsskyddad",
+        "description": "Din data stannar på din enhet, alltid säker och privat"
+      },
+      {
+        "title": "Mild Analys",
+        "description": "Förstå mönster utan dömande, väx i din egen takt"
+      },
+      {
+        "title": "Medvetna Påminnelser",
+        "description": "Milda puffar för att upprätthålla hälsosamma AI-gränser"
+      },
+      {
+        "title": "Gruppstöd",
+        "description": "Anslut med andra på deras medvetna teknikresa"
+      }
+    ],
+    "howItWorks": {
+      "badge": "Din Väg till Frihet",
+      "title1": "Resa mot",
+      "title2": "Digital Balans",
+      "subtitle": "Fyra transformativa steg för att återväcka din kognitiva självständighet",
+      "step1": {
+        "step": "STEG 01",
+        "title": "Börja Din Resa",
+        "subtitle": "Snabb Installation",
+        "description": "Ladda ner vår app och skapa din personliga välbefinnanprofil på bara 2 minuter. Ställ in dina mål och preferenser.",
+        "feature1": "2-minuters installation",
+        "feature2": "Personliga mål",
+        "feature3": "Integritet-först-strategi"
+      },
+      "step2": {
+        "step": "STEG 02",
+        "title": "Förstå Dina Vanor",
+        "subtitle": "Smart Spårning",
+        "description": "Appen övervakar tyst din AI-verktygsanvändning och skapar en omfattande bild av dina digitala beteendemönster.",
+        "feature1": "Passiv övervakning",
+        "feature2": "Mönsterigenkanning",
+        "feature3": "Noll dömande"
+      },
+      "step3": {
+        "step": "STEG 03",
+        "title": "Få Tydliga Insikter",
+        "subtitle": "Personlig Analys",
+        "description": "Få veckoinsikter anpassade till dina unika mönster, som hjälper dig förstå din relation med AI.",
+        "feature1": "Veckorapporter",
+        "feature2": "Trendanalys",
+        "feature3": "Handlingsplaner"
+      },
+      "step4": {
+        "step": "STEG 04",
+        "title": "Förvandla Ditt Liv",
+        "subtitle": "Medveten Tillväxt",
+        "description": "Bygg varaktiga vanor med vårt milda vägledningssystem, designat för att hjälpa dig växa i din egen takt.",
+        "feature1": "Milda puffar",
+        "feature2": "Vanbyggande",
+        "feature3": "Community-stöd"
+      }
+    },
+    "benefits": {
+      "badge": "Livsförändrande Fördelar",
+      "title1": "Förvandla Ditt",
+      "title2": "Digitala Liv",
+      "subtitle": "Upptäck den djupgående påverkan av medveten AI-användning på alla aspekter av ditt liv",
+      "mainBenefit": {
+        "title": "Återväck Din Kognitiva Frihet",
+        "description": "Bryt dig fri från AI-beroende och återupptäck dina naturliga problemlösningsförmågor. Våra användare rapporterar 73% förbättring av kreativt tänkande på bara 4 veckor.",
+        "tag1": "Bättre Fokus",
+        "tag2": "Förbättrad Kreativitet",
+        "tag3": "Klarare Tänkande"
+      },
+      "stat1": {
+        "value": "2,5x",
+        "label": "Produktivitetsökning",
+        "subtitle": "Utan konstanta AI-avbrott"
+      },
+      "stat2": {
+        "value": "85%",
+        "label": "Mindre Digital Ångest",
+        "subtitle": "Rapporterat av aktiva användare"
+      },
+      "benefit1": {
+        "title": "Förbättrat Fokus",
+        "description": "Håll djupt arbete längre utan AI-distraktioner"
+      },
+      "benefit2": {
+        "title": "Bättre Relationer",
+        "description": "Mer närvarande i verkliga interaktioner"
+      },
+      "benefit3": {
+        "title": "Kvalitetsömn",
+        "description": "Minskad skärmtid förbättrar vilomönster"
+      },
+      "benefit4": {
+        "title": "Kreativ Renasans",
+        "description": "Återupptäck dina naturliga kreativa förmågor"
+      }
+    },
+    "cta": {
+      "title": "Starta Din Medvetna Resa Idag",
+      "subtitle": "Ladda ner appen och ta det första steget mot ett balanserat digitalt liv",
+      "download": {
+        "googlePlay": {
+          "getItOn": "Hämta på",
+          "storeName": "Google Play"
+        },
+        "appStore": {
+          "downloadOn": "Ladda ner på",
+          "storeName": "App Store"
+        }
+      },
+      "feature1": "Integritet Först",
+      "feature2": "Ingen Reklam",
+      "feature3": "Gratis Nedladdning"
+    }
+  },
+  "bookkeepingPage": {
+    "badge": "Smart Ekonomi",
+    "hero": {
+      "title1": "Intelligent",
+      "title2": "Bokföring",
+      "description": "Effektivisera din ekonomihantering med AI-driven automatisering, realtidsinsikter och intelligent rapportering.",
+      "cta": {
+        "primary": "Starta Gratis Provperiod",
+        "secondary": "Se Demo"
+      }
+    },
+    "marquee": {
+      "aiPowered": "AI-DRIVEN",
+      "automatedBookkeeping": "AUTOMATISERAD BOKFÖRING",
+      "smartCategorization": "SMART KATEGORISERING",
+      "realtimeSync": "REALTIDSSYNKRONISERING",
+      "bankLevelSecurity": "BANKNIVÅSÄKERHET",
+      "predictiveInsights": "PREDIKTIVA INSIKTER",
+      "accuracy": "99% NOGGRANNHET",
+      "timeSaving": "SPARA 10+ TIMMAR VECKOVIS"
+    },
+    "features": {
+      "badge": "Nästa Generation",
+      "title1": "INTELLIGENTA",
+      "title2": "FUNKTIONER",
+      "subtitle": "Driven av avancerad AI som lär sig, anpassar sig och utvecklas med ditt företag",
+      "aiCategorization": {
+        "title": "AI-Driven Kategorisering",
+        "description": "Vår maskininlärningsmotor analyserar mönster från miljontals transaktioner för att automatiskt kategorisera med 99,9% noggrannhet. Ingen mer manuell sortering.",
+        "stats": {
+          "accuracy": "Noggrannhet",
+          "timeSaved": "Sparad Tid",
+          "autoLearn": "Auto-Lärande",
+          "accuracyValue": "99,9%",
+          "timeSavedValue": "15tim/vecka",
+          "autoLearnValue": "Alltid"
+        }
+      },
+      "realtimeSync": {
+        "title": "Realtidssynkronisering",
+        "description": "Omedelbar synkronisering över alla dina konton och enheter. Se förändringar när de sker."
+      },
+      "bankSecurity": {
+        "title": "Banknivåsäkerhet",
+        "description": "256-bitars kryptering, SOC 2-certifierad och GDPR-kompatibel. Din data är fästningsskyddad."
+      },
+      "smartInsights": {
+        "title": "Smarta Insikter",
+        "description": "Prediktiv analys som hjälper dig fatta bättre ekonomiska beslut innan problem uppstår."
+      },
+      "receiptScanning": {
+        "title": "Kvittoskanning",
+        "description": "Peka, fotografera, klart. Vår OCR-teknik extraherar varje detalj från kvitton omedelbart."
+      },
+      "timeSaving": {
+        "title": "Spara 10+ Timmar",
+        "description": "Varje vecka. Garanterat. Fokusera på tillväxt, inte pappersarbete.",
+        "value": "10t",
+        "unit": "per vecka"
+      }
+    },
+    "comingSoon": {
+      "title1": "NÅGOT",
+      "title2": "STORT KOMMER",
+      "subtitle": "Framtiden för bokföring håller på att omdefinieras",
+      "stats": {
+        "earlyAccess": {
+          "number": "500+",
+          "label": "Förhandsåtkomstförfrågningar"
+        },
+        "launchYear": {
+          "number": "2025",
+          "label": "Lansringsår"
+        },
+        "possibilities": {
+          "number": "∞",
+          "label": "Möjligheter"
+        }
+      },
+      "thinking": {
+        "title": "Föreställ dig bokföring som tänker",
+        "description": "Tänk om ditt bokföringssystem förstod ditt företag bättre än du själv? Tänk om det kunde förutse, optimera och utvecklas med dig?",
+        "features": {
+          "automation": "Bortom Automatisering",
+          "security": "Osårbar Säkerhet",
+          "intelligence": "Ren Intelligens"
+        }
+      },
+      "waitlist": {
+        "subtitle": "Bli bland de första att uppleva revolutionen",
+        "cta": "Reservera Din Plats"
+      }
+    },
+    "finalCta": {
+      "title1": "BLI FÖRST ATT",
+      "title2": "UPPLEVA",
+      "subtitle": "Gå med på vår exklusiva väntelista och hjälp till att forma framtiden för bokföring",
+      "cta": "Gå med på Väntelistan Nu"
+    },
+    "waitlistModal": {
+      "quick": {
+        "badge": "BEGRÄNSAD FÖRHANDSÅTKOMST",
+        "title1": "Bli Del av",
+        "title2": "Revolutionen",
+        "description": "Gå med tusentals framsynta företag som väntar på framtiden för bokföring. Få exklusiv förhandsåtkomst och livstidsförmåner.",
+        "benefits": [
+          "Exklusiv åtkomst innan offentlig lansering",
+          "Prioriterad introduktion och support",
+          "Forma produkten med din feedback"
+        ],
+        "form": {
+          "title": "Gå med på Väntelistan",
+          "subtitle": "Ingen spam, bara viktiga uppdateringar.",
+          "emailLabel": "E-postadress",
+          "emailPlaceholder": "din@epost.com",
+          "submitting": "Går med...",
+          "submit": "Reservera Min Plats",
+          "moreOptions": "Vill du ha fler alternativ?",
+          "customize": "Anpassa Din Upplevelse",
+          "security": "Din data skyddas med 256-bitars kryptering"
+        }
+      },
+      "custom": {
+        "title": "Anpassa Din Upplevelse",
+        "subtitle": "Hjälp oss bygga den perfekta bokföringslösningen för dig",
+        "tabs": {
+          "survey": "1. Berätta om Dig",
+          "rules": "2. Anpassa Regler"
+        },
+        "contact": {
+          "title": "Kontaktinformation",
+          "name": "Namn *",
+          "namePlaceholder": "Anna Andersson",
+          "email": "E-post *",
+          "emailPlaceholder": "anna@foretag.se",
+          "company": "Företag",
+          "companyPlaceholder": "Ditt Företagsnamn"
+        },
+        "business": {
+          "title": "Företagsinformation",
+          "businessType": "Företagstyp",
+          "businessSize": "Företagsstorlek",
+          "currentSolution": "Nuvarande Lösning",
+          "solutionPlaceholder": "Fortnox, Excel, etc.",
+          "monthlyTransactions": "Månatliga Transaktioner",
+          "businessTypes": {
+            "selectType": "Välj typ",
+            "saas": "SaaS",
+            "ecommerce": "E-handel",
+            "agency": "Byrå",
+            "freelance": "Frilans",
+            "retail": "Detaljhandel",
+            "other": "Annat"
+          },
+          "businessSizes": {
+            "selectSize": "Välj storlek",
+            "solo": "Solo (1 person)",
+            "small": "Litet (2-10)",
+            "medium": "Medelstort (11-50)",
+            "large": "Stort (50+)"
+          },
+          "transactionRanges": {
+            "selectRange": "Välj intervall",
+            "range1": "0-100",
+            "range2": "100-500",
+            "range3": "500-1,000",
+            "range4": "1,000+"
+          }
+        },
+        "painPoints": {
+          "title": "Nuvarande Smärtpunkter",
+          "items": [
+            "Manuell datainmatning",
+            "Kategoriseringsfel",
+            "Tidskrävande avstamning",
+            "Komplex skattehantering",
+            "Dålig kassaflödesvisibilitet",
+            "Flera frånkopplade verktyg",
+            "Dyra redovisarkostnader",
+            "Regelefterlevnadsproblem"
+          ]
+        },
+        "features": {
+          "title": "Funktioner Du Behöver",
+          "items": [
+            "Automatisk kategorisering",
+            "Multivalutastöd",
+            "Fakturahantering",
+            "Utgiftsspårning",
+            "Skatteoptimering",
+            "Finansiell rapportering",
+            "Teamsamarbete",
+            "API-integrationer",
+            "Mobilapp",
+            "Anpassade regelmotor"
+          ]
+        },
+        "rules": {
+          "templatesTitle": "Förbyggda Regelmallar",
+          "templatesSubtitle": "Välj mallar som matchar dina företagsbehov",
+          "builderTitle": "Anpassad Regelbyggare",
+          "builderSubtitle": "Skapa dina egna transaktionskategoriseringsregler",
+          "whenContains": "När transaktion innehåller",
+          "containsPlaceholder": "t.ex. 'Klarna', 'AWS', 'Lön'",
+          "transactionType": "Transaktionstyp",
+          "categorizeAs": "Kategorisera som",
+          "addRule": "Lägg till Regel",
+          "customRulesTitle": "Dina Anpassade Regler",
+          "whenContainsLabel": "När innehåller"
+        },
+        "actions": {
+          "previous": "Föregående",
+          "nextRules": "Nästa: Anpassa Regler",
+          "joinWaitlist": "Gå med på Väntelistan",
+          "submitting": "Skickar..."
+        }
+      },
+      "success": {
+        "title": "Du är med på listan!",
+        "message": "Tack för ditt intresse för Smart Bookkeeping. Vi meddelar dig så snart vi lanserar med exklusiva förhandsåtkomstförmåner.",
+        "close": "Stäng"
+      }
+    }
+  },
+  "cookieConsent": {
+    "banner": {
+      "title": "Cookie-samtycke",
+      "description": "Vi använder cookies för att förbättra din surfupplevelse och analysera webbplatstrafik. Genom att klicka på \"Acceptera alla\" samtycker du till vår användning av cookies. Du kan hantera dina inställningar eller läsa mer i vår",
+      "policyLink": "cookie-policy",
+      "customize": "Anpassa",
+      "necessaryOnly": "Endast nödvändiga",
+      "acceptAll": "Acceptera alla"
+    },
+    "settings": {
+      "title": "Cookie-inställningar",
+      "compliance": {
+        "title": "Svensk lagreglering",
+        "description": "Detta samtyckesformulär följer svensk lag om elektronisk kommunikation och IMY:s riktlinjer för 2025. Dina val respekteras och kan ändras när som helst."
+      },
+      "categories": {
+        "necessary": {
+          "title": "Strikt nödvändiga cookies",
+          "status": "Alltid aktiva",
+          "description": "Dessa cookies är nödvändiga för att webbplatsen ska fungera och kan inte inaktiveras. De inkluderar sessionshantering, säkerhetstoken och lastbalansering."
+        },
+        "analytics": {
+          "title": "Analytics-cookies",
+          "description": "Hjälp oss att förstå hur besökare interagerar med vår webbplats genom Google Analytics. Data anonymiseras och används för att förbättra användarupplevelsen."
+        },
+        "functional": {
+          "title": "Funktionella cookies",
+          "description": "Kom ihåg dina inställningar såsom språkval, temainställningar och formulärdata för att ge en personlig upplevelse."
+        },
+        "marketing": {
+          "title": "Marknadsföringscookies",
+          "description": "Används för reklam och integration med sociala medier. Hjälper oss leverera relevant innehåll och mäta kampanjeffektivitet."
+        }
+      },
+      "actions": {
+        "necessaryOnly": "Endast nödvändiga",
+        "savePreferences": "Spara inställningar"
+      }
+    }
+  },
+  "privacyPolicy": {
+    "navigation": {
+      "title": "Snabbnavigation",
+      "overview": "Översikt",
+      "legalBasis": "Rättslig grund",
+      "dataCollection": "Datainsamling",
+      "dataUsage": "Hur vi använder data",
+      "dataSharing": "Datadelning",
+      "yourRights": "Dina rättigheter",
+      "dataRetention": "Datalagring",
+      "security": "Säkerhet",
+      "cookies": "Cookies",
+      "contact": "Kontakt"
+    },
+    "header": {
+      "title1": "INTEGRITETS",
+      "title2": "POLICY",
+      "subtitle": "Omfattande dataskydd i enlighet med GDPR, EU-regler och svensk lag",
+      "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
+      "gdprCompliant": "GDPR-kompatibel",
+      "importantTitle": "Viktig information",
+      "importantDescription": "Denna integritetspolicy är utformad för att följa Dataskyddsförordningen (GDPR), svenska Dataskyddslagen och andra tillämpliga EU-regler. Du har specifika rättigheter gällande dina personuppgifter, och vi är engagerade i att skydda din integritet."
+    },
+    "overview": {
+      "title": "Personuppgiftsansvarig & Översikt",
+      "controllerTitle": "Personuppgiftsansvarig",
+      "company": "Företag:",
+      "companyName": "Bromander Global AB",
+      "address": "Adress:",
+      "addressValue": "Stockholm, Sverige",
+      "contact": "Kontakt:",
+      "contactEmail": "privacy@bromanderglobal.com",
+      "dpo": "DPO-kontakt:",
+      "dpoEmail": "dpo@bromanderglobal.com",
+      "description1": "Bromander Global AB (\"vi,\" \"vårt,\" eller \"oss\") är ett svenskt teknikbolag registrerat i Stockholm, Sverige. Vi äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Som personuppgiftsansvarig bestämmer vi ändamålen och medlen för behandling av dina personuppgifter.",
+      "description2": "Denna integritetspolicy följer Dataskyddsförordningen (GDPR), svenska Dataskyddslagen (2018:218) och andra tillämpliga EU- och svenska regleringar. Var och en av våra portföljbolag upprätthåller sin egen specifika integritetspolicy för sina respektive produkter och tjänster."
+    },
+    "legalBasis": {
+      "title": "Rättslig grund för behandling",
+      "description": "Vi behandlar dina personuppgifter baserat på följande rättsliga grunder enligt GDPR artikel 6:",
+      "legitimateInterest": {
+        "title": "🟢 Berättigat intresse (Art. 6(1)(f))",
+        "description": "Webbplatsanalys, säkerhetsövervakning och affärskommunikation"
+      },
+      "consent": {
+        "title": "🔵 Samtycke (Art. 6(1)(a))",
+        "description": "Marknadsföringskommunikation, icke-nödvändiga cookies och nyhetsbrevsprenumerationer"
+      },
+      "contract": {
+        "title": "🟣 Avtalsuppfyllelse (Art. 6(1)(b))",
+        "description": "Tjänsteleverans, kundsupport och kontohantering"
+      },
+      "legal": {
+        "title": "🟠 Rättslig förpliktelse (Art. 6(1)(c))",
+        "description": "Skatterapportering, regelefterlevnad och förfrågningar från brottsbekämpande myndigheter"
+      }
+    },
+    "dataCollection": {
+      "title": "Data vi samlar in",
+      "description": "Vi samlar in personuppgifter i följande kategorier:",
+      "identity": {
+        "title": "Identitets- och kontaktuppgifter",
+        "items": [
+          "Fullständigt namn, e-postadress, telefonnummer",
+          "Företagsnamn, jobbtitel, professionell information",
+          "Adress, postnummer, bosättningsland",
+          "Kontoupgifter och autentiseringsdata"
+        ]
+      },
+      "technical": {
+        "title": "Tekniska och användningsdata",
+        "items": [
+          "IP-adress, webbläsartyp, enhetsidentifierare",
+          "Operativsystem, skärmupplösning, språkpreferenser",
+          "Webbplatsnavigationsmönster, sidvisningar, tid spenderad",
+          "Hänvisningskällor, söktermer, klickmönster",
+          "Sessionsinspelningar (anonymiserade), värmekartsdata"
+        ]
+      },
+      "communication": {
+        "title": "Kommunikation och innehåll",
+        "items": [
+          "E-postkorrespondens, chattmeddelanden, supportärenden",
+          "Feedback, undersökningar, recensioner och vittnesmål",
+          "Marknadsföringspreferenser och kommunikationshistorik",
+          "Mötesanteckningar, samtalsinspelningar (med samtycke)"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies och spårningsteknologier",
+        "items": [
+          "Nödvändiga cookies för webbplatsfunktionalitet",
+          "Analytiska cookies (Google Analytics, Mixpanel)",
+          "Marknadsföringscookies (med samtycke)",
+          "Sociala mediepixlar och spårningsbeacons",
+          "Lokal lagringsdata och sessionsinformation"
+        ]
+      },
+      "specialData": {
+        "title": "Särskilda kategorier av data",
+        "description": "Vi samlar inte avsiktligt in särskilda kategorier av personuppgifter (hälsa, ras/etniskt ursprung, politiska åsikter, religiösa övertygelser, biometriska data) såvida det inte uttryckligen krävs och med ditt uttryckliga samtycke."
+      }
+    },
+    "dataUsage": {
+      "title": "Hur vi använder dina data",
+      "description": "Vi behandlar dina personuppgifter för följande ändamål, alltid baserat på en giltig rättslig grund:",
+      "serviceDelivery": {
+        "title": "Tjänsteleverans och kundsupport",
+        "items": [
+          "Tillhandahålla och underhålla våra tjänster",
+          "Bearbeta transaktioner och hantera konton",
+          "Svara på förfrågningar och tillhandahålla support",
+          "Felsökning och teknisk assistans"
+        ]
+      },
+      "analytics": {
+        "title": "Analys och förbättringar",
+        "items": [
+          "Analysera webbplatsanvändning och prestanda",
+          "Förbättra användarupplevelse och funktionalitet",
+          "Utföra forskning och utveckling",
+          "A/B-testning och funktionsoptimering"
+        ]
+      },
+      "marketing": {
+        "title": "Marknadsföring och kommunikation",
+        "items": [
+          "Skicka nyhetsbrev och produktuppdateringar (med samtycke)",
+          "Personaliserad marknadsföringskommunikation",
+          "Eventinbjudningar och branschinsikter",
+          "Sociala medieengagemang och reklam"
+        ]
+      },
+      "legal": {
+        "title": "Juridisk och säkerhet",
+        "items": [
+          "Efterlevnad av rättsliga förpliktelser",
+          "Bedrägeriförebyggande och säkerhetsövervakning",
+          "Skydda våra rättigheter och intressen",
+          "Samarbete med brottsbekämpande myndigheter när det krävs"
+        ]
+      }
+    },
+    "dataSharing": {
+      "title": "Datadelning och tredje parter",
+      "description": "Vi kan dela dina personuppgifter med följande kategorier av mottagare:",
+      "serviceProviders": {
+        "title": "Tjänsteleverantörer och personuppgiftsbiträden",
+        "items": [
+          "Molninfrastruktur: AWS, Google Cloud (datahosting)",
+          "Analys: Google Analytics, Mixpanel (webbplatsanalys)",
+          "Kommunikation: Mailchimp, SendGrid (e-posttjänster)",
+          "Support: Intercom, Zendesk (kundservice)",
+          "Betalningsbehandling: Stripe, PayPal (transaktioner)"
+        ]
+      },
+      "legalRequirements": {
+        "title": "Rättsliga krav",
+        "description": "Vi kan avslöja dina data när det krävs av lag, domstolsbeslut eller för att skydda våra rättigheter, användares säkerhet eller följa rättsliga processer."
+      },
+      "businessTransfers": {
+        "title": "Affärsöverföringar",
+        "description": "I händelse av fusion, förvärv eller försäljning kan dina data överföras som en del av affärstillgångarna, med fortsatt skydd under denna integritetspolicy."
+      },
+      "weDoNot": {
+        "title": "Vi gör INTE:",
+        "items": [
+          "Säljer dina personuppgifter till tredje parter",
+          "Delar data för tredjepartsmarknadsföring utan samtycke",
+          "Överför data utanför EU/EES utan adekvata skydd"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Dina dataskyddsrättigheter",
+      "description": "Enligt GDPR och svensk lag har du följande rättigheter gällande dina personuppgifter:",
+      "access": {
+        "title": "Rätt till tillgång (Art. 15)",
+        "description": "Begära tillgång till dina personuppgifter och information om hur vi behandlar dem."
+      },
+      "rectification": {
+        "title": "Rätt till rättelse (Art. 16)",
+        "description": "Begära korrigering av felaktiga eller ofullständiga personuppgifter."
+      },
+      "erasure": {
+        "title": "Rätt till radering (Art. 17)",
+        "description": "Begära radering av dina personuppgifter ('rätten att bli bortglömd')."
+      },
+      "restrict": {
+        "title": "Rätt att begränsa behandling (Art. 18)",
+        "description": "Begära begränsning av behandling under vissa omständigheter."
+      },
+      "portability": {
+        "title": "Rätt till dataportabilitet (Art. 20)",
+        "description": "Få dina data i ett strukturerat, maskinläsbart format."
+      },
+      "object": {
+        "title": "Rätt att invända (Art. 21)",
+        "description": "Invända mot behandling baserad på berättigade intressen eller direktmarknadsföring."
+      },
+      "howToExercise": {
+        "title": "Hur du utövar dina rättigheter",
+        "email": "E-post: privacy@bromanderglobal.com",
+        "phone": "Telefon: +46 70 123 45 67",
+        "responseTime": "Svarstid: Inom 30 dagar (kan förlängas till 60 dagar för komplexa förfrågningar)",
+        "verification": "Vi kan behöva verifiera din identitet innan vi behandlar din förfrågan. Om vi vägrar din förfrågan kommer vi att förklara varför och informera dig om din rätt att klaga till Integritetsskyddsmyndigheten (IMY)."
+      }
+    },
+    "dataRetention": {
+      "title": "Datalagring",
+      "description": "Vi behåller dina personuppgifter endast så länge som nödvändigt för att uppfylla de syften som beskrivs i denna policy:",
+      "accountData": {
+        "title": "Kontodata",
+        "active": "Aktiva konton: Till kontoborttagning + 30 dagar för säkerhetskopieringshämtning",
+        "inactive": "Inaktiva konton: 3 år från senaste inloggning, sedan automatisk radering"
+      },
+      "communication": {
+        "title": "Kommunikationsdata",
+        "support": "Kundsupport: 7 år (svenska krav på affärsregister)",
+        "marketing": "Marknadsföringskommunikation: Till samtycke återkallas + 30 dagar"
+      },
+      "analytics": {
+        "title": "Analysdata",
+        "website": "Webbplatsanalys: 26 månader (Google Analytics standard)",
+        "performance": "Prestandadata: 12 månader för optimeringsändamål"
+      },
+      "legalFinancial": {
+        "title": "Juridisk och finansiell",
+        "financial": "Finansiella register: 7 år (svenska bokföringslagen)",
+        "legal": "Juridisk dokumentation: Enligt tillämplig lag"
+      }
+    },
+    "security": {
+      "title": "Säkerhetsåtgärder",
+      "description": "Vi implementerar omfattande tekniska och organisatoriska åtgärder för att skydda dina personuppgifter:",
+      "technical": {
+        "title": "Tekniska skyddsåtgärder",
+        "items": [
+          "TLS 1.3-kryptering för data under överföring",
+          "AES-256-kryptering för data i vila",
+          "Multifaktorautentisering (MFA)",
+          "Regelbundna säkerhetsrevisioner och penetrationstester",
+          "Automatiserad hotdetektering och övervakning",
+          "Säker molninfrastruktur (SOC 2-kompatibel)"
+        ]
+      },
+      "access": {
+        "title": "Åtkomstkontroller",
+        "items": [
+          "Rollbaserad åtkomstkontroll (RBAC)",
+          "Principen om minsta privilegium",
+          "Regelbundna åtkomstgranskningar och revisioner",
+          "Säkra autentiseringsprotokoll",
+          "Bakgrundskontroller av anställda"
+        ]
+      },
+      "organizational": {
+        "title": "Organisatoriska åtgärder",
+        "items": [
+          "Regelbunden personalutbildning om dataskydd",
+          "Incidentrespons och intrångsprocedurer",
+          "Integritet genom design och som standard",
+          "Konsekvensbedömningar av databehandling (KDB)",
+          "Säkerhetsbedömningar av leverantörer"
+        ]
+      },
+      "compliance": {
+        "title": "Regelefterlevnad",
+        "items": [
+          "ISO 27001-säkerhetsramverk",
+          "GDPR-efterlevnadsövervakning",
+          "Svenska dataskyddsstandarder",
+          "Regelbundna efterlevnadsrevisioner",
+          "Tredjepartssäkerhetscertifieringar"
+        ]
+      },
+      "breach": {
+        "title": "Svar på dataintrång",
+        "description": "I det osannolika fallet av ett dataintrång kommer vi att meddela Integritetsskyddsmyndigheten (IMY) inom 72 timmar och berörda individer utan onödigt dröjsmål, enligt GDPR artikel 33-34."
+      }
+    },
+    "cookies": {
+      "title": "Cookies och spårning",
+      "description": "Vi använder cookies och liknande spårningsteknologier för att förbättra din surfupplevelse. Du kan hantera dina cookiepreferenser när som helst.",
+      "essential": {
+        "title": "Nödvändiga cookies (obligatoriska)",
+        "description": "Dessa cookies är nödvändiga för att webbplatsen ska fungera och kan inte stängas av.",
+        "items": [
+          "Autentisering och sessionshantering",
+          "Säkerhet och bedrägeriförebyggande",
+          "Lastbalansering och prestanda"
+        ]
+      },
+      "analytics": {
+        "title": "Analytiska cookies (opt-in)",
+        "description": "Hjälp oss att förstå hur besökare interagerar med vår webbplats.",
+        "items": [
+          "Google Analytics (anonymiserad IP)",
+          "Sidvisningar och användarresespårning",
+          "Prestandaövervakning"
+        ]
+      },
+      "marketing": {
+        "title": "Marknadsföringscookies (samtycke krävs)",
+        "description": "Används för att leverera personaliserat innehåll och annonser.",
+        "items": [
+          "LinkedIn Insight Tag",
+          "Google Ads-konverteringsspårning",
+          "Integration av sociala medier"
+        ]
+      },
+      "management": {
+        "title": "Cookiehantering",
+        "description": "Du kan kontrollera cookies genom:",
+        "items": [
+          "Vår cookiebanner och preferenscenter",
+          "Webbläsarinställningar (kan påverka webbplatsfunktionalitet)",
+          "Opt-out-länkar för specifika tjänster",
+          "Kontakta oss på privacy@bromanderglobal.com"
+        ]
+      }
+    },
+    "portfolioCompanies": {
+      "title": "Portföljbolagets integritetspolicyer",
+      "description": "Vart och ett av våra portföljbolag verkar självständigt och upprätthåller sin egen omfattande integritetspolicy för sina specifika produkter och tjänster. Dessa policyer följer samma höga standarder som denna policy.",
+      "aiTracker": {
+        "title": "AI Reliance Tracker",
+        "description": "Integritetsfokuserad digital hälsoplattform med lokal datalagring och noll spårningsfilosofi.",
+        "link": "Visa integritetspolicy"
+      },
+      "smartBookkeeping": {
+        "title": "Smart Bookkeeping",
+        "description": "Finansiell förvaltningsplattform med banknivåsäkerhet och krypterad databehandling.",
+        "link": "Visa integritetspolicy"
+      }
+    },
+    "contact": {
+      "title": "Kontakt och support",
+      "description": "För frågor om denna integritetspolicy, databehandling eller för att utöva dina rättigheter, vänligen kontakta oss:",
+      "privacy": {
+        "title": "Integritet och dataskydd",
+        "email": "privacy@bromanderglobal.com",
+        "dpo": "dpo@bromanderglobal.com (Dataskyddsombud)"
+      },
+      "general": {
+        "title": "Allmän kontakt",
+        "phone": "+46 70 123 45 67",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sverige"
+      },
+      "complaint": {
+        "title": "Lämna ett klagomål",
+        "description": "Om du är missnöjd med vårt svar kan du lämna ett klagomål till:",
+        "authority": "Integritetsskyddsmyndigheten (IMY)",
+        "website": "imy.se",
+        "email": "imy@imy.se",
+        "phone": "+46 8 657 61 00"
+      },
+      "policyUpdates": {
+        "title": "Policyuppdateringar",
+        "description": "Vi kan uppdatera denna integritetspolicy periodiskt. Väsentliga ändringar kommer att kommuniceras via e-post och framträdande visas på vår webbplats. Fortsatt användning efter ändringar utgör acceptans."
+      },
+      "quickResponse": {
+        "title": "Snabb svar garanti",
+        "description": "Vi strävar efter att svara på alla integritetsrelaterade förfrågningar inom 5 arbetsdagar och uppfylla förfrågningar om registrerade inom GDPR-mandaterade 30 dagar (förlängningsbar till 60 dagar för komplexa förfrågningar)."
+      }
+    }
+  },
+  "termsOfService": {
+    "navigation": {
+      "title": "Snabbnavigation",
+      "overview": "Översikt",
+      "definitions": "Definitioner",
+      "acceptance": "Acceptans",
+      "services": "Våra tjänster",
+      "userObligations": "Användaråtaganden",
+      "prohibitedUse": "Förbjuden användning",
+      "intellectualProperty": "Immaterialrätt",
+      "consumerRights": "Konsumenträttigheter",
+      "liability": "Ansvar",
+      "termination": "Uppsägning",
+      "governingLaw": "Tillämplig lag",
+      "contact": "Kontakt"
+    },
+    "header": {
+      "title1": "ANVÄNDAR",
+      "title2": "VILLKOR",
+      "subtitle": "Omfattande villkor som styr våra tjänster i enlighet med EU:s konsumentskydd och svensk lag",
+      "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
+      "euCompliant": "EU-kompatibel",
+      "swedishLaw": "Svensk lag",
+      "importantTitle": "Viktig juridisk information",
+      "importantDescription": "Dessa villkor följer EU:s direktiv för konsumentskydd, svenska lagen om konsumentavtal och övervakas av Konsumentverket. Dina konsumenträttigheter är skyddade under svensk och EU-lag."
+    },
+    "overview": {
+      "title": "Företagsinformation och översikt",
+      "serviceProvider": "Tjänsteleverantör",
+      "company": "Företag:",
+      "companyName": "Bromander Global AB",
+      "registrationNumber": "Registreringsnummer:",
+      "registrationValue": "[Svenskt företagsregistreringsnummer]",
+      "address": "Adress:",
+      "addressValue": "Stockholm, Sverige",
+      "email": "E-post:",
+      "emailValue": "legal@bromanderglobal.com",
+      "phone": "Telefon:",
+      "phoneValue": "+46 70 123 45 67",
+      "vatNumber": "Momsregistreringsnummer:",
+      "vatValue": "SE[Momsregistreringsnummer]",
+      "description1": "Bromander Global AB är ett svenskt teknikholdingbolag som äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Vi tillhandahåller företagsinformationstjänster och fungerar som holdingbolag för vår portfölj av teknikföretag.",
+      "description2": "Dessa användarvillkor (\"Villkor\") utgör ett juridiskt bindande avtal mellan dig (\"Användare,\" \"du,\" eller \"din\") och Bromander Global AB gällande din användning av vår webbplats, tjänster och allt relaterat innehåll eller material."
+    },
+    "definitions": {
+      "title": "Definitioner",
+      "company": {
+        "term": "\"Företag,\" \"vi,\" \"oss,\" \"vårt\"",
+        "definition": "Hänvisar till Bromander Global AB, ett svenskt aktiebolag."
+      },
+      "consumer": {
+        "term": "\"Konsument\"",
+        "definition": "En fysisk person som handlar för ändamål utanför sin näringsverksamhet, yrkesutövning eller sitt hantverk (enligt EU:s konsumenträttsdirektiv)."
+      },
+      "services": {
+        "term": "\"Tjänster\"",
+        "definition": "Vår företagswebbplats, informationstjänster och alla relaterade digitala tjänster som tillhandahålls av Bromander Global AB."
+      },
+      "distanceContract": {
+        "term": "\"Distansavtal\"",
+        "definition": "Varje avtal som ingås mellan oss och en konsument inom ramen för ett organiserat distansförsäljningssystem utan samtidig fysisk närvaro (enligt svensk lag om distansavtal)."
+      }
+    },
+    "acceptance": {
+      "title": "Acceptans av villkor",
+      "legalAgreement": {
+        "title": "Juridiskt avtal",
+        "description": "Genom att komma åt eller använda vår webbplats och tjänster bekräftar du att du har läst, förstått och samtyckt till att vara bunden av dessa villkor och vår integritetspolicy."
+      },
+      "ageRequirements": {
+        "title": "Ålderskrav och kapacitet",
+        "items": [
+          "Du måste vara minst 18 år gammal för att ingå dessa villkor",
+          "För användare under 18 måste en förälder eller vårdnadshavare acceptera dessa villkor för din räkning",
+          "Du måste ha rättslig kapacitet att ingå bindande avtal enligt svensk lag",
+          "Om du representerar ett företag bekräftar du att du har befogenhet att binda den enheten till dessa villkor"
+        ]
+      },
+      "consumerRights": {
+        "title": "Konsumenträttighetsinformation (EU/Sverige)",
+        "description": "Om du är en konsument (fysisk person som handlar utanför ditt företag) har du specifika rättigheter enligt EU:s och svenska konsumentskyddslagar som inte kan avsägas genom dessa villkor. Dessa rättigheter har företräde framför eventuella motstridiga villkor."
+      }
+    },
+    "services": {
+      "title": "Våra tjänster",
+      "description": "Bromander Global AB tillhandahåller följande tjänster genom vår företagswebbplats:",
+      "corporate": {
+        "title": "🏢 Företagsinformationstjänster",
+        "items": [
+          "Företagsinformation och investerarrelationer",
+          "Översikter och uppdateringar av portföljföretag",
+          "Affärskontakter och förfrågningshantering",
+          "Nyheter och meddelanden"
+        ]
+      },
+      "communication": {
+        "title": "📧 Kommunikationstjänster",
+        "items": [
+          "Kontaktformulär och förfrågningsbehandling",
+          "E-postkommunikation och nyhetsbrev (med samtycke)",
+          "Kundsupport och assistans"
+        ]
+      },
+      "gateway": {
+        "title": "🔗 Portföljföretagsgateway",
+        "items": [
+          "Länkar och omdirigeringar till portföljföretags tjänster",
+          "Integrationspunkter för dotterbolagsplattformar",
+          "Konsoliderad integritets- och juridisk information"
+        ]
+      },
+      "portfolioCompanies": {
+        "title": "Portföljföretag",
+        "description": "Varje portföljföretag verkar självständigt med separata villkor:",
+        "aiTracker": "AI Reliance Tracker: Digital hälsoplattform",
+        "smartBookkeeping": "Smart Bookkeeping: Finansiell förvaltningsplattform",
+        "termsLink": "Villkor"
+      }
+    },
+    "userObligations": {
+      "title": "Användaråtaganden",
+      "description": "Som användare av våra tjänster samtycker du till att följa följande förpliktelser:",
+      "permitted": {
+        "title": "✅ Tillåten användning",
+        "items": [
+          "Komma åt och använda våra tjänster för legitima affärs- eller personliga ändamål",
+          "Tillhandahålla korrekt och fullständig information när det begärs",
+          "Upprätthålla konfidentialiteten för eventuella åtkomstuppgifter",
+          "Respektera immateriella rättigheter och tillämpliga lagar",
+          "Använda våra tjänster i god tro och i enlighet med dessa villkor"
+        ]
+      },
+      "accuracy": {
+        "title": "📋 Informationsnoggrannhet",
+        "description": "Du garanterar att all information du tillhandahåller är korrekt, fullständig och uppdaterad. Du måste omedelbart meddela oss om eventuella ändringar av din information."
+      },
+      "security": {
+        "title": "🔐 Säkerhetsansvar",
+        "items": [
+          "Upprätthålla rimliga säkerhetsåtgärder för dina enheter och anslutningar",
+          "Omedelbart rapportera eventuell misstänkt obehörig åtkomst",
+          "Inte dela åtkomstuppgifter med obehöriga parter",
+          "Använda uppdaterade och säkra webbläsare och programvara"
+        ]
+      }
+    },
+    "prohibitedUse": {
+      "title": "Förbjuden användning",
+      "description": "Du är strängt förbjuden att använda våra tjänster för följande ändamål:",
+      "illegal": {
+        "title": "Olagliga aktiviteter",
+        "items": [
+          "All olaglig verksamhet enligt svensk, EU- eller tillämplig internationell lag",
+          "Bedrägeri, penningtvätt eller finansiella brott",
+          "Trakasserier, hot eller skrämsel av individer",
+          "Kränkning av immateriella rättigheter",
+          "Distribution av olagligt eller skadligt innehåll"
+        ]
+      },
+      "technical": {
+        "title": "⚠️ Tekniskt missbruk",
+        "items": [
+          "Försök att få obehörig åtkomst till våra system",
+          "Störa eller avbryta våra tjänster eller servrar",
+          "Reverse engineering, dekompilering eller demontering av vår programvara",
+          "Använda automatiserade system (botar, skrapor) utan tillstånd",
+          "Överföra skadlig programvara, virus eller skadlig kod"
+        ]
+      },
+      "commercial": {
+        "title": "⚡ Kommersiella begränsningar",
+        "items": [
+          "Kommersiell användning utan uttryckligt skriftligt tillstånd",
+          "Återförsäljning eller omfördelning av våra tjänster",
+          "Använda våra tjänster för att konkurrera med vår verksamhet",
+          "Bulkdataextraktion eller systematisk nedladdning"
+        ]
+      },
+      "enforcement": {
+        "title": "Verkställighet",
+        "description": "Kränkning av dessa förbud kan resultera i omedelbar uppsägning av din åtkomst, rättsliga åtgärder och samarbete med brottsbekämpande myndigheter."
+      }
+    },
+    "intellectualProperty": {
+      "title": "Immateriella rättigheter",
+      "ownership": {
+        "title": "🏢 Våra äganderättigheter",
+        "description": "Alla immateriella rättigheter i och till våra tjänster tillhör Bromander Global AB eller våra licensgivare, inklusive:",
+        "items": [
+          "Varumärken, servicemärken och handelsnamn (\"Bromander Global,\" logotyper, etc.)",
+          "Upphovsrätter till webbplatsinnehåll, text, grafik, bilder och programvara",
+          "Patent och patentansökningar",
+          "Affärshemligheter och proprietär affärsinformation",
+          "Databasrättigheter och kompileringsrättigheter"
+        ]
+      },
+      "license": {
+        "title": "✅ Dina licensrättigheter",
+        "description": "Vi beviljar dig en begränsad, icke-exklusiv, icke-överförbar, återkallelig licens att:",
+        "items": [
+          "Komma åt och visa vårt webbplatsinnehåll för personliga eller affärsändamål",
+          "Ladda ner och skriva ut innehåll för icke-kommersiell användning (med attribution)",
+          "Kontakta oss via tillhandahållna kommunikationskanaler",
+          "Länka till vår webbplats från din egen webbplats (inga djupa länkar utan tillstånd)"
+        ]
+      },
+      "restrictions": {
+        "title": "🚫 Begränsningar",
+        "items": [
+          "Ingen modifiering, reproduktion eller skapande av härledda verk",
+          "Ingen kommersiell användning utan uttryckligt skriftligt tillstånd",
+          "Ingen reverse engineering av programvara eller system",
+          "Inget borttagande av upphovsrättsmeddelanden eller attribution",
+          "Ingen användning av våra varumärken utan auktorisation"
+        ]
+      },
+      "userContent": {
+        "title": "Användarinnehåll och feedback",
+        "description": "Allt innehåll, feedback eller förslag som du tillhandahåller oss blir vår egendom och kan användas fritt för alla ändamål utan kompensation eller attribution."
+      }
+    },
+    "consumerRights": {
+      "title": "EU-konsumenträttigheter",
+      "description": "Om du är en konsument enligt EU/svensk lag har du specifika rättigheter som inte kan avsägas:",
+      "withdrawal": {
+        "title": "Ångerrätt (14 dagar)",
+        "description": "För distansavtal har du rätt att avbryta inom 14 dagar utan att ange skäl.",
+        "howTo": "Hur man ångrar sig: Skicka tydligt meddelande till legal@bromanderglobal.com",
+        "deadline": "Tidsfrist: 14 dagar från avtalsslut eller tjänstestart",
+        "effects": "Effekter: Vi kommer att återbetala betalningar inom 14 dagar efter att ha fått ångermeddelandet"
+      },
+      "preContractual": {
+        "title": "Förkontraktuella informationsrättigheter",
+        "description": "Innan du ingår något avtal har du rätt att få:",
+        "items": [
+          "Huvudegenskaper för tjänster",
+          "Totalt pris inklusive skatter och avgifter",
+          "Varaktighet och uppsägningsvillkor",
+          "Information om klagomålshantering och tvistlösning"
+        ]
+      },
+      "unfairTerms": {
+        "title": "Skydd mot oskäliga villkor",
+        "description": "Alla villkor som skapar betydande obalans till din nackdel kan anses oskäliga enligt EU-direktiv 93/13/EEC och svenska lagen om konsumentavtal. Sådana villkor är inte bindande för dig."
+      },
+      "disputes": {
+        "title": "Konsumenttvister",
+        "description": "För konsumenttvister kan du kontakta:",
+        "swedishConsumerAgency": "Konsumentverket: konsumentverket.se",
+        "euODR": "EU:s plattform för onlinetvistlösning: ec.europa.eu/consumers/odr",
+        "arn": "Allmänna reklamationsnämnden: arn.se"
+      }
+    },
+    "liability": {
+      "title": "Ansvar och garantier",
+      "consumerRightsOverride": {
+        "title": "Konsumenträttigheter har företräde",
+        "description": "Inget i dessa villkor begränsar dina lagstadgade konsumenträttigheter enligt svensk eller EU-lag. Vid konflikt har konsumentskyddslagarna företräde."
+      },
+      "serviceWarranties": {
+        "title": "Tjänstegarantier",
+        "description": "Våra tjänster tillhandahålls \"som de är\" men vi garanterar att:",
+        "items": [
+          "Tjänster kommer att tillhandahållas med rimlig skicklighet och omsorg",
+          "Tillhandahållen information kommer att vara materiellt korrekt när den publiceras",
+          "Vi har rätt att tillhandahålla de beskrivna tjänsterna",
+          "Tjänster kommer att följa tillämplig svensk och EU-lag"
+        ]
+      },
+      "businessLimitations": {
+        "title": "Ansvarsbegränsningar (Företagsanvändare)",
+        "description": "För företagsanvändare (icke-konsumenter) är vårt ansvar begränsat enligt följande:",
+        "items": [
+          "Totalt ansvar begränsat till avgifter som betalats under 12 månader före anspråket",
+          "Inget ansvar för indirekta, följd- eller särskilda skador",
+          "Inget ansvar för affärsavbrott eller förlorade vinster",
+          "Anspråk måste väckas inom 2 år från orsaken till åtgärd"
+        ]
+      },
+      "unlimitedLiability": {
+        "title": "Obegränsat ansvar",
+        "description": "Vi begränsar inte ansvar för dödsfall, personskada, bedrägeri eller något annat ansvar som inte kan begränsas enligt svensk lag."
+      },
+      "thirdPartyContent": {
+        "title": "Tredjepartsinnehåll",
+        "description": "Vi ansvarar inte för tredjepartswebbplatser, innehåll eller tjänster som är tillgängliga genom vår plattform. Länkar tillhandahålls endast för bekvämlighet."
+      }
+    },
+    "termination": {
+      "title": "Uppsägning",
+      "terminationByUs": {
+        "title": "Uppsägning från vår sida",
+        "description": "Vi kan avsluta eller tillfälligt stoppa din åtkomst omedelbart för:",
+        "items": [
+          "Kränkning av dessa villkor eller tillämpliga lagar",
+          "Bedrägligt, kränkande eller skadligt beteende",
+          "Tekniska eller säkerhetsskäl",
+          "Domstolsbeslut eller rättsliga krav"
+        ],
+        "consumerNotice": "För konsumenter kommer vi att ge rimlig förvarning utom i brådskande situationer."
+      },
+      "terminationByYou": {
+        "title": "Uppsägning från din sida",
+        "description": "Du kan avsluta din användning av våra tjänster när som helst genom att:",
+        "items": [
+          "Sluta använda vår webbplats och tjänster",
+          "Skicka skriftligt meddelande till legal@bromanderglobal.com",
+          "Utöva ångerrätten (endast konsumenter)"
+        ]
+      },
+      "effects": {
+        "title": "Effekter av uppsägning",
+        "items": [
+          "Alla rättigheter och licenser som beviljats dig kommer att upphöra",
+          "Utestående förpliktelser förblir i kraft",
+          "Vi kan behålla information som krävs enligt lag eller policy",
+          "Vissa bestämmelser överlever uppsägning (IP, ansvar, tillämplig lag)"
+        ]
+      }
+    },
+    "changes": {
+      "title": "Ändringar av villkor",
+      "modification": {
+        "title": "Ändringsrättigheter",
+        "description": "Vi kan uppdatera dessa villkor för att återspegla ändringar i lag, förordningar, affärspraxis eller tjänsteförbättringar. Uppdateringar kommer att publiceras på denna sida med ett reviderat \"senast uppdaterat\" datum."
+      },
+      "consumerProtection": {
+        "title": "Konsumentskydd (EU/svensk lag)",
+        "minorChanges": "Mindre ändringar: Träder i kraft omedelbart vid publicering",
+        "substantialChanges": "Väsentliga ändringar: 30 dagars förvarning via e-post eller framträdande webbplatsmeddelande",
+        "unfavorableChanges": "Ogynnsamma ändringar: Du har rätt att säga upp utan påföljd",
+        "continuedUse": "Fortsatt användning: Utgör acceptans, men avsäger inte konsumenträttigheter"
+      },
+      "businessUsers": {
+        "title": "Företagsanvändare",
+        "description": "För företagsanvändare utgör fortsatt användning efter publicering acceptans av reviderade villkor. Vi rekommenderar att du granskar villkoren regelbundet."
+      },
+      "versionControl": {
+        "title": "Versionskontroll",
+        "description": "Tidigare versioner arkiveras och finns tillgängliga på begäran. Den aktuella versionen är alltid tillgänglig på denna URL med ikraftträdandedatumet tydligt visat."
+      }
+    },
+    "governingLaw": {
+      "title": "Tillämplig lag och tvistlösning",
+      "applicableLaw": {
+        "title": "🇸🇪 Tillämplig lag",
+        "description": "Dessa villkor styrs av och tolkas i enlighet med:",
+        "items": [
+          "Svensk lag (främst avtalslagen och lagen om konsumentavtal)",
+          "EU-direktiv och förordningar (där tillämpligt)",
+          "GDPR och andra dataskyddsförordningar",
+          "Svensk konsumentskyddslagstiftning"
+        ]
+      },
+      "consumerDisputes": {
+        "title": "Konsumenttvistlösning",
+        "firstStep": "Första steget: Kontakta oss direkt på legal@bromanderglobal.com",
+        "swedishConsumers": "Svenska konsumenter: Allmänna reklamationsnämnden (ARN) - arn.se",
+        "euConsumers": "EU-konsumenter: EU:s plattform för onlinetvistlösning - ec.europa.eu/consumers/odr",
+        "generalConsumers": "Allmänna konsumenter: Konsumentverket - konsumentverket.se"
+      },
+      "businessDisputes": {
+        "title": "Företagstvister",
+        "jurisdiction": "Jurisdiktion: Svenska domstolar, med Stockholms tingsrätt som första instans",
+        "alternativeResolution": "Alternativ lösning: Stockholms handelskammares skiljedomsinstitut",
+        "language": "Språk: Förhandlingar på svenska eller engelska enligt överenskommelse"
+      },
+      "limitationPeriod": {
+        "title": "Preskriptionstid",
+        "description": "Anspråk måste väckas inom de preskriptionstider som anges i svensk lag (generellt 3 år för konsumentanspråk, 10 år för avtalsanspråk)."
+      },
+      "consumerRightsOverride": {
+        "title": "Konsumenträttigheter har företräde",
+        "description": "Inget i dessa tvistlösningsbestämmelser begränsar dina lagstadgade konsumenträttigheter, inklusive rättigheter att väcka talan i ditt hemland."
+      }
+    },
+    "contact": {
+      "title": "Kontakt och support",
+      "description": "För frågor om dessa användarvillkor eller juridiska frågor, vänligen kontakta oss:",
+      "legal": {
+        "title": "Juridik och villkor",
+        "email": "legal@bromanderglobal.com",
+        "phone": "+46 70 123 45 67 (Kontorstid)"
+      },
+      "general": {
+        "title": "Allmänna förfrågningar",
+        "email": "hello@bromanderglobal.com",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sverige"
+      },
+      "consumerAssistance": {
+        "title": "Konsumenthjälp",
+        "description": "För konsumentklagomål och tvister:",
+        "swedishConsumerAgency": "Konsumentverket: konsumentverket.se",
+        "euODR": "EU ODR-plattform: ec.europa.eu/consumers/odr",
+        "arn": "ARN (Konsumenttvister): arn.se"
+      },
+      "responseTimes": {
+        "title": "Svarstider",
+        "legal": "Juridiska förfrågningar: 5 arbetsdagar",
+        "general": "Allmänna frågor: 2 arbetsdagar",
+        "consumer": "Konsumentklagomål: 10 arbetsdagar"
+      },
+      "regulatoryInfo": {
+        "title": "Reglerande information",
+        "companyRegistration": "Företagsregistrering: Bolagsverket",
+        "vatRegistration": "Momsregistrering: Skatteverket",
+        "dataProtection": "Dataskydd: Integritetsskyddsmyndigheten (IMY)"
+      },
+      "termsEffective": {
+        "title": "Villkor i kraft",
+        "description": "Dessa villkor träder i kraft från det senast uppdaterade datumet och förblir i kraft tills de ändras eller sägs upp i enlighet med dessa bestämmelser."
+      },
+      "accessibility": {
+        "title": "Tillgänglighet",
+        "description": "Om du behöver dessa villkor i ett alternativt format av tillgänglighetsskäl, vänligen kontakta oss så kommer vi att tillhandahålla dem i ett lämpligt format inom 5 arbetsdagar."
+      }
+    }
+  },
+  "cookiePolicy": {
+    "navigation": {
+      "title": "Snabbnavigation",
+      "overview": "Översikt",
+      "whatAreCookies": "Vad är cookies",
+      "legalBasis": "Rättslig grund",
+      "cookieTypes": "Cookie-typer",
+      "consentManagement": "Samtyckehantering",
+      "thirdParty": "Tredjepartstjänster",
+      "yourRights": "Dina rättigheter",
+      "cookieTable": "Cookie-tabell",
+      "contact": "Kontakt"
+    },
+    "header": {
+      "title1": "COOKIE",
+      "title2": "POLICY",
+      "subtitle": "Omfattande cookie-användning och samtyckehantering i enlighet med EU:s e-integritetsdirektiv och svensk lag",
+      "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
+      "ePrivacyCompliant": "e-Integritet-kompatibel",
+      "ptsApproved": "PTS-godkänd",
+      "importantTitle": "Cookie-samtyckesmeddelande",
+      "importantDescription": "Denna policy följer EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation (ECA). Post- och telestyrelsen (PTS) övervakar efterlevnad. Dina samtycke val respekteras och kan ändras när som helst."
+    },
+    "overview": {
+      "title": "Controllerinformation och översikt",
+      "controllerTitle": "Cookie-controller",
+      "company": "Företag:",
+      "companyName": "Bromander Global AB",
+      "address": "Adress:",
+      "addressValue": "Stockholm, Sverige",
+      "contact": "Kontakt:",
+      "contactEmail": "cookies@bromanderglobal.com",
+      "dpo": "DPO:",
+      "dpoEmail": "dpo@bromanderglobal.com",
+      "supervisoryAuthority": "Tillsynsmyndighet:",
+      "supervisoryValue": "Post- och telestyrelsen (PTS)",
+      "description1": "Denna cookie-policy förklarar hur Bromander Global AB använder cookies och liknande teknologier på vår företagswebbplats. Vi är engagerade i transparens och efterlevnad av EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation.",
+      "description2": "Vart och ett av våra portföljföretag (AI Reliance Tracker, Smart Bookkeeping) upprätthåller sin egen cookie-policy för sina respektive tjänster. Denna policy täcker endast Bromander Globals företagswebbplats."
+    },
+    "whatAreCookies": {
+      "title": "Vad är cookies och liknande teknologier?",
+      "description": "Cookies är små textfiler som lagras på din enhet när du besöker vår webbplats. Liknande teknologier inkluderar pixlar, webbbeacons, lokal lagring och andra spårningsteknologier som samlar information om din interaktion med våra tjänster.",
+      "types": {
+        "httpCookies": {
+          "title": "🍪 HTTP-cookies",
+          "description": "Små textfiler lagrade i din webbläsare som innehåller information om ditt besök och preferenser."
+        },
+        "pixels": {
+          "title": "📊 Pixlar och webbbeacons",
+          "description": "Små osynliga bilder som spårar när e-postmeddelanden öppnas eller sidor visas."
+        },
+        "localStorage": {
+          "title": "💾 Lokal lagring",
+          "description": "Webbläsarlagring som bevarar data lokalt på din enhet för förbättrad funktionalitet."
+        },
+        "sessionStorage": {
+          "title": "🔍 Sessionslagring",
+          "description": "Tillfällig lagring som upphör när du stänger din webbläsarflik eller fönster."
+        }
+      },
+      "importantNotice": {
+        "title": "Viktigt meddelande",
+        "description": "Enligt svensk lag behöver vi ditt samtycke innan vi placerar de flesta cookies på din enhet. Denna policy förklarar vilka cookies som kräver samtycke och hur du kan hantera dina preferenser."
+      }
+    },
+    "legalBasis": {
+      "title": "Rättslig grund för cookie-användning",
+      "description": "Vi behandlar cookies baserat på följande rättsliga grunder enligt EU- och svensk lag:",
+      "strictlyNecessary": {
+        "title": "Strikt nödvändiga (inget samtycke krävs)",
+        "subtitle": "Svensk ECA § 28 undantag för cookies som är strikt nödvändiga för tjänsteleverans:",
+        "items": [
+          "Autentisering och sessionshantering",
+          "Säkerhet och bedrägeriförebyggande",
+          "Lastbalansering och prestanda",
+          "Kundvagnsfunktionalitet (om tillämpligt)"
+        ]
+      },
+      "consentRequired": {
+        "title": "Förhandsssamtycke krävs (e-integritetsdirektiv)",
+        "subtitle": "Alla andra cookies kräver uttryckligt samtycke före placering:",
+        "items": [
+          "Analys- och prestandacookies",
+          "Marknadsförings- och reklamcookies",
+          "Integrationscookies för sociala medier",
+          "Tredjepartsspårningscookies"
+        ]
+      },
+      "enforcement": {
+        "title": "Svensk verkställighet (2025)",
+        "description": "Svenska myndigheter (IMY/PTS) verkställer aktivt krav på cookie-samtycke. I april 2025 förbjöd nya riktlinjer \"mörka mönster\" i samtyckesgränssnitt och krävde lika behandling av \"Acceptera\" och \"Avvisa\" alternativ."
+      }
+    },
+    "cookieTypes": {
+      "title": "Cookie-kategorier vi använder",
+      "description": "Vi använder cookies i följande kategorier:",
+      "necessary": {
+        "title": "Strikt nödvändiga cookies",
+        "status": "Alltid aktiva",
+        "description": "Nödvändiga för grundläggande webbplatsfunktionalitet och säkerhet. Kan inte inaktiveras.",
+        "purpose": "Syfte: Autentisering, säkerhet, lastbalansering",
+        "duration": "Varaktighet: Session till 1 år",
+        "examples": "Exempel: PHPSESSID, _csrf_token, lb_cookie"
+      },
+      "analytics": {
+        "title": "Analys- och prestandacookies",
+        "status": "Samtycke krävs",
+        "description": "Hjälp oss förstå webbplatsanvändning och förbättra prestanda. Kräver samtycke.",
+        "purpose": "Syfte: Användningsanalys, prestandaövervakning",
+        "duration": "Varaktighet: 13-26 månader",
+        "examples": "Exempel: _ga, _gid, _gat, _hjSessionUser",
+        "providers": "Leverantörer: Google Analytics, Hotjar"
+      },
+      "functional": {
+        "title": "Funktionella cookies",
+        "status": "Samtycke krävs",
+        "description": "Kom ihåg preferenser och förbättra användarupplevelse. Kräver samtycke.",
+        "purpose": "Syfte: Preferenser, språk, temainställningar",
+        "duration": "Varaktighet: 30 dagar till 1 år",
+        "examples": "Exempel: lang_preference, theme_mode, cookie_preferences"
+      },
+      "marketing": {
+        "title": "Marknadsförings- och sociala medier-cookies",
+        "status": "Uttryckligt samtycke krävs",
+        "description": "Används för reklam och integration av sociala medier. Kräver uttryckligt samtycke.",
+        "purpose": "Syfte: Reklam, social delning, remarketing",
+        "duration": "Varaktighet: 30 dagar till 2 år",
+        "examples": "Exempel: _fbp, li_sugr, ads_data, social_share",
+        "providers": "Leverantörer: LinkedIn, Google Ads"
+      }
+    },
+    "consentManagement": {
+      "title": "Cookie-samtyckehantering",
+      "description": "Vi följer svenska och EU-krav för cookie-samtycke enligt 2025 års verkställighetsriktlinjer:",
+      "compliantInterface": {
+        "title": "Kompatibelt samtyckesgränssnitt",
+        "items": [
+          "Lika framträdande \"Acceptera\" och \"Avvisa\" knappar",
+          "Inga förkryssade rutor för icke-nödvändiga cookies",
+          "Tydliga, enkla språkförklaringar",
+          "Detaljerad kontroll över cookie-kategorier",
+          "Enkel återkallelse av samtycke"
+        ]
+      },
+      "management": {
+        "title": "Hur du hanterar ditt samtycke",
+        "initialVisit": "Första besök: Cookie-banner visas med tydliga acceptera/avvisa alternativ",
+        "changePreferences": "Ändra preferenser: Åtkomst till cookie-inställningar när som helst via sidfotslänk",
+        "withdrawConsent": "Återkalla samtycke: Inaktivera icke-nödvändiga cookies omedelbart",
+        "browserSettings": "Webbläsarinställningar: Ytterligare kontroll genom webbläsarpreferenser"
+      },
+      "swedishCompliance": {
+        "title": "Svensk lagefterlevnad (2025)",
+        "description": "Efter IMY:s riktlinjer från april 2025 undviker vår samtyckmekanism \"mörka mönster\" och säkerställer äkta användarval. Allt samtycke dokumenteras och kan granskas."
+      },
+      "ageRequirements": {
+        "title": "Ålderskrav",
+        "description": "Den digitala samtyckesåldern i Sverige är 13 år. Användare under 13 kräver föräldrasamtycke för all databehandling, inklusive cookies som samlar personlig information."
+      }
+    },
+    "thirdPartyServices": {
+      "title": "Tredjepartstjänster och cookies",
+      "description": "Vi väljer noggrant tredjepartstjänster och säkerställer att de följer EU/svenska dataskyddslagar:",
+      "googleAnalytics": {
+        "title": "Google Analytics 4 (GA4)",
+        "purpose": "Syfte: Webbplatsanalys och prestandaövervakning",
+        "dataProcessing": "Databehandling: EU-servrar, IP-anonymisering aktiverad",
+        "consentRequired": "Samtycke krävs: Ja - Analyskategori",
+        "cookiesSet": "Cookies som sätts: _ga, _ga_*, _gid, _gat_gtag_*",
+        "duration": "Varaktighet: 13-24 månader",
+        "privacyPolicy": "Googles integritetspolicy"
+      },
+      "linkedinInsight": {
+        "title": "LinkedIn Insight Tag",
+        "purpose": "Syfte: B2B-marknadsföringsanalys och målgruppsinsikter",
+        "dataProcessing": "Databehandling: EU/USA med standardavtalsklausuler",
+        "consentRequired": "Samtycke krävs: Ja - Marknadsföringskategori",
+        "cookiesSet": "Cookies som sätts: li_sugr, lidc, UserMatchHistory",
+        "duration": "Varaktighet: 30 dagar till 2 år",
+        "privacyPolicy": "LinkedIns integritetspolicy"
+      },
+      "cloudflare": {
+        "title": "CloudFlare CDN",
+        "purpose": "Syfte: Prestanda, säkerhet och DDoS-skydd",
+        "dataProcessing": "Databehandling: EU-servrar, nödvändig funktionalitet",
+        "consentRequired": "Samtycke krävs: Nej - Strikt nödvändiga",
+        "cookiesSet": "Cookies som sätts: __cflb, __cf_bm, cf_clearance",
+        "duration": "Varaktighet: Session till 1 år",
+        "privacyPolicy": "CloudFlares integritetspolicy"
+      },
+      "weDoNotUse": {
+        "title": "Vi använder INTE",
+        "items": [
+          "Korswebbplatsspårning utan samtycke",
+          "Fingeravtrycksteknologier",
+          "Datamäklare eller målgruppsnätverk",
+          "Hemliga tredjepartscookies"
+        ]
+      }
+    },
+    "yourRights": {
+      "title": "Dina cookie-rättigheter och kontroller",
+      "description": "Enligt svensk och EU-lag har du omfattande rättigheter gällande cookies och spårning:",
+      "consentRights": {
+        "title": "Samtyckesrättigheter",
+        "items": [
+          "Ge eller vägra samtycke för icke-nödvändiga cookies",
+          "Återkalla samtycke när som helst utan påföljd",
+          "Detaljerad kontroll över olika cookie-kategorier",
+          "Samtyckesvalen respekteras över alla besök"
+        ]
+      },
+      "browserControls": {
+        "title": "Webbläsarkontroller",
+        "chrome": "Chrome: Inställningar → Integritet och säkerhet → Cookies och andra webbplatsdata",
+        "firefox": "Firefox: Preferenser → Integritet och säkerhet → Cookies och webbplatsdata",
+        "safari": "Safari: Preferenser → Integritet → Hantera webbplatsdata",
+        "edge": "Edge: Inställningar → Cookies och webbplatstillstånd"
+      },
+      "transparencyRights": {
+        "title": "Transparensrättigheter",
+        "items": [
+          "Tydlig information om alla cookies vi använder",
+          "Syfte och varaktighet för varje cookie",
+          "Identitet för tredje parter som sätter cookies",
+          "Dataöverföringsinformation för internationella cookies"
+        ]
+      },
+      "cookieImpact": {
+        "title": "Påverkan av cookie-kontroller",
+        "essential": "Nödvändiga cookies: Kan inte inaktiveras; kan förhindra grundläggande webbplatsfunktioner",
+        "analytics": "Analytiska cookies: Webbplatsen förblir funktionell; vi kan inte förbättra användarupplevelsen",
+        "functional": "Funktionella cookies: Kan kräva att du anger preferenser på nytt vid varje besök",
+        "marketing": "Marknadsföringscookies: Mindre relevant innehåll och reklam"
+      },
+      "preferenceCenter": {
+        "title": "Cookie-preferenscenter",
+        "description": "Få åtkomst till dina cookie-preferenser när som helst:",
+        "buttonText": "Hantera cookie-preferenser",
+        "availability": "Tillgängligt i sidfoten på varje sida"
+      }
+    },
+    "cookieTable": {
+      "title": "Komplett cookie-inventering",
+      "description": "Omfattande lista över alla cookies som används på vår webbplats, enligt svenska transparenskrav:",
+      "necessaryTable": {
+        "title": "Strikt nödvändiga cookies",
+        "headers": {
+          "cookieName": "Cookie-namn",
+          "purpose": "Syfte",
+          "duration": "Varaktighet",
+          "provider": "Leverantör"
+        },
+        "cookies": [
+          {
+            "name": "PHPSESSID",
+            "purpose": "Sessionshantering",
+            "duration": "Session",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "_csrf_token",
+            "purpose": "Säkerhetsskydd",
+            "duration": "Session",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "__cf_bm",
+            "purpose": "Bot-hantering",
+            "duration": "30 minuter",
+            "provider": "CloudFlare"
+          }
+        ]
+      },
+      "analyticsTable": {
+        "title": "Analytiska cookies (samtycke krävs)",
+        "cookies": [
+          {
+            "name": "_ga",
+            "purpose": "Användaridentifiering",
+            "duration": "24 månader",
+            "provider": "Google Analytics"
+          },
+          {
+            "name": "_ga_*",
+            "purpose": "Sessionsdata",
+            "duration": "24 månader",
+            "provider": "Google Analytics"
+          },
+          {
+            "name": "_gid",
+            "purpose": "Användaridentifiering",
+            "duration": "24 timmar",
+            "provider": "Google Analytics"
+          }
+        ]
+      },
+      "functionalTable": {
+        "title": "Funktionella cookies (samtycke krävs)",
+        "cookies": [
+          {
+            "name": "cookie_preferences",
+            "purpose": "Kom ihåg samtyckesvalen",
+            "duration": "1 år",
+            "provider": "Bromander Global"
+          },
+          {
+            "name": "lang_preference",
+            "purpose": "Språkval",
+            "duration": "30 dagar",
+            "provider": "Bromander Global"
+          }
+        ]
+      }
+    },
+    "dataSecurity": {
+      "title": "Cookie-säkerhet och datalagring",
+      "securityMeasures": {
+        "title": "Säkerhetsåtgärder",
+        "items": [
+          "Säker (endast HTTPS) cookie-överföring",
+          "HttpOnly-flaggor för att förhindra JavaScript-åtkomst där det är lämpligt",
+          "SameSite-attribut för att förhindra CSRF-attacker",
+          "Regelbundna säkerhetsrevisioner av cookie-implementering",
+          "Kryptering av känsliga cookie-data"
+        ]
+      },
+      "dataRetention": {
+        "title": "Datalagring",
+        "sessionCookies": "Sessionscookies: Raderas när du stänger din webbläsare",
+        "persistentCookies": "Beständiga cookies: Upphör automatiskt efter angiven varaktighet",
+        "analyticsData": "Analysdata: Aggregerad och anonymiserad efter 26 månader",
+        "consentRecords": "Samtyckesregister: Behålls i 3 år för efterlevnadsändamål"
+      },
+      "dataMinimization": {
+        "title": "Dataminimering",
+        "description": "Vi följer GDPR:s dataminimeringsregler, samlar endast nödvändiga cookie-data och behåller dem under kortast möjliga tid för deras angivna syfte."
+      },
+      "internationalTransfers": {
+        "title": "Internationella överföringar",
+        "description": "Vissa tredjepartscookies (Google Analytics, LinkedIn) kan överföra data utanför EU. Vi säkerställer adekvata skydd genom standardavtalsklausuler och adequacy decisions."
+      }
+    },
+    "policyUpdates": {
+      "title": "Policyuppdateringar och regelefterlevnad",
+      "updateProcess": {
+        "title": "Uppdateringsprocess",
+        "minorChanges": "Mindre ändringar: Uppdateras omedelbart med nytt \"senast uppdaterat\" datum",
+        "materialChanges": "Väsentliga ändringar: 30 dagars förvarning via e-post och webbplatsbanner",
+        "newCookieCategories": "Nya cookie-kategorier: Färskt samtycke krävs före utplacering",
+        "versionHistory": "Versionshistorik: Tidigare versioner arkiverade för efterlevnadsrevision"
+      },
+      "regulatoryCompliance": {
+        "title": "Reglerande efterlevnad",
+        "ePrivacyDirective": "EU:s e-integritetsdirektiv: Implementerat via svensk ECA",
+        "gdpr": "GDPR: Artikel 6 rättslig grund och artikel 7 samtyckesskrav",
+        "swedishAuthorities": "Svenska myndigheter: PTS (teknisk) och IMY (dataskydd) tillsyn",
+        "guidelines2025": "2025 års riktlinjer: Kompatibel med IMY:s vägledning om mörka mönster"
+      },
+      "regularReviews": {
+        "title": "Regelbundna granskningar",
+        "description": "Vi genomför kvartalsvisa granskningar av vår cookie-inventering, samtycksmekanismer och efterlevnad av utvecklande svenska och EU-krav för att säkerställa pågående juridisk efterlevnad."
+      },
+      "technologyUpdates": {
+        "title": "Teknikuppdateringar",
+        "description": "När cookie-tekniken utvecklas (t.ex. Topics API, Privacy Sandbox) kommer vi att uppdatera denna policy och få färskt samtycke enligt svensk lag."
+      }
+    },
+    "contact": {
+      "title": "Kontakt och cookie-support",
+      "description": "För frågor om cookies, samtyckehantering eller denna policy, vänligen kontakta oss:",
+      "cookieInquiries": {
+        "title": "Cookie- och integritetsförfrågningar",
+        "cookieEmail": "cookies@bromanderglobal.com",
+        "dpoEmail": "dpo@bromanderglobal.com (Dataskyddsombud)",
+        "phone": "+46 70 123 45 67"
+      },
+      "generalSupport": {
+        "title": "Allmän support",
+        "company": "Bromander Global AB",
+        "address": "Stockholm, Sverige"
+      },
+      "regulatoryAuthorities": {
+        "title": "Reglerande myndigheter",
+        "description": "För cookie-relaterade klagomål i Sverige:",
+        "pts": "Post- och telestyrelsen (PTS): pts.se | E-post: pts@pts.se",
+        "imy": "Integritetsskyddsmyndigheten (IMY): imy.se | E-post: imy@imy.se"
+      },
+      "responseTimes": {
+        "title": "Svarstider",
+        "cookieQuestions": "Cookie-frågor: 3 arbetsdagar",
+        "consentIssues": "Samtyckesfrågor: Samma dag",
+        "technicalProblems": "Tekniska problem: 24 timmar",
+        "legalInquiries": "Juridiska förfrågningar: 5 arbetsdagar"
+      },
+      "cookieManagement": {
+        "title": "Cookie-preferenshantering",
+        "openSettings": "Öppna cookie-inställningar",
+        "resetCookies": "Återställ alla cookies",
+        "resetConfirm": "Detta kommer att återställa alla cookie-preferenser och ladda om sidan. Fortsätta?"
+      },
+      "accessibility": {
+        "title": "Tillgänglighet",
+        "description": "Om du behöver denna cookie-policy i ett alternativt format av tillgänglighetsskäl, vänligen kontakta oss så kommer vi att tillhandahålla den i ett lämpligt format inom 3 arbetsdagar."
+      },
+      "policyEffective": {
+        "title": "Cookie-policy i kraft",
+        "description": "Denna cookie-policy träder i kraft från det senast uppdaterade datumet och gäller för alla besökare på vår webbplats. Genom att fortsätta använda vår webbplats efter att ha läst denna policy bekräftar du förståelse för vår cookie-praxis."
+      }
+    }
+  }
+}
