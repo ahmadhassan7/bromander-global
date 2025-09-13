@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { 
   Mail, 
   MapPin, 
-  Phone, 
   Send,
   CheckCircle,
   ArrowRight
@@ -181,20 +180,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Email</h3>
-                      <p className="text-gray-400">hello@bromanderglobal.com</p>
-                    </div>
-                  </motion.div>
-
-                  <motion.div
-                    whileHover={{ x: 5 }}
-                    className="flex items-center gap-4 p-4 bg-white/[0.02] border border-white/10 rounded-xl hover:border-blue-500/30 transition-all"
-                  >
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-lg flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-blue-500" />
-                    </div>
-                    <div>
-                      <h3 className="text-white font-semibold">Phone</h3>
-                      <p className="text-gray-400">+46 70 123 45 67</p>
+                      <p className="text-gray-400">support@bromanderglobal.com</p>
                     </div>
                   </motion.div>
 
@@ -207,7 +193,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-white font-semibold">Location</h3>
-                      <p className="text-gray-400">Stockholm, Sweden</p>
+                      <p className="text-gray-400">Örebro, Sweden</p>
                     </div>
                   </motion.div>
                 </div>

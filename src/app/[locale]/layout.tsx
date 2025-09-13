@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import {getTranslations} from 'next-intl/server';
 import "../globals.css";
 import CustomCursor from "@/components/CustomCursor";
@@ -9,14 +9,14 @@ type Props = {
   params: {locale: string};
 };
 
-export async function generateMetadata({params: {locale}}: Props): Promise<Metadata> {
+export async function generateMetadata({params}: Props): Promise<Metadata> {
+  const {locale} = await params;
   const t = await getTranslations({locale, namespace: 'site'});
   
   return {
     title: t('title'),
     description: t('description'),
     keywords: t('keywords'),
-    viewport: "width=device-width, initial-scale=1, maximum-scale=5",
     openGraph: {
       title: "Bromander Global",
       description: t('description'),
@@ -35,6 +35,12 @@ export async function generateMetadata({params: {locale}}: Props): Promise<Metad
     },
   };
 }
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export default function LocaleLayout({
   children,

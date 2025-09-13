@@ -281,8 +281,8 @@ export default function BookkeepingPage() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-blue-500/10 border border-blue-500/30 rounded-full mb-4 sm:mb-6 md:mb-8"
             >
-              <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" />
-              <span className="text-xs sm:text-sm font-medium text-blue-300">{t('badge')}</span>
+              <Brain className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" />
+              <span className="text-xs sm:text-sm font-medium text-blue-300 uppercase tracking-wider">{t('hero.badge')}</span>
             </motion.div>
 
             <h1 className="font-black mb-4 sm:mb-6">
@@ -595,130 +595,361 @@ export default function BookkeepingPage() {
         </div>
       </section>
 
-      {/* Coming Soon Hype Section */}
-      <section className="section-padding bg-gradient-to-b from-slate-950 via-blue-950/50 to-slate-950">
-        <div className="container-custom">
+      {/* How It Works Section - Enhanced UI */}
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-950 via-blue-950/30 to-slate-950 relative overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e3a8a10_1px,transparent_1px),linear-gradient(to_bottom,#1e3a8a10_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <h2 className="text-4xl md:text-5xl font-black mb-6">
-              <span className="text-white">{t('comingSoon.title1')}</span>{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">{t('comingSoon.title2')}</span>
+            {/* Section Badge */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600/10 to-cyan-600/10 border border-blue-500/30 rounded-full mb-8"
+            >
+              <ChevronRight className="w-4 h-4 text-blue-400" />
+              <span className="text-sm font-medium text-cyan-400 uppercase tracking-wider">{t('howItWorks.badge')}</span>
+              <ChevronRight className="w-4 h-4 text-blue-400" />
+            </motion.div>
+
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6">
+              <span className="text-white">{t('howItWorks.title1')}</span>{' '}
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-400 bg-clip-text text-transparent animate-gradient">{t('howItWorks.title2')}</span>
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              {t('comingSoon.subtitle')}
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+              {t('howItWorks.subtitle')}
             </p>
           </motion.div>
 
-          <div className="max-w-5xl mx-auto">
-            {/* Mysterious Countdown or Stats */}
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
-              {[
-                { number: t('comingSoon.stats.earlyAccess.number'), label: t('comingSoon.stats.earlyAccess.label'), color: 'from-blue-500 to-cyan-500' },
-                { number: t('comingSoon.stats.launchYear.number'), label: t('comingSoon.stats.launchYear.label'), color: 'from-cyan-500 to-teal-500' },
-                { number: t('comingSoon.stats.possibilities.number'), label: t('comingSoon.stats.possibilities.label'), color: 'from-teal-500 to-blue-500' }
-              ].map((stat, i) => (
+          <div className="max-w-6xl mx-auto">
+            {/* Enhanced 3-Step Process */}
+            <div className="relative">
+              {/* Animated Connection Line */}
+              <motion.div 
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.5 }}
+                className="absolute top-[45%] left-[10%] right-[10%] h-1 bg-gradient-to-r from-blue-500/30 via-cyan-500/50 to-teal-500/30 rounded-full -translate-y-1/2 hidden lg:block origin-left"
+              >
                 <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ x: ["0%", "100%", "0%"] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                  className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-50"
+                />
+              </motion.div>
+              
+              <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 relative">
+                {/* Step 1: Connect Fortnox - Enhanced */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="text-center"
+                  transition={{ delay: 0.1, duration: 0.5 }}
+                  className="relative group"
                 >
-                  <div className={`text-6xl font-black bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}>
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-400">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Cryptic Feature Hints */}
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-cyan-600/20 to-teal-600/20 blur-3xl" />
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                className="relative bg-slate-950/80 border border-blue-500/30 rounded-2xl p-12 text-center"
-              >
-                <motion.div
-                  animate={{ 
-                    rotate: [0, 360],
-                  }}
-                  transition={{ 
-                    duration: 30,
-                    repeat: Infinity,
-                    ease: "linear"
-                  }}
-                  className="w-32 h-32 mx-auto mb-8"
-                >
-                  <div className="w-full h-full relative">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-full opacity-20 blur-xl" />
-                    <div className="absolute inset-0 border-4 border-blue-500/30 rounded-full" />
-                    <div className="absolute inset-2 border-2 border-cyan-500/30 rounded-full" />
-                    <div className="absolute inset-4 border border-teal-500/30 rounded-full" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Brain className="w-12 h-12 text-cyan-400" />
+                  <motion.div
+                    whileHover={{ y: -5, scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="bg-gradient-to-br from-slate-900/90 via-slate-950/90 to-blue-950/50 backdrop-blur-xl border border-blue-500/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 hover:border-blue-400/40 transition-all duration-500 relative overflow-hidden h-full"
+                  >
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    {/* Floating Particles */}
+                    <div className="absolute inset-0 overflow-hidden">
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0 }}
+                        className="absolute bottom-10 left-10 w-1 h-1 bg-blue-400 rounded-full"
+                      />
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
+                        className="absolute bottom-20 right-10 w-1 h-1 bg-cyan-400 rounded-full"
+                      />
                     </div>
-                  </div>
+
+                    {/* Step Number - Animated */}
+                    <motion.div 
+                      animate={{ rotate: [0, 360] }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="absolute -top-5 left-1/2 -translate-x-1/2"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-blue-600 via-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-2xl shadow-blue-500/50 relative">
+                        <span className="relative z-10">1</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-full animate-pulse" />
+                      </div>
+                    </motion.div>
+                    
+                    {/* Icon Container - Enhanced */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.05, 1],
+                        rotate: [0, 5, -5, 0]
+                      }}
+                      transition={{ 
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut"
+                      }}
+                      className="w-24 h-24 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 mt-6 relative"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-cyan-600/30 rounded-2xl blur-xl" />
+                      <Zap className="w-12 h-12 text-blue-400 relative z-10" />
+                    </motion.div>
+                    
+                    {/* Content */}
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 text-center relative z-10">
+                      {t('howItWorks.step1.title')}
+                    </h3>
+                    <p className="text-gray-300 text-center leading-relaxed relative z-10">
+                      {t('howItWorks.step1.description')}
+                    </p>
+
+                    {/* Feature Pills */}
+                    <div className="flex flex-wrap gap-2 justify-center mt-6">
+                      <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs text-blue-300">{t('howItWorks.step1.pill1')}</span>
+                      <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs text-blue-300">{t('howItWorks.step1.pill2')}</span>
+                      <span className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-xs text-blue-300">{t('howItWorks.step1.pill3')}</span>
+                    </div>
+                  </motion.div>
                 </motion.div>
 
-                <h3 className="text-3xl font-bold text-white mb-4">
-                  {t('comingSoon.thinking.title')}
-                </h3>
-                <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  {t('comingSoon.thinking.description')}
-                </p>
-                
-                {/* Teaser Points */}
-                <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                  {[
-                    { icon: Zap, text: t('comingSoon.thinking.features.automation') },
-                    { icon: Shield, text: t('comingSoon.thinking.features.security') },
-                    { icon: Sparkles, text: t('comingSoon.thinking.features.intelligence') }
-                  ].map((item, i) => (
-                    <motion.div
-                      key={item.text}
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.5 + i * 0.1 }}
-                      className="flex flex-col items-center gap-3"
+                {/* Step 2: Add Rules - Enhanced */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  className="relative group"
+                >
+                  <motion.div
+                    whileHover={{ y: -5, scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="bg-gradient-to-br from-slate-900/90 via-slate-950/90 to-cyan-950/50 backdrop-blur-xl border border-cyan-500/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 hover:border-cyan-400/40 transition-all duration-500 relative overflow-hidden h-full"
+                  >
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    {/* Floating Particles */}
+                    <div className="absolute inset-0 overflow-hidden">
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0.3 }}
+                        className="absolute bottom-15 left-15 w-1 h-1 bg-cyan-400 rounded-full"
+                      />
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0.8 }}
+                        className="absolute bottom-25 right-15 w-1 h-1 bg-teal-400 rounded-full"
+                      />
+                    </div>
+
+                    {/* Step Number - Animated */}
+                    <motion.div 
+                      animate={{ rotate: [0, -360] }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="absolute -top-5 left-1/2 -translate-x-1/2"
                     >
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-600/20 to-cyan-600/20 rounded-lg flex items-center justify-center">
-                        <item.icon className="w-6 h-6 text-cyan-400" />
+                      <div className="w-14 h-14 bg-gradient-to-br from-cyan-600 via-teal-600 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-2xl shadow-cyan-500/50 relative">
+                        <span className="relative z-10">2</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 to-teal-600 rounded-full animate-pulse" />
                       </div>
-                      <span className="text-gray-400 font-medium">{item.text}</span>
                     </motion.div>
-                  ))}
-                </div>
-              </motion.div>
+                    
+                    {/* Icon Container - Enhanced */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.05, 1],
+                        rotate: [0, -5, 5, 0]
+                      }}
+                      transition={{ 
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 0.5
+                      }}
+                      className="w-24 h-24 bg-gradient-to-br from-cyan-600/20 to-teal-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 mt-6 relative"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/30 to-teal-600/30 rounded-2xl blur-xl" />
+                      <Brain className="w-12 h-12 text-cyan-400 relative z-10" />
+                    </motion.div>
+                    
+                    {/* Content */}
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 text-center relative z-10">
+                      {t('howItWorks.step2.title')}
+                    </h3>
+                    <p className="text-gray-300 text-center leading-relaxed relative z-10">
+                      {t('howItWorks.step2.description')}
+                    </p>
+
+                    {/* Mode Toggle Visual */}
+                    <div className="flex items-center justify-center gap-4 mt-6">
+                      <div className="flex items-center gap-2 px-4 py-2 bg-cyan-500/10 border border-cyan-500/20 rounded-lg">
+                        <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" />
+                        <span className="text-sm text-cyan-300">{t('howItWorks.step2.mode1')}</span>
+                      </div>
+                      <span className="text-gray-500">/</span>
+                      <div className="flex items-center gap-2 px-4 py-2 bg-teal-500/10 border border-teal-500/20 rounded-lg">
+                        <div className="w-2 h-2 bg-teal-400 rounded-full animate-pulse" />
+                        <span className="text-sm text-teal-300">{t('howItWorks.step2.mode2')}</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+
+                {/* Step 3: Post Safely - Enhanced */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  className="relative group"
+                >
+                  <motion.div
+                    whileHover={{ y: -5, scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    className="bg-gradient-to-br from-slate-900/90 via-slate-950/90 to-teal-950/50 backdrop-blur-xl border border-teal-500/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 hover:border-teal-400/40 transition-all duration-500 relative overflow-hidden h-full"
+                  >
+                    {/* Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    
+                    {/* Floating Particles */}
+                    <div className="absolute inset-0 overflow-hidden">
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 0.6 }}
+                        className="absolute bottom-10 left-20 w-1 h-1 bg-teal-400 rounded-full"
+                      />
+                      <motion.div
+                        animate={{ y: [-20, -60], opacity: [0, 1, 0] }}
+                        transition={{ duration: 2, repeat: Infinity, delay: 1.1 }}
+                        className="absolute bottom-30 right-20 w-1 h-1 bg-blue-400 rounded-full"
+                      />
+                    </div>
+
+                    {/* Step Number - Animated */}
+                    <motion.div 
+                      animate={{ rotate: [0, 360] }}
+                      transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                      className="absolute -top-5 left-1/2 -translate-x-1/2"
+                    >
+                      <div className="w-14 h-14 bg-gradient-to-br from-teal-600 via-blue-600 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-2xl shadow-teal-500/50 relative">
+                        <span className="relative z-10">3</span>
+                        <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-blue-600 rounded-full animate-pulse" />
+                      </div>
+                    </motion.div>
+                    
+                    {/* Icon Container - Enhanced */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.05, 1],
+                        rotate: [0, 5, -5, 0]
+                      }}
+                      transition={{ 
+                        duration: 4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 1
+                      }}
+                      className="w-24 h-24 bg-gradient-to-br from-teal-600/20 to-blue-600/20 rounded-2xl flex items-center justify-center mx-auto mb-6 mt-6 relative"
+                    >
+                      <div className="absolute inset-0 bg-gradient-to-br from-teal-600/30 to-blue-600/30 rounded-2xl blur-xl" />
+                      <Shield className="w-12 h-12 text-teal-400 relative z-10" />
+                    </motion.div>
+                    
+                    {/* Content */}
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 text-center relative z-10">
+                      {t('howItWorks.step3.title')}
+                    </h3>
+                    <p className="text-gray-300 text-center leading-relaxed relative z-10">
+                      {t('howItWorks.step3.description')}
+                    </p>
+
+                    {/* Security Badge */}
+                    <div className="flex justify-center mt-6">
+                      <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-500/10 to-blue-500/10 border border-teal-500/20 rounded-lg">
+                        <CheckCircle className="w-4 h-4 text-teal-400" />
+                        <span className="text-sm text-teal-300">{t('howItWorks.step3.badge')}</span>
+                      </div>
+                    </div>
+                  </motion.div>
+                </motion.div>
+              </div>
             </div>
 
-            {/* Waitlist CTA */}
+            {/* Enhanced Additional Info */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-center mt-12"
+              transition={{ delay: 0.5 }}
+              className="mt-20"
             >
-              <p className="text-gray-400 mb-6">
-                {t('comingSoon.waitlist.subtitle')}
-              </p>
-              <motion.button
-                onClick={() => setShowWaitlist(true)}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-bold uppercase tracking-wider hover:from-blue-700 hover:to-cyan-700 transition-all shadow-lg shadow-blue-500/25 rounded-lg"
-              >
-                {t('comingSoon.waitlist.cta')}
-                <ArrowRight className="inline-block ml-2 w-5 h-5" />
-              </motion.button>
+              <div className="relative">
+                {/* Background Glow */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-cyan-600/20 to-teal-600/20 blur-3xl" />
+                
+                <div className="relative bg-gradient-to-br from-slate-900/90 via-slate-950/90 to-slate-900/90 backdrop-blur-xl border border-blue-500/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 max-w-4xl mx-auto overflow-hidden">
+                  {/* Animated Background Pattern */}
+                  <div className="absolute inset-0 opacity-5">
+                    <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(68,147,248,0.2)_50%,transparent_75%,transparent_100%)] bg-[length:250px_250px] animate-[shimmer_3s_linear_infinite]" />
+                  </div>
+
+                  <div className="relative z-10 text-center">
+                    <motion.div
+                      animate={{ 
+                        rotate: [0, 360],
+                        scale: [1, 1.1, 1]
+                      }}
+                      transition={{ 
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear"
+                      }}
+                      className="w-16 h-16 bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6"
+                    >
+                      <Sparkles className="w-8 h-8 text-white" />
+                    </motion.div>
+
+                    <h3 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+                      {t('howItWorks.bottomTitle')}
+                    </h3>
+                    <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto mb-8">
+                      {t('howItWorks.bottomDescription')}
+                    </p>
+
+                    {/* Feature Grid */}
+                    <div className="grid md:grid-cols-3 gap-6 mt-10">
+                      <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-4">
+                        <div className="text-2xl font-bold text-blue-400 mb-1">{t('howItWorks.stat1Value')}</div>
+                        <div className="text-sm text-gray-400">{t('howItWorks.stat1Label')}</div>
+                      </div>
+                      <div className="bg-cyan-500/5 border border-cyan-500/20 rounded-xl p-4">
+                        <div className="text-2xl font-bold text-cyan-400 mb-1">{t('howItWorks.stat2Value')}</div>
+                        <div className="text-sm text-gray-400">{t('howItWorks.stat2Label')}</div>
+                      </div>
+                      <div className="bg-teal-500/5 border border-teal-500/20 rounded-xl p-4">
+                        <div className="text-2xl font-bold text-teal-400 mb-1">{t('howItWorks.stat3Value')}</div>
+                        <div className="text-sm text-gray-400">{t('howItWorks.stat3Label')}</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
         </div>

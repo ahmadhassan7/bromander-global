@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Scale, Shield, AlertTriangle, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Ban, BookOpen, Building, AlertCircle, Settings } from 'lucide-react';
+import { Scale, Shield, AlertTriangle, Globe, Clock, CheckCircle, Mail, MapPin, Gavel, UserCheck, Ban, BookOpen, Building, AlertCircle, Settings } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -138,7 +138,6 @@ export default function TermsOfServicePage() {
                         <p><strong>{t('overview.registrationNumber')}</strong> {t('overview.registrationValue')}</p>
                         <p><strong>{t('overview.address')}</strong> {t('overview.addressValue')}</p>
                         <p><strong>{t('overview.email')}</strong> {t('overview.emailValue')}</p>
-                        <p><strong>{t('overview.phone')}</strong> {t('overview.phoneValue')}</p>
                         <p><strong>{t('overview.vatNumber')}</strong> {t('overview.vatValue')}</p>
                       </div>
                     </div>
@@ -264,22 +263,25 @@ export default function TermsOfServicePage() {
                     </div>
 
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">{t('services.portfolioCompanies.title')}</h4>
-                      <p className="text-sm mb-3">{t('services.portfolioCompanies.description')}</p>
+                      <h4 className="text-white font-semibold mb-2">{t('services.digitalServices.title')}</h4>
+                      <p className="text-sm mb-3">{t('services.digitalServices.description')}</p>
                       <div className="space-y-2 text-sm">
-                        <div className="flex items-center justify-between">
-                          <span><strong>AI Reliance Tracker:</strong> {t('services.portfolioCompanies.aiTracker')}</span>
-                          <a href="#" className="text-blue-500 hover:text-blue-400 transition-colors flex items-center gap-1">
-                            {t('services.portfolioCompanies.termsLink')} <ExternalLink className="w-3 h-3" />
-                          </a>
+                        <div>
+                          <span>{t('services.digitalServices.aiTracker')}</span>
                         </div>
-                        <div className="flex items-center justify-between">
-                          <span><strong>Smart Bookkeeping:</strong> {t('services.portfolioCompanies.smartBookkeeping')}</span>
-                          <a href="#" className="text-blue-500 hover:text-blue-400 transition-colors flex items-center gap-1">
-                            {t('services.portfolioCompanies.termsLink')} <ExternalLink className="w-3 h-3" />
-                          </a>
+                        <div>
+                          <span>{t('services.digitalServices.smartBookkeeping')}</span>
                         </div>
                       </div>
+                    </div>
+                    
+                    <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
+                      <h4 className="text-white font-semibold mb-2">{t('services.disclaimers.title')}</h4>
+                      <ul className="text-sm space-y-1 list-disc list-inside">
+                        {t.raw('services.disclaimers.items').map((item: string, index: number) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </motion.section>
@@ -601,17 +603,17 @@ export default function TermsOfServicePage() {
                   <div className="text-gray-300 leading-relaxed space-y-6">
                     <div className="space-y-4">
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">{t('changes.modificationRights.title')}</h4>
-                        <p className="text-sm">{t('changes.modificationRights.description')}</p>
+                        <h4 className="text-white font-semibold mb-2">{t('changes.modification.title')}</h4>
+                        <p className="text-sm">{t('changes.modification.description')}</p>
                       </div>
 
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('changes.consumerProtection.title')}</h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>{t('changes.consumerProtection.minorChanges.label')}:</strong> {t('changes.consumerProtection.minorChanges.description')}</p>
-                          <p><strong>{t('changes.consumerProtection.substantialChanges.label')}:</strong> {t('changes.consumerProtection.substantialChanges.description')}</p>
-                          <p><strong>{t('changes.consumerProtection.unfavorableChanges.label')}:</strong> {t('changes.consumerProtection.unfavorableChanges.description')}</p>
-                          <p><strong>{t('changes.consumerProtection.continuedUse.label')}:</strong> {t('changes.consumerProtection.continuedUse.description')}</p>
+                          <p>{t('changes.consumerProtection.minorChanges')}</p>
+                          <p>{t('changes.consumerProtection.substantialChanges')}</p>
+                          <p>{t('changes.consumerProtection.unfavorableChanges')}</p>
+                          <p>{t('changes.consumerProtection.continuedUse')}</p>
                         </div>
                       </div>
 
@@ -655,19 +657,19 @@ export default function TermsOfServicePage() {
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('governingLaw.consumerDisputes.title')}</h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>{t('governingLaw.consumerDisputes.firstStep.label')}:</strong> {t('governingLaw.consumerDisputes.firstStep.value')}</p>
-                          <p><strong>{t('governingLaw.consumerDisputes.swedish.label')}:</strong> {t('governingLaw.consumerDisputes.swedish.value')}</p>
-                          <p><strong>{t('governingLaw.consumerDisputes.eu.label')}:</strong> {t('governingLaw.consumerDisputes.eu.value')}</p>
-                          <p><strong>{t('governingLaw.consumerDisputes.general.label')}:</strong> {t('governingLaw.consumerDisputes.general.value')}</p>
+                          <p>{t('governingLaw.consumerDisputes.firstStep')}</p>
+                          <p>{t('governingLaw.consumerDisputes.swedishConsumers')}</p>
+                          <p>{t('governingLaw.consumerDisputes.euConsumers')}</p>
+                          <p>{t('governingLaw.consumerDisputes.generalConsumers')}</p>
                         </div>
                       </div>
 
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('governingLaw.businessDisputes.title')}</h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>{t('governingLaw.businessDisputes.jurisdiction.label')}:</strong> {t('governingLaw.businessDisputes.jurisdiction.value')}</p>
-                          <p><strong>{t('governingLaw.businessDisputes.alternative.label')}:</strong> {t('governingLaw.businessDisputes.alternative.value')}</p>
-                          <p><strong>{t('governingLaw.businessDisputes.language.label')}:</strong> {t('governingLaw.businessDisputes.language.value')}</p>
+                          <p>{t('governingLaw.businessDisputes.jurisdiction')}</p>
+                          <p>{t('governingLaw.businessDisputes.alternativeResolution')}</p>
+                          <p>{t('governingLaw.businessDisputes.language')}</p>
                         </div>
                       </div>
 
@@ -678,8 +680,8 @@ export default function TermsOfServicePage() {
                     </div>
 
                     <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">{t('governingLaw.consumerOverride.title')}</h4>
-                      <p className="text-sm">{t('governingLaw.consumerOverride.description')}</p>
+                      <h4 className="text-white font-semibold mb-2">{t('governingLaw.consumerRightsOverride.title')}</h4>
+                      <p className="text-sm">{t('governingLaw.consumerRightsOverride.description')}</p>
                     </div>
                   </div>
                 </motion.section>
@@ -708,10 +710,6 @@ export default function TermsOfServicePage() {
                               <Mail className="w-4 h-4 text-blue-500" />
                               <span>{t('contact.legal.email')}</span>
                             </div>
-                            <div className="flex items-center gap-3">
-                              <Phone className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.legal.phone')}</span>
-                            </div>
                           </div>
                         </div>
 
@@ -735,13 +733,13 @@ export default function TermsOfServicePage() {
 
                       <div className="space-y-4">
                         <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">{t('contact.consumer.title')}</h4>
+                          <h4 className="text-white font-semibold mb-3">{t('contact.consumerAssistance.title')}</h4>
                           <div className="text-sm space-y-2">
-                            <p>{t('contact.consumer.description')}</p>
+                            <p>{t('contact.consumerAssistance.description')}</p>
                             <div className="space-y-1">
-                              <p><strong>{t('contact.consumer.agencies.swedish.name')}:</strong> {t('contact.consumer.agencies.swedish.website')}</p>
-                              <p><strong>{t('contact.consumer.agencies.eu.name')}:</strong> {t('contact.consumer.agencies.eu.website')}</p>
-                              <p><strong>{t('contact.consumer.agencies.arn.name')}:</strong> {t('contact.consumer.agencies.arn.website')}</p>
+                              <p>{t('contact.consumerAssistance.swedishConsumerAgency')}</p>
+                              <p>{t('contact.consumerAssistance.euODR')}</p>
+                              <p>{t('contact.consumerAssistance.arn')}</p>
                             </div>
                           </div>
                         </div>
@@ -749,9 +747,9 @@ export default function TermsOfServicePage() {
                         <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                           <h4 className="text-white font-semibold mb-3">{t('contact.responseTimes.title')}</h4>
                           <div className="text-sm space-y-1">
-                            <p><strong>{t('contact.responseTimes.legal.type')}:</strong> {t('contact.responseTimes.legal.time')}</p>
-                            <p><strong>{t('contact.responseTimes.general.type')}:</strong> {t('contact.responseTimes.general.time')}</p>
-                            <p><strong>{t('contact.responseTimes.consumer.type')}:</strong> {t('contact.responseTimes.consumer.time')}</p>
+                            <p>{t('contact.responseTimes.legal')}</p>
+                            <p>{t('contact.responseTimes.general')}</p>
+                            <p>{t('contact.responseTimes.consumer')}</p>
                           </div>
                         </div>
                       </div>
@@ -759,17 +757,17 @@ export default function TermsOfServicePage() {
 
                     <div className="grid md:grid-cols-2 gap-4">
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">{t('contact.regulatory.title')}</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('contact.regulatoryInfo.title')}</h4>
                         <div className="text-sm space-y-1">
-                          <p><strong>{t('contact.regulatory.company.type')}:</strong> {t('contact.regulatory.company.office')}</p>
-                          <p><strong>{t('contact.regulatory.vat.type')}:</strong> {t('contact.regulatory.vat.office')}</p>
-                          <p><strong>{t('contact.regulatory.dataProtection.type')}:</strong> {t('contact.regulatory.dataProtection.office')}</p>
+                          <p>{t('contact.regulatoryInfo.companyRegistration')}</p>
+                          <p>{t('contact.regulatoryInfo.vatRegistration')}</p>
+                          <p>{t('contact.regulatoryInfo.dataProtection')}</p>
                         </div>
                       </div>
 
                       <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">{t('contact.effective.title')}</h4>
-                        <p className="text-sm">{t('contact.effective.description')}</p>
+                        <h4 className="text-white font-semibold mb-2">{t('contact.termsEffective.title')}</h4>
+                        <p className="text-sm">{t('contact.termsEffective.description')}</p>
                       </div>
                     </div>
 

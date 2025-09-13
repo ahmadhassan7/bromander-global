@@ -5,7 +5,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useLanguageSwitcher } from '@/hooks/useLanguageSwitcher';
 import LanguageIcon from '@/components/LanguageIcon';
-import { ArrowUpRight, Mail, MapPin, Phone, Globe } from 'lucide-react';
+import { ArrowUpRight, Mail, MapPin, Globe } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -152,14 +152,18 @@ export default function Footer() {
                     <span>{t('contactDetails.email')}</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Phone className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
-                    <span>{t('contactDetails.phone')}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
                     <MapPin className="w-4 h-4 mt-1 text-blue-500 flex-shrink-0" />
                     <span>{t('contactDetails.location')}</span>
                   </li>
                 </ul>
+                {/* Company Registration Info */}
+                <div className="mt-6 pt-6 border-t border-white/10">
+                  <ul className="space-y-2 text-sm text-gray-400">
+                    <li>{t('contactDetails.orgNumber')}</li>
+                    <li>{t('contactDetails.vatNumber')}</li>
+                    <li className="text-blue-400">{t('contactDetails.fSkatt')}</li>
+                  </ul>
+                </div>
               </motion.div>
             </div>
           </div>
@@ -172,38 +176,51 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="pt-8 border-t border-white/10"
         >
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="flex items-center gap-8">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+            {/* Copyright */}
+            <div className="text-center lg:text-left">
               <p className="text-gray-500 text-sm">
-                © {currentYear} Bromander Global. {t('legal.copyright')}
+                {t('legal.copyright')}
               </p>
             </div>
             
-            <div className="flex items-center gap-6 text-sm">
-              <Link href={`/${locale}/privacy`} className="text-gray-500 hover:text-white transition-colors">
-                {t('legal.privacy')}
-              </Link>
-              <Link href={`/${locale}/terms`} className="text-gray-500 hover:text-white transition-colors">
-                {t('legal.terms')}
-              </Link>
-              <Link href={`/${locale}/cookies`} className="text-gray-500 hover:text-white transition-colors">
-                {t('legal.cookies')}
-              </Link>
-              <button 
-                onClick={() => {
-                  if (typeof window !== 'undefined' && window.openCookieSettings) {
-                    window.openCookieSettings();
-                  }
-                }}
-                className="text-gray-500 hover:text-white transition-colors"
-              >
-                {t('legal.cookieSettings')}
-              </button>
-              <div className="flex items-center gap-3">
+            {/* Legal Links and Language Switcher */}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              {/* Legal Links */}
+              <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm">
+                <Link href={`/${locale}/privacy`} className="text-gray-500 hover:text-white transition-colors">
+                  {t('legal.privacy')}
+                </Link>
+                <span className="text-gray-600 hidden sm:inline">•</span>
+                <Link href={`/${locale}/terms`} className="text-gray-500 hover:text-white transition-colors">
+                  {t('legal.terms')}
+                </Link>
+                <span className="text-gray-600 hidden sm:inline">•</span>
+                <Link href={`/${locale}/cookies`} className="text-gray-500 hover:text-white transition-colors">
+                  {t('legal.cookies')}
+                </Link>
+                <span className="text-gray-600 hidden sm:inline">•</span>
+                <button 
+                  onClick={() => {
+                    if (typeof window !== 'undefined' && window.openCookieSettings) {
+                      window.openCookieSettings();
+                    }
+                  }}
+                  className="text-gray-500 hover:text-white transition-colors"
+                >
+                  {t('legal.cookieSettings')}
+                </button>
+              </div>
+              
+              {/* Divider */}
+              <span className="hidden sm:inline text-gray-600">|</span>
+              
+              {/* Language Switcher */}
+              <div className="flex items-center gap-2">
                 <Globe className="w-4 h-4 text-gray-500" />
                 <button 
                   onClick={() => switchLanguage('en')}
-                  className={`flex items-center gap-2 text-sm transition-colors px-2 py-1 rounded ${locale === 'en' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
+                  className={`flex items-center gap-1 text-sm transition-colors px-2 py-1 rounded ${locale === 'en' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
                 >
                   <LanguageIcon language="en" className="w-4 h-3" />
                   <span>EN</span>
@@ -211,7 +228,7 @@ export default function Footer() {
                 <span className="text-gray-600">|</span>
                 <button 
                   onClick={() => switchLanguage('sv')}
-                  className={`flex items-center gap-2 text-sm transition-colors px-2 py-1 rounded ${locale === 'sv' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
+                  className={`flex items-center gap-1 text-sm transition-colors px-2 py-1 rounded ${locale === 'sv' ? 'text-blue-400 bg-blue-500/10' : 'text-gray-500 hover:text-white hover:bg-white/10'}`}
                 >
                   <LanguageIcon language="sv" className="w-4 h-3" />
                   <span>SV</span>

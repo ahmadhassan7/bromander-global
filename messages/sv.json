@@ -6,7 +6,7 @@
   },
   "nav": {
     "home": "Hem",
-    "portfolio": "Portfölj",
+    "portfolio": "Våra tjänster",
     "about": "Om Oss",
     "contact": "Kontakt",
     "language": "Språk",
@@ -19,18 +19,18 @@
     "description": "Ett teknikholdingbolag som äger och driver innovativa digitala produkter. Vi tror på att skapa lösningar som förbättrar mänsklig potential och digital hälsa.",
     "features": {
       "holding": "Teknikholdingbolag",
-      "portfolio": "Produktportföljhantering",
+      "portfolio": "Digital tjänsteutveckling",
       "innovation": "Innovationsinvestering"
     },
     "cta": {
-      "portfolio": "Vår Portfölj",
+      "portfolio": "Våra tjänster",
       "contact": "Kontakta Oss"
     }
   },
   "products": {
     "title": "Ägs Av",
     "subtitle": "Bromander Global",
-    "description": "Innovativa digitala produkter som förbättrar mänsklig potential och företagseffektivitet genom genomtänkt teknik och design.",
+    "description": "Bromander Global AB utvecklar och driver en portfölj av digitala tjänster som förbättrar mänsklig potential och företagseffektivitet genom genomtänkt teknik och design.",
     "values": {
       "privacy": {
         "title": "Integritet Först",
@@ -137,12 +137,14 @@
       "bookkeeping": "Smart Bookkeeping"
     },
     "contactDetails": {
-      "email": "hello@bromanderglobal.com",
-      "phone": "+46 70 123 45 67",
-      "location": "Stockholm, Sverige"
+      "email": "support@bromanderglobal.com",
+      "location": "Örebro, Sverige",
+      "vatNumber": "Momsreg.nr: SE559529787901",
+      "orgNumber": "Org.nr: 559529-7879",
+      "fSkatt": "F-skatteregistrerad"
     },
     "legal": {
-      "copyright": "Alla rättigheter förbehållna.",
+      "copyright": "© 2025 Bromander Global AB",
       "privacy": "Integritetspolicy",
       "terms": "Användarvillkor", 
       "cookies": "Cookie-policy",
@@ -316,12 +318,13 @@
   "bookkeepingPage": {
     "badge": "Smart Ekonomi",
     "hero": {
-      "title1": "Intelligent",
-      "title2": "Bokföring",
-      "description": "Effektivisera din ekonomihantering med AI-driven automatisering, realtidsinsikter och intelligent rapportering.",
+      "badge": "Förklarbar automatisering för Fortnox",
+      "title1": "Automatisera Fortnox-avstämning",
+      "title2": "utan att tappa kontrollen",
+      "description": "Rätta en avvikelse en gång, gör den till en återanvändbar regel. Byggt för komplexa utbetalningar, valuta och moms.",
       "cta": {
-        "primary": "Starta Gratis Provperiod",
-        "secondary": "Se Demo"
+        "primary": "Gå med på väntelistan",
+        "secondary": "Läs mer"
       }
     },
     "marquee": {
@@ -335,43 +338,43 @@
       "timeSaving": "SPARA 10+ TIMMAR VECKOVIS"
     },
     "features": {
-      "badge": "Nästa Generation",
+      "badge": "Undantagsdriven automatisering",
       "title1": "INTELLIGENTA",
       "title2": "FUNKTIONER",
-      "subtitle": "Driven av avancerad AI som lär sig, anpassar sig och utvecklas med ditt företag",
+      "subtitle": "Byggt och hostat i Sverige. Förklarbar automatisering för Fortnox.",
       "aiCategorization": {
-        "title": "AI-Driven Kategorisering",
-        "description": "Vår maskininlärningsmotor analyserar mönster från miljontals transaktioner för att automatiskt kategorisera med 99,9% noggrannhet. Ingen mer manuell sortering.",
+        "title": "Smart Kategorisering",
+        "description": "Undantagsdriven approach. Rätta en gång, tillämpa överallt. Se exakt varför varje regel matchade.",
         "stats": {
-          "accuracy": "Noggrannhet",
-          "timeSaved": "Sparad Tid",
-          "autoLearn": "Auto-Lärande",
-          "accuracyValue": "99,9%",
-          "timeSavedValue": "15tim/vecka",
-          "autoLearnValue": "Alltid"
+          "accuracy": "Plats",
+          "timeSaved": "Bearbetning",
+          "autoLearn": "Regler",
+          "accuracyValue": "Sverige",
+          "timeSavedValue": "Realtid",
+          "autoLearnValue": "Förklarbar"
         }
       },
       "realtimeSync": {
         "title": "Realtidssynkronisering",
-        "description": "Omedelbar synkronisering över alla dina konton och enheter. Se förändringar när de sker."
+        "description": "Direkt Fortnox-integration. Ändringar synkas omedelbart, båda vägarna."
       },
       "bankSecurity": {
-        "title": "Banknivåsäkerhet",
-        "description": "256-bitars kryptering, SOC 2-certifierad och GDPR-kompatibel. Din data är fästningsskyddad."
+        "title": "Svensk Datasäkerhet",
+        "description": "Hostat i Stockholm (AWS eu-north-1). EU-kompatibel. Din data lämnar aldrig Sverige."
       },
       "smartInsights": {
         "title": "Smarta Insikter",
-        "description": "Prediktiv analys som hjälper dig fatta bättre ekonomiska beslut innan problem uppstår."
+        "description": "Tydlig insyn i din automatisering. Förstå varje beslut, spåra varje regel."
       },
       "receiptScanning": {
         "title": "Kvittoskanning",
-        "description": "Peka, fotografera, klart. Vår OCR-teknik extraherar varje detalj från kvitton omedelbart."
+        "description": "Extrahera data från kvitton och fakturor. Mappa till dina regler automatiskt."
       },
       "timeSaving": {
-        "title": "Spara 10+ Timmar",
-        "description": "Varje vecka. Garanterat. Fokusera på tillväxt, inte pappersarbete.",
-        "value": "10t",
-        "unit": "per vecka"
+        "title": "Tid Tillbaka",
+        "description": "Automatisera det repetitiva. Behåll kontrollen över det viktiga.",
+        "value": "Auto",
+        "unit": "alltid på"
       }
     },
     "comingSoon": {
@@ -405,6 +408,38 @@
         "subtitle": "Bli bland de första att uppleva revolutionen",
         "cta": "Reservera Din Plats"
       }
+    },
+    "howItWorks": {
+      "badge": "Enkel Integration",
+      "title1": "Så Fungerar",
+      "title2": "Det",
+      "subtitle": "Byggt och hostat i Sverige. Tre steg till smartare bokföring.",
+      "step1": {
+        "title": "Koppla Fortnox",
+        "description": "Säker API-anslutning. Din data stannar i Sverige.",
+        "pill1": "Svenska Servrar",
+        "pill2": "EU-kompatibel",
+        "pill3": "Säker"
+      },
+      "step2": {
+        "title": "Lägg till Regler",
+        "description": "Enkelt eller Avancerat läge. Bygg regler som anpassar sig till ditt arbetsflöde.",
+        "mode1": "Enkelt",
+        "mode2": "Avancerat"
+      },
+      "step3": {
+        "title": "Bokför Säkert",
+        "description": "Idempotent återskrivning. Säkert, förutsägbart, transparent.",
+        "badge": "Verifierat Säkert"
+      },
+      "bottomTitle": "Intelligenta Funktioner",
+      "bottomDescription": "Byggt och hostat i Sverige (AWS eu-north-1). Varje regel är förklarbar, varje transaktion spårbar. Du behåller kontrollen.",
+      "stat1Label": "Dataplats",
+      "stat1Value": "Sverige",
+      "stat2Label": "Bearbetning",
+      "stat2Value": "Realtid",
+      "stat3Label": "Varje Regel",
+      "stat3Value": "Förklarbar"
     },
     "finalCta": {
       "title1": "BLI FÖRST ATT",
@@ -540,17 +575,17 @@
   "cookieConsent": {
     "banner": {
       "title": "Cookie-samtycke",
-      "description": "Vi använder cookies för att förbättra din surfupplevelse och analysera webbplatstrafik. Genom att klicka på \"Acceptera alla\" samtycker du till vår användning av cookies. Du kan hantera dina inställningar eller läsa mer i vår",
+      "description": "Vi använder cookies för att få webbplatsen att fungera och förbättra din upplevelse. Du kan acceptera alla, avvisa valfria cookies eller välja dina inställningar. Nödvändiga cookies är alltid aktiva. Läs mer i vår",
       "policyLink": "cookie-policy",
       "customize": "Anpassa",
-      "necessaryOnly": "Endast nödvändiga",
+      "necessaryOnly": "Avvisa icke-nödvändiga",
       "acceptAll": "Acceptera alla"
     },
     "settings": {
       "title": "Cookie-inställningar",
       "compliance": {
-        "title": "Svensk lagreglering",
-        "description": "Detta samtyckesformulär följer svensk lag om elektronisk kommunikation och IMY:s riktlinjer för 2025. Dina val respekteras och kan ändras när som helst."
+        "title": "Integritetsefterlevnad",
+        "description": "Detta samtyckesformulär är utformat för att följa principerna i svensk lag om elektronisk kommunikation och IMY:s riktlinjer. Dina val respekteras och kan ändras när som helst."
       },
       "categories": {
         "necessary": {
@@ -572,7 +607,7 @@
         }
       },
       "actions": {
-        "necessaryOnly": "Endast nödvändiga",
+        "necessaryOnly": "Avvisa icke-nödvändiga",
         "savePreferences": "Spara inställningar"
       }
     }
@@ -596,9 +631,9 @@
       "title2": "POLICY",
       "subtitle": "Omfattande dataskydd i enlighet med GDPR, EU-regler och svensk lag",
       "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
-      "gdprCompliant": "GDPR-kompatibel",
+      "gdprCompliant": "Följer GDPR-principer",
       "importantTitle": "Viktig information",
-      "importantDescription": "Denna integritetspolicy är utformad för att följa Dataskyddsförordningen (GDPR), svenska Dataskyddslagen och andra tillämpliga EU-regler. Du har specifika rättigheter gällande dina personuppgifter, och vi är engagerade i att skydda din integritet."
+      "importantDescription": "Denna integritetspolicy är utformad för att följa principerna i Dataskyddsförordningen (GDPR), svenska Dataskyddslagen och andra tillämpliga EU-regler. Du har specifika rättigheter gällande dina personuppgifter, och vi är engagerade i att skydda din integritet."
     },
     "overview": {
       "title": "Personuppgiftsansvarig & Översikt",
@@ -606,13 +641,16 @@
       "company": "Företag:",
       "companyName": "Bromander Global AB",
       "address": "Adress:",
-      "addressValue": "Stockholm, Sverige",
+      "addressValue": "Ringaby 432, 718 92 Frövi",
+      "orgNumber": "Org.nr:",
+      "orgNumberValue": "559529-7879",
+      "vatNumber": "Momsreg.nr:",
+      "vatNumberValue": "SE559529787901",
+      "fSkatt": "Innehar F-skatt",
       "contact": "Kontakt:",
-      "contactEmail": "privacy@bromanderglobal.com",
-      "dpo": "DPO-kontakt:",
-      "dpoEmail": "dpo@bromanderglobal.com",
-      "description1": "Bromander Global AB (\"vi,\" \"vårt,\" eller \"oss\") är ett svenskt teknikbolag registrerat i Stockholm, Sverige. Vi äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Som personuppgiftsansvarig bestämmer vi ändamålen och medlen för behandling av dina personuppgifter.",
-      "description2": "Denna integritetspolicy följer Dataskyddsförordningen (GDPR), svenska Dataskyddslagen (2018:218) och andra tillämpliga EU- och svenska regleringar. Var och en av våra portföljbolag upprätthåller sin egen specifika integritetspolicy för sina respektive produkter och tjänster."
+      "contactEmail": "support@bromanderglobal.com",
+      "description1": "Bromander Global AB (\"vi,\" \"vårt,\" eller \"oss\") är ett svenskt teknikbolag registrerat i Frövi, Sverige. Vi äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Som personuppgiftsansvarig bestämmer vi ändamålen och medlen för behandling av dina personuppgifter.",
+      "description2": "Denna integritetspolicy är utformad för att följa principerna i Dataskyddsförordningen (GDPR), svenska Dataskyddslagen (2018:218) och andra tillämpliga EU- och svenska regleringar. Var och en av våra digitala tjänster kan ha ytterligare specifika integritetsvillkor för sina respektive funktioner."
     },
     "legalBasis": {
       "title": "Rättslig grund för behandling",
@@ -779,8 +817,7 @@
       },
       "howToExercise": {
         "title": "Hur du utövar dina rättigheter",
-        "email": "E-post: privacy@bromanderglobal.com",
-        "phone": "Telefon: +46 70 123 45 67",
+        "email": "E-post: support@bromanderglobal.com",
         "responseTime": "Svarstid: Inom 30 dagar (kan förlängas till 60 dagar för komplexa förfrågningar)",
         "verification": "Vi kan behöva verifiera din identitet innan vi behandlar din förfrågan. Om vi vägrar din förfrågan kommer vi att förklara varför och informera dig om din rätt att klaga till Integritetsskyddsmyndigheten (IMY)."
       }
@@ -899,9 +936,15 @@
         ]
       }
     },
+    "liability": {
+      "title": "Ansvarsbegränsning",
+      "description": "Medan vi tillämpar lämpliga tekniska och organisatoriska säkerhetsåtgärder är inget system helt säkert. Din användning av våra tjänster sker på egen risk.",
+      "disclaimer": "Våra tjänster tillhandahålls 'som de är'. Vi lämnar inga garantier gällande oavbruten eller felfri drift och ansvarar inte för indirekta, tilfälliga eller följdskador. Vi ansvarar inte för tredjepartshandlingar utanför vår kontroll.",
+      "dataBreaches": "I det osannolika fallet av ett dataintrång kommer vi att meddela Integritetsskyddsmyndigheten (IMY) inom 72 timmar och berörda individer utan onödigt dröjsmål, enligt GDPR."
+    },
     "portfolioCompanies": {
-      "title": "Portföljbolagets integritetspolicyer",
-      "description": "Vart och ett av våra portföljbolag verkar självständigt och upprätthåller sin egen omfattande integritetspolicy för sina specifika produkter och tjänster. Dessa policyer följer samma höga standarder som denna policy.",
+      "title": "Våra digitala tjänster",
+      "description": "Bromander Global AB utvecklar och driver dessa digitala tjänster, var och en med specifika integritetsöverväganden:",
       "aiTracker": {
         "title": "AI Reliance Tracker",
         "description": "Integritetsfokuserad digital hälsoplattform med lokal datalagring och noll spårningsfilosofi.",
@@ -916,16 +959,14 @@
     "contact": {
       "title": "Kontakt och support",
       "description": "För frågor om denna integritetspolicy, databehandling eller för att utöva dina rättigheter, vänligen kontakta oss:",
-      "privacy": {
-        "title": "Integritet och dataskydd",
-        "email": "privacy@bromanderglobal.com",
-        "dpo": "dpo@bromanderglobal.com (Dataskyddsombud)"
-      },
       "general": {
         "title": "Allmän kontakt",
-        "phone": "+46 70 123 45 67",
         "company": "Bromander Global AB",
-        "address": "Stockholm, Sverige"
+        "address": "Ringaby 432, 718 92 Frövi",
+        "email": "support@bromanderglobal.com",
+        "orgNumber": "Org.nr: 559529-7879",
+        "vatNumber": "Momsreg.nr: SE559529787901",
+        "fSkatt": "Innehar F-skatt"
       },
       "complaint": {
         "title": "Lämna ett klagomål",
@@ -940,8 +981,8 @@
         "description": "Vi kan uppdatera denna integritetspolicy periodiskt. Väsentliga ändringar kommer att kommuniceras via e-post och framträdande visas på vår webbplats. Fortsatt användning efter ändringar utgör acceptans."
       },
       "quickResponse": {
-        "title": "Snabb svar garanti",
-        "description": "Vi strävar efter att svara på alla integritetsrelaterade förfrågningar inom 5 arbetsdagar och uppfylla förfrågningar om registrerade inom GDPR-mandaterade 30 dagar (förlängningsbar till 60 dagar för komplexa förfrågningar)."
+        "title": "Snabb respons",
+        "description": "Vi strävar efter att svara på alla integritetsrelaterade förfrågningar så snart som rimligen möjligt, och alltid inom den tidsram som krävs enligt lag (vanligtvis 30 dagar, förlängningsbart till 60 dagar för komplexa förfrågningar)."
       }
     }
   },
@@ -964,12 +1005,12 @@
     "header": {
       "title1": "ANVÄNDAR",
       "title2": "VILLKOR",
-      "subtitle": "Omfattande villkor som styr våra tjänster i enlighet med EU:s konsumentskydd och svensk lag",
+      "subtitle": "Villkor som styr våra tjänster, utformade för att följa EU:s konsumentskydd och svensk lag",
       "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
       "euCompliant": "EU-kompatibel",
       "swedishLaw": "Svensk lag",
       "importantTitle": "Viktig juridisk information",
-      "importantDescription": "Dessa villkor följer EU:s direktiv för konsumentskydd, svenska lagen om konsumentavtal och övervakas av Konsumentverket. Dina konsumenträttigheter är skyddade under svensk och EU-lag."
+      "importantDescription": "Dessa villkor är utformade för att följa EU:s direktiv för konsumentskydd och svenska lagen om konsumentavtal. Dina konsumenträttigheter är skyddade under svensk och EU-lag."
     },
     "overview": {
       "title": "Företagsinformation och översikt",
@@ -977,16 +1018,14 @@
       "company": "Företag:",
       "companyName": "Bromander Global AB",
       "registrationNumber": "Registreringsnummer:",
-      "registrationValue": "[Svenskt företagsregistreringsnummer]",
+      "registrationValue": "559529-7879",
       "address": "Adress:",
-      "addressValue": "Stockholm, Sverige",
+      "addressValue": "Ringaby 432, 718 92 Frövi",
       "email": "E-post:",
-      "emailValue": "legal@bromanderglobal.com",
-      "phone": "Telefon:",
-      "phoneValue": "+46 70 123 45 67",
+      "emailValue": "support@bromanderglobal.com",
       "vatNumber": "Momsregistreringsnummer:",
-      "vatValue": "SE[Momsregistreringsnummer]",
-      "description1": "Bromander Global AB är ett svenskt teknikholdingbolag som äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Vi tillhandahåller företagsinformationstjänster och fungerar som holdingbolag för vår portfölj av teknikföretag.",
+      "vatValue": "SE559529787901",
+      "description1": "Bromander Global AB utvecklar och driver digitala tjänster inklusive AI Reliance Tracker (tillgänglig nu) och Smart Bookkeeping (under utveckling). Vi tillhandahåller digitala tjänster som förbättrar mänsklig potential och företagseffektivitet.",
       "description2": "Dessa användarvillkor (\"Villkor\") utgör ett juridiskt bindande avtal mellan dig (\"Användare,\" \"du,\" eller \"din\") och Bromander Global AB gällande din användning av vår webbplats, tjänster och allt relaterat innehåll eller material."
     },
     "definitions": {
@@ -1056,12 +1095,22 @@
           "Konsoliderad integritets- och juridisk information"
         ]
       },
-      "portfolioCompanies": {
-        "title": "Portföljföretag",
-        "description": "Varje portföljföretag verkar självständigt med separata villkor:",
-        "aiTracker": "AI Reliance Tracker: Digital hälsoplattform",
-        "smartBookkeeping": "Smart Bookkeeping: Finansiell förvaltningsplattform",
+      "digitalServices": {
+        "title": "Digitala tjänster",
+        "description": "Våra tjänster inkluderar:",
+        "aiTracker": "AI Reliance Tracker: Digital hälsoplattform (endast informationsändamål, inte medicinsk eller psykologisk rådgivning)",
+        "smartBookkeeping": "Smart Bookkeeping: Finansiell förvaltningsplattform (utformad för att hjälpa till med bokföring, inte en ersättning för professionell redovisnings- eller juridisk rådgivning)",
         "termsLink": "Villkor"
+      },
+      "disclaimers": {
+        "title": "Tjänstefriskrivningar",
+        "items": [
+          "Våra tjänster tillhandahålls 'som de är' utan garantier av något slag",
+          "Vi garanterar inte oavbruten eller felfri drift",
+          "AI Reliance Tracker är endast för informationsändamål, inte medicinsk rådgivning",
+          "Smart Bookkeeping hjälper till med bokföring men är inte en ersättning för professionell redovisningsrådgivning",
+          "Vi kan ändra, avbryta eller upphöra med tjänster när som helst utan ansvar"
+        ]
       }
     },
     "userObligations": {
@@ -1326,14 +1375,16 @@
       "description": "För frågor om dessa användarvillkor eller juridiska frågor, vänligen kontakta oss:",
       "legal": {
         "title": "Juridik och villkor",
-        "email": "legal@bromanderglobal.com",
-        "phone": "+46 70 123 45 67 (Kontorstid)"
+        "email": "support@bromanderglobal.com"
       },
       "general": {
         "title": "Allmänna förfrågningar",
-        "email": "hello@bromanderglobal.com",
+        "email": "support@bromanderglobal.com",
         "company": "Bromander Global AB",
-        "address": "Stockholm, Sverige"
+        "address": "Ringaby 432, 718 92 Frövi",
+        "orgNumber": "Org.nr: 559529-7879",
+        "vatNumber": "Momsreg.nr: SE559529787901",
+        "fSkatt": "Innehar F-skatt"
       },
       "consumerAssistance": {
         "title": "Konsumenthjälp",
@@ -1380,12 +1431,12 @@
     "header": {
       "title1": "COOKIE",
       "title2": "POLICY",
-      "subtitle": "Omfattande cookie-användning och samtyckehantering i enlighet med EU:s e-integritetsdirektiv och svensk lag",
+      "subtitle": "Cookie-användning och samtyckehantering utformad för att följa EU:s e-integritetsdirektiv och svensk lag",
       "lastUpdated": "Senast uppdaterad: 29 augusti 2025",
-      "ePrivacyCompliant": "e-Integritet-kompatibel",
-      "ptsApproved": "PTS-godkänd",
+      "ePrivacyAligned": "Följer e-integritetsprinciper",
+      "ptsGuidelines": "Följer PTS-riktlinjer",
       "importantTitle": "Cookie-samtyckesmeddelande",
-      "importantDescription": "Denna policy följer EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation (ECA). Post- och telestyrelsen (PTS) övervakar efterlevnad. Dina samtycke val respekteras och kan ändras när som helst."
+      "importantDescription": "Denna policy är utformad för att följa EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation (LEK). Vi strävar efter att hålla oss uppdaterade med framtida IMY- och EU-vägledning. Dina samtyckesval respekteras och kan ändras när som helst."
     },
     "overview": {
       "title": "Controllerinformation och översikt",
@@ -1393,15 +1444,15 @@
       "company": "Företag:",
       "companyName": "Bromander Global AB",
       "address": "Adress:",
-      "addressValue": "Stockholm, Sverige",
+      "addressValue": "Ringaby 432, 718 92 Frövi",
       "contact": "Kontakt:",
-      "contactEmail": "cookies@bromanderglobal.com",
+      "contactEmail": "support@bromanderglobal.com",
       "dpo": "DPO:",
       "dpoEmail": "dpo@bromanderglobal.com",
       "supervisoryAuthority": "Tillsynsmyndighet:",
       "supervisoryValue": "Post- och telestyrelsen (PTS)",
-      "description1": "Denna cookie-policy förklarar hur Bromander Global AB använder cookies och liknande teknologier på vår företagswebbplats. Vi är engagerade i transparens och efterlevnad av EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation.",
-      "description2": "Vart och ett av våra portföljföretag (AI Reliance Tracker, Smart Bookkeeping) upprätthåller sin egen cookie-policy för sina respektive tjänster. Denna policy täcker endast Bromander Globals företagswebbplats."
+      "description1": "Denna cookie-policy förklarar hur Bromander Global AB använder cookies och liknande teknologier på vår webbplats. Vi är engagerade i transparens och att följa principerna i EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation.",
+      "description2": "Våra digitala tjänster (AI Reliance Tracker, Smart Bookkeeping) kan ha ytterligare cookie-överväganden för sina specifika funktioner. Denna policy täcker Bromander Global-webbplatsen."
     },
     "whatAreCookies": {
       "title": "Vad är cookies och liknande teknologier?",
@@ -1744,7 +1795,7 @@
       "generalSupport": {
         "title": "Allmän support",
         "company": "Bromander Global AB",
-        "address": "Stockholm, Sverige"
+        "address": "Örebro, Sverige"
       },
       "regulatoryAuthorities": {
         "title": "Reglerande myndigheter",

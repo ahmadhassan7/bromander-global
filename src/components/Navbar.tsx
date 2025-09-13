@@ -49,7 +49,7 @@ const useNavigation = () => {
   ];
 };
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({ isMobile = false }) => {
   const { switchLanguage, currentLocale } = useLanguageSwitcher();
   const t = useTranslations('nav');
   const [isOpen, setIsOpen] = useState(false);
@@ -72,6 +72,56 @@ const LanguageSwitcher = () => {
     return currentLocale === 'sv' ? t('swedish') : t('english');
   };
   
+  if (isMobile) {
+    return (
+      <div className="w-full">
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-full flex items-center justify-between px-4 py-3 hover:bg-white/10 transition-colors rounded-lg"
+        >
+          <div className="flex items-center space-x-3">
+            <LanguageIcon language={getCurrentLanguageCode()} className="w-5 h-4" />
+            <span className="font-medium text-white uppercase tracking-wider">
+              {t('language')}
+            </span>
+          </div>
+          <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        </button>
+        
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="overflow-hidden"
+            >
+              <div className="pl-6 space-y-2 mt-2">
+                <button
+                  onClick={() => handleLanguageSwitch('en')}
+                  className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-white/10 transition-colors ${currentLocale === 'en' ? 'text-blue-400 bg-blue-500/10' : 'text-white'}`}
+                >
+                  <LanguageIcon language="en" className="w-5 h-4" />
+                  <span className="font-medium">{t('english')}</span>
+                  {currentLocale === 'en' && <div className="w-2 h-2 bg-blue-400 rounded-full ml-auto" />}
+                </button>
+                <button
+                  onClick={() => handleLanguageSwitch('sv')}
+                  className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg hover:bg-white/10 transition-colors ${currentLocale === 'sv' ? 'text-blue-400 bg-blue-500/10' : 'text-white'}`}
+                >
+                  <LanguageIcon language="sv" className="w-5 h-4" />
+                  <span className="font-medium">{t('swedish')}</span>
+                  {currentLocale === 'sv' && <div className="w-2 h-2 bg-blue-400 rounded-full ml-auto" />}
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  }
+  
   return (
     <div className="relative">
       <button 
@@ -90,7 +140,7 @@ const LanguageSwitcher = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.2 }}
-            className="absolute top-full left-0 mt-2 w-44 glass-dark p-2 rounded-lg border border-white/10"
+            className="absolute top-full right-0 mt-2 w-44 glass-dark p-2 rounded-lg border border-white/10"
           >
             <button
               onClick={() => handleLanguageSwitch('en')}
@@ -308,9 +358,7 @@ export default function Navbar() {
               
               {/* Mobile Language Switcher */}
               <div className="pt-4 border-t border-white/10">
-                <div className="px-4 py-3">
-                  <LanguageSwitcher />
-                </div>
+                <LanguageSwitcher isMobile={true} />
               </div>
             </div>
           </motion.div>

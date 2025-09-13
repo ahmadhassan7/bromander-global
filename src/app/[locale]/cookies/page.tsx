@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cookie, Settings, Eye, Shield, BarChart3, Globe, Clock, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Database, AlertCircle, Ban, Lock, FileText, Building, Share } from 'lucide-react';
+import { Cookie, Settings, Eye, Shield, BarChart3, Globe, Clock, CheckCircle, Mail, MapPin, Gavel, UserCheck, Database, AlertCircle, Ban, Lock, FileText, Building, Share } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -85,11 +85,11 @@ export default function CookiePolicyPage() {
                 </div>
                 <div className="flex items-center gap-2 text-green-500">
                   <CheckCircle className="w-4 h-4" />
-                  <span>{t('header.ePrivacyCompliant')}</span>
+                  <span>{t('header.ePrivacyAligned')}</span>
                 </div>
                 <div className="flex items-center gap-2 text-blue-500">
                   <Shield className="w-4 h-4" />
-                  <span>{t('header.ptsApproved')}</span>
+                  <span>{t('header.ptsGuidelines')}</span>
                 </div>
               </div>
             </motion.div>
@@ -131,11 +131,10 @@ export default function CookiePolicyPage() {
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                       <h3 className="text-white font-semibold mb-2">{t('overview.controllerTitle')}</h3>
                       <div className="text-sm space-y-1">
-                        <p><strong>{t('overview.company')}:</strong> Bromander Global AB</p>
-                        <p><strong>{t('overview.address')}:</strong> Stockholm, Sweden</p>
-                        <p><strong>{t('overview.contact')}:</strong> cookies@bromanderglobal.com</p>
-                        <p><strong>{t('overview.dpo')}:</strong> dpo@bromanderglobal.com</p>
-                        <p><strong>{t('overview.supervisoryAuthority')}:</strong> Swedish Post and Telecom Authority (PTS)</p>
+                        <p><strong>{t('overview.company')}:</strong> {t('overview.companyName')}</p>
+                        <p><strong>{t('overview.address')}:</strong> {t('overview.addressValue')}</p>
+                        <p><strong>{t('overview.contact')}:</strong> {t('overview.contactEmail')}</p>
+                        <p><strong>{t('overview.supervisoryAuthority')}:</strong> {t('overview.supervisoryValue')}</p>
                       </div>
                     </div>
                     <p>
@@ -742,15 +741,7 @@ export default function CookiePolicyPage() {
                           <div className="space-y-2 text-sm">
                             <div className="flex items-center gap-3">
                               <Mail className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.cookieInquiries.cookieEmail')}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <Mail className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.cookieInquiries.dpoEmail')}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <Phone className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.cookieInquiries.phone')}</span>
+                              <span>support@bromanderglobal.com</span>
                             </div>
                           </div>
                         </div>
@@ -799,7 +790,7 @@ export default function CookiePolicyPage() {
 
                     <div className="space-y-4">
                       <div className="bg-purple-500/10 border border-purple-500/20 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2">{t('contact.preferenceManagement.title')}</h4>
+                        <h4 className="text-white font-semibold mb-2">{t('contact.cookieManagement.title')}</h4>
                         <div className="flex items-center gap-4">
                           <button 
                             onClick={() => {
@@ -810,12 +801,12 @@ export default function CookiePolicyPage() {
                             className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white text-sm transition-colors flex items-center gap-2"
                           >
                             <Settings className="w-4 h-4" />
-{t('contact.preferenceManagement.openSettings')}
+{t('contact.cookieManagement.openSettings')}
                           </button>
                           <button 
                             onClick={() => {
                               if (typeof window !== 'undefined' && (window as unknown as { resetAllCookies?: () => void }).resetAllCookies) {
-                                if (confirm(t('contact.preferenceManagement.resetConfirmation'))) {
+                                if (confirm(t('contact.cookieManagement.resetConfirm'))) {
                                   (window as unknown as { resetAllCookies: () => void }).resetAllCookies();
                                 }
                               }
@@ -823,7 +814,7 @@ export default function CookiePolicyPage() {
                             className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded text-white text-sm transition-colors flex items-center gap-2"
                           >
                             <Ban className="w-4 h-4" />
-{t('contact.preferenceManagement.resetCookies')}
+{t('contact.cookieManagement.resetCookies')}
                           </button>
                         </div>
                       </div>
@@ -837,9 +828,9 @@ export default function CookiePolicyPage() {
                     </div>
 
                     <div className="bg-gradient-to-r from-green-500/10 to-blue-500/10 border border-green-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">{t('contact.effective.title')}</h4>
+                      <h4 className="text-white font-semibold mb-2">{t('contact.policyEffective.title')}</h4>
                       <p className="text-sm">
-                        {t('contact.effective.description')}
+                        {t('contact.policyEffective.description')}
                       </p>
                     </div>
                   </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Shield, Eye, Lock, Globe, FileText, Users, Clock, AlertCircle, CheckCircle, Mail, Phone, MapPin, ExternalLink, Gavel, UserCheck, Database, Settings, Share } from 'lucide-react';
+import { Shield, Eye, Lock, Globe, FileText, Users, Clock, AlertCircle, CheckCircle, Mail, MapPin, ExternalLink, Gavel, UserCheck, Database, Settings, Share } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
@@ -126,12 +126,16 @@ export default function PrivacyPolicyPage() {
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-4">
                     <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
-                      <h3 className="text-white font-semibold mb-2">{t('overview.controllerTitle')}</h3>
-                      <div className="text-sm space-y-1">
+                      <h3 className="text-white font-semibold mb-3">{t('overview.controllerTitle')}</h3>
+                      <div className="text-sm space-y-2">
                         <p><strong>{t('overview.company')}</strong> {t('overview.companyName')}</p>
                         <p><strong>{t('overview.address')}</strong> {t('overview.addressValue')}</p>
-                        <p><strong>{t('overview.contact')}</strong> {t('overview.contactEmail')}</p>
-                        <p><strong>{t('overview.dpo')}</strong> {t('overview.dpoEmail')}</p>
+                        <p><strong>{t('overview.orgNumber')}</strong> {t('overview.orgNumberValue')}</p>
+                        <p><strong>{t('overview.vatNumber')}</strong> {t('overview.vatNumberValue')}</p>
+                        <p className="text-blue-400 font-medium">{t('overview.fSkatt')}</p>
+                        <div className="mt-3 pt-3 border-t border-white/10">
+                          <p><strong>{t('overview.contact')}</strong> {t('overview.contactEmail')}</p>
+                        </div>
                       </div>
                     </div>
                     <p>
@@ -429,10 +433,6 @@ export default function PrivacyPolicyPage() {
                           <Mail className="w-5 h-5 text-blue-500" />
                           <span>{t('yourRights.howToExercise.email')}</span>
                         </div>
-                        <div className="flex items-center gap-3">
-                          <Phone className="w-5 h-5 text-blue-500" />
-                          <span>{t('yourRights.howToExercise.phone')}</span>
-                        </div>
                         <div className="flex items-start gap-3">
                           <Clock className="w-5 h-5 text-blue-500 mt-0.5" />
                           <div>
@@ -683,32 +683,23 @@ export default function PrivacyPolicyPage() {
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-4">
                         <div className="bg-white/[0.02] border border-white/10 rounded-lg p-4">
-                          <h4 className="text-white font-semibold mb-3">{t('contact.privacy.title')}</h4>
-                          <div className="space-y-2 text-sm">
-                            <div className="flex items-center gap-3">
-                              <Mail className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.privacy.email')}</span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <Mail className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.privacy.dpo')}</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="bg-white/[0.02] border border-white/10 rounded-lg p-4">
                           <h4 className="text-white font-semibold mb-3">{t('contact.general.title')}</h4>
                           <div className="space-y-2 text-sm">
-                            <div className="flex items-center gap-3">
-                              <Phone className="w-4 h-4 text-blue-500" />
-                              <span>{t('contact.general.phone')}</span>
-                            </div>
                             <div className="flex items-start gap-3">
                               <MapPin className="w-4 h-4 text-blue-500 mt-0.5" />
                               <div>
-                                <p>{t('contact.general.company')}</p>
+                                <p className="font-medium">{t('contact.general.company')}</p>
                                 <p>{t('contact.general.address')}</p>
                               </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                              <Mail className="w-4 h-4 text-blue-500" />
+                              <span>{t('contact.general.email')}</span>
+                            </div>
+                            <div className="mt-3 pt-3 border-t border-white/10 space-y-1">
+                              <p className="text-gray-400">{t('contact.general.orgNumber')}</p>
+                              <p className="text-gray-400">{t('contact.general.vatNumber')}</p>
+                              <p className="text-blue-400 font-medium">{t('contact.general.fSkatt')}</p>
                             </div>
                           </div>
                         </div>
@@ -726,7 +717,6 @@ export default function PrivacyPolicyPage() {
                               <p><strong>{t('contact.complaint.authority')}</strong></p>
                               <p>Website: {t('contact.complaint.website')}</p>
                               <p>Email: {t('contact.complaint.email')}</p>
-                              <p>Phone: {t('contact.complaint.phone')}</p>
                             </div>
                           </div>
                         </div>
