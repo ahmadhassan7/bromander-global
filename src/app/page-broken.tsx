@@ -28,7 +28,7 @@ const testimonials = [
   {
     name: 'Sarah Johnson',
     role: 'CEO at TechFlow',
-    content: 'AI Reliance Tracker has helped our team maintain better digital wellness and cognitive independence. Incredible product.',
+    content: 'Shinery has helped our team maintain better digital wellness and cognitive independence. Incredible product.',
     rating: 5,
   },
   {
@@ -416,7 +416,7 @@ export default function Home() {
           </motion.div>
 
           <div className="max-w-6xl mx-auto">
-            {/* AI Reliance Tracker Card */}
+            {/* Shinery Card */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -454,7 +454,7 @@ export default function Home() {
                     </div>
 
                     <Link 
-                      href="/products/ai-tracker" 
+                      href="/products/shinery" 
                       className="inline-flex items-center gap-3 text-purple-500 font-bold uppercase tracking-wider hover:gap-5 transition-all group/link"
                     >
                       <span>Explore Product</span>

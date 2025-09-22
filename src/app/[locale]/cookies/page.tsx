@@ -226,14 +226,13 @@ export default function CookiePolicyPage() {
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2 flex items-center gap-2">
                           <UserCheck className="w-4 h-4" />
-                          Prior Consent Required (ePrivacy Directive)
+                          {t('legalBasis.consentRequired.title')}
                         </h4>
                         <p className="text-sm mb-2">All other cookies require explicit consent before placement:</p>
                         <ul className="text-sm space-y-1 list-disc list-inside">
-                          <li>Analytics and performance cookies</li>
-                          <li>Marketing and advertising cookies</li>
-                          <li>Social media integration cookies</li>
-                          <li>Third-party tracking cookies</li>
+                          {t.raw('legalBasis.consentRequired.items').map((item: string, index: number) => (
+                            <li key={index}>{item}</li>
+                          ))}
                         </ul>
                       </div>
 
@@ -514,10 +513,10 @@ export default function CookiePolicyPage() {
                       <div className="bg-orange-500/10 border border-orange-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('yourRights.cookieImpact.title')}</h4>
                         <div className="text-sm space-y-1">
-                          <p><strong>Essential:</strong> {t('yourRights.cookieImpact.essential')}</p>
-                          <p><strong>Analytics:</strong> {t('yourRights.cookieImpact.analytics')}</p>
-                          <p><strong>Functional:</strong> {t('yourRights.cookieImpact.functional')}</p>
-                          <p><strong>Marketing:</strong> {t('yourRights.cookieImpact.marketing')}</p>
+                          <p>{t('yourRights.cookieImpact.essential')}</p>
+                          <p>{t('yourRights.cookieImpact.analytics')}</p>
+                          <p>{t('yourRights.cookieImpact.functional')}</p>
+                          <p>{t('yourRights.cookieImpact.marketing')}</p>
                         </div>
                       </div>
                     </div>
@@ -581,7 +580,7 @@ export default function CookiePolicyPage() {
                         </div>
                       </div>
 
-                      {/* Analytics Cookies */}
+                      {/* {t('cookieTypes.analytics.title')} */}
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
                           <BarChart3 className="w-4 h-4" />
@@ -645,10 +644,10 @@ export default function CookiePolicyPage() {
 {t('dataSecurity.dataRetention.title')}
                         </h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>Session Cookies:</strong> {t('dataSecurity.dataRetention.sessionCookies')}</p>
-                          <p><strong>Persistent Cookies:</strong> {t('dataSecurity.dataRetention.persistentCookies')}</p>
-                          <p><strong>Analytics Data:</strong> {t('dataSecurity.dataRetention.analyticsData')}</p>
-                          <p><strong>Consent Records:</strong> {t('dataSecurity.dataRetention.consentRecords')}</p>
+                          <p>{t('dataSecurity.dataRetention.sessionCookies')}</p>
+                          <p>{t('dataSecurity.dataRetention.persistentCookies')}</p>
+                          <p>{t('dataSecurity.dataRetention.analyticsData')}</p>
+                          <p>{t('dataSecurity.dataRetention.consentRecords')}</p>
                         </div>
                       </div>
 
@@ -685,20 +684,20 @@ export default function CookiePolicyPage() {
                       <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('policyUpdates.updateProcess.title')}</h4>
                         <div className="text-sm space-y-2">
-                          <p><strong>Minor Changes:</strong> {t('policyUpdates.updateProcess.minorChanges')}</p>
-                          <p><strong>Material Changes:</strong> {t('policyUpdates.updateProcess.materialChanges')}</p>
-                          <p><strong>New Cookie Categories:</strong> {t('policyUpdates.updateProcess.newCookieCategories')}</p>
-                          <p><strong>Version History:</strong> {t('policyUpdates.updateProcess.versionHistory')}</p>
+                          <p>{t('policyUpdates.updateProcess.minorChanges')}</p>
+                          <p>{t('policyUpdates.updateProcess.materialChanges')}</p>
+                          <p>{t('policyUpdates.updateProcess.newCookieCategories')}</p>
+                          <p>{t('policyUpdates.updateProcess.versionHistory')}</p>
                         </div>
                       </div>
 
                       <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-4">
                         <h4 className="text-white font-semibold mb-2">{t('policyUpdates.regulatoryCompliance.title')}</h4>
                         <div className="text-sm space-y-1">
-                          <p><strong>EU ePrivacy Directive:</strong> {t('policyUpdates.regulatoryCompliance.ePrivacyDirective')}</p>
-                          <p><strong>GDPR:</strong> {t('policyUpdates.regulatoryCompliance.gdpr')}</p>
-                          <p><strong>Swedish Authorities:</strong> {t('policyUpdates.regulatoryCompliance.swedishAuthorities')}</p>
-                          <p><strong>2025 Guidelines:</strong> {t('policyUpdates.regulatoryCompliance.guidelines2025')}</p>
+                          <p>{t('policyUpdates.regulatoryCompliance.ePrivacyDirective')}</p>
+                          <p>{t('policyUpdates.regulatoryCompliance.gdpr')}</p>
+                          <p>{t('policyUpdates.regulatoryCompliance.swedishAuthorities')}</p>
+                          <p>{t('policyUpdates.regulatoryCompliance.guidelines2025')}</p>
                         </div>
                       </div>
 

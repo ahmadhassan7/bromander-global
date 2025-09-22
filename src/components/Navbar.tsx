@@ -32,7 +32,7 @@ const useNavigation = () => {
       dropdown: [
         { 
           name: tProducts('aiTracker.name'), 
-          href: `/${locale}/products/ai-tracker`, 
+          href: `/${locale}/products/shinery`, 
           icon: Brain,
           description: tProducts('aiTracker.shortDescription')
         },

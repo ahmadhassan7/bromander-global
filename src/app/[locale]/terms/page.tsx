@@ -456,9 +456,9 @@ export default function TermsOfServicePage() {
                         </h4>
                         <p className="text-sm mb-2">{t('consumerRights.withdrawal.description')}</p>
                         <div className="text-sm space-y-1">
-                          <p><strong>How to withdraw:</strong> {t('consumerRights.withdrawal.howTo')}</p>
-                          <p><strong>Deadline:</strong> {t('consumerRights.withdrawal.deadline')}</p>
-                          <p><strong>Effects:</strong> {t('consumerRights.withdrawal.effects')}</p>
+                          <p>{t('consumerRights.withdrawal.howTo')}</p>
+                          <p>{t('consumerRights.withdrawal.deadline')}</p>
+                          <p>{t('consumerRights.withdrawal.effects')}</p>
                         </div>
                       </div>
 
@@ -481,9 +481,9 @@ export default function TermsOfServicePage() {
                         <h4 className="text-white font-semibold mb-2">{t('consumerRights.disputes.title')}</h4>
                         <p className="text-sm mb-2">{t('consumerRights.disputes.description')}</p>
                         <ul className="text-sm space-y-1">
-                          <li><strong>Swedish Consumer Agency:</strong> {t('consumerRights.disputes.swedishConsumerAgency')}</li>
-                          <li><strong>EU Online Dispute Resolution:</strong> {t('consumerRights.disputes.euODR')}</li>
-                          <li><strong>National Board for Consumer Disputes:</strong> {t('consumerRights.disputes.arn')}</li>
+                          <li>{t('consumerRights.disputes.swedishConsumerAgency')}</li>
+                          <li>{t('consumerRights.disputes.euODR')}</li>
+                          <li>{t('consumerRights.disputes.arn')}</li>
                         </ul>
                       </div>
                     </div>
@@ -504,8 +504,8 @@ export default function TermsOfServicePage() {
                   </div>
                   <div className="text-gray-300 leading-relaxed space-y-6">
                     <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
-                      <h4 className="text-white font-semibold mb-2">Consumer Rights Override</h4>
-                      <p className="text-sm">Nothing in these Terms limits your statutory consumer rights under Swedish or EU law. In case of conflict, consumer protection laws take precedence.</p>
+                      <h4 className="text-white font-semibold mb-2">{t('liability.consumerRightsOverride.title')}</h4>
+                      <p className="text-sm">{t('liability.consumerRightsOverride.description')}</p>
                     </div>
                     
                     <div className="space-y-4">

@@ -99,7 +99,7 @@ export default function Footer() {
                 <h3 className="text-white font-bold text-sm tracking-wider mb-6">{t('products')}</h3>
                 <ul className="space-y-4">
                   <li>
-                    <Link href={`/${locale}/products/ai-tracker`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
+                    <Link href={`/${locale}/products/shinery`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
                       {t('links.aiTracker')}
                       <ArrowUpRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>

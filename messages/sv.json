@@ -1,8 +1,8 @@
 {
   "site": {
     "title": "Bromander Global | Innovativa Lösningar för Moderna Företag",
-    "description": "Bromander Global levererar banbrytande produkter inklusive AI Reliance Tracker och Smart Bookkeeping-app. Ger företag kraft genom teknik som transformerar hur du arbetar.",
-    "keywords": "Bromander Global, AI Reliance Tracker, Smart Bookkeeping, företagslösningar, digital hälsa, automatisering"
+    "description": "Bromander Global levererar banbrytande produkter inklusive Shinery och Smart Bookkeeping-app. Ger företag kraft genom teknik som transformerar hur du arbetar.",
+    "keywords": "Bromander Global, Shinery, Smart Bookkeeping, företagslösningar, digital hälsa, automatisering"
   },
   "nav": {
     "home": "Hem",
@@ -47,7 +47,7 @@
     },
     "learnMore": "Läs mer om vårt uppdrag",
     "aiTracker": {
-      "name": "AI Reliance Tracker",
+      "name": "Shinery",
       "tagline": "Digital Hälsoverktyg",
       "description": "Övervaka dina AI-användningsmönster och upprätthåll hälsosamma teknikrelationer med vårt integritetscentrerade spårningssystem.",
       "shortDescription": "Digital hälsa och medveten AI-användning",
@@ -133,7 +133,7 @@
       "home": "Hem",
       "about": "Om Oss",
       "contact": "Kontakt",
-      "aiTracker": "AI Reliance Tracker",
+      "aiTracker": "Shinery",
       "bookkeeping": "Smart Bookkeeping"
     },
     "contactDetails": {
@@ -153,7 +153,7 @@
   },
   "scrollItems": {
     "technologyHolding": "Teknikholdingbolag",
-    "aiTracker": "AI Tracker",
+    "aiTracker": "Shinery",
     "smartBookkeeping": "Smart Bokföring",
     "strategicOwnership": "Strategiskt Ägande",
     "sustainableGrowth": "Hållbar Tillväxt",
@@ -649,7 +649,7 @@
       "fSkatt": "Innehar F-skatt",
       "contact": "Kontakt:",
       "contactEmail": "support@bromanderglobal.com",
-      "description1": "Bromander Global AB (\"vi,\" \"vårt,\" eller \"oss\") är ett svenskt teknikbolag registrerat i Frövi, Sverige. Vi äger och driver digitala produkter inklusive AI Reliance Tracker och Smart Bookkeeping. Som personuppgiftsansvarig bestämmer vi ändamålen och medlen för behandling av dina personuppgifter.",
+      "description1": "Bromander Global AB (\"vi,\" \"vårt,\" eller \"oss\") är ett svenskt teknikbolag registrerat i Frövi, Sverige. Vi äger och driver digitala produkter inklusive Shinery och Smart Bookkeeping. Som personuppgiftsansvarig bestämmer vi ändamålen och medlen för behandling av dina personuppgifter.",
       "description2": "Denna integritetspolicy är utformad för att följa principerna i Dataskyddsförordningen (GDPR), svenska Dataskyddslagen (2018:218) och andra tillämpliga EU- och svenska regleringar. Var och en av våra digitala tjänster kan ha ytterligare specifika integritetsvillkor för sina respektive funktioner."
     },
     "legalBasis": {
@@ -946,7 +946,7 @@
       "title": "Våra digitala tjänster",
       "description": "Bromander Global AB utvecklar och driver dessa digitala tjänster, var och en med specifika integritetsöverväganden:",
       "aiTracker": {
-        "title": "AI Reliance Tracker",
+        "title": "Shinery",
         "description": "Integritetsfokuserad digital hälsoplattform med lokal datalagring och noll spårningsfilosofi.",
         "link": "Visa integritetspolicy"
       },
@@ -1025,7 +1025,7 @@
       "emailValue": "support@bromanderglobal.com",
       "vatNumber": "Momsregistreringsnummer:",
       "vatValue": "SE559529787901",
-      "description1": "Bromander Global AB utvecklar och driver digitala tjänster inklusive AI Reliance Tracker (tillgänglig nu) och Smart Bookkeeping (under utveckling). Vi tillhandahåller digitala tjänster som förbättrar mänsklig potential och företagseffektivitet.",
+      "description1": "Bromander Global AB utvecklar och driver digitala tjänster inklusive Shinery (tillgänglig nu) och Smart Bookkeeping (under utveckling). Vi tillhandahåller digitala tjänster som förbättrar mänsklig potential och företagseffektivitet.",
       "description2": "Dessa användarvillkor (\"Villkor\") utgör ett juridiskt bindande avtal mellan dig (\"Användare,\" \"du,\" eller \"din\") och Bromander Global AB gällande din användning av vår webbplats, tjänster och allt relaterat innehåll eller material."
     },
     "definitions": {
@@ -1098,7 +1098,7 @@
       "digitalServices": {
         "title": "Digitala tjänster",
         "description": "Våra tjänster inkluderar:",
-        "aiTracker": "AI Reliance Tracker: Digital hälsoplattform (endast informationsändamål, inte medicinsk eller psykologisk rådgivning)",
+        "aiTracker": "Shinery: Digital hälsoplattform (endast informationsändamål, inte medicinsk eller psykologisk rådgivning)",
         "smartBookkeeping": "Smart Bookkeeping: Finansiell förvaltningsplattform (utformad för att hjälpa till med bokföring, inte en ersättning för professionell redovisnings- eller juridisk rådgivning)",
         "termsLink": "Villkor"
       },
@@ -1107,7 +1107,7 @@
         "items": [
           "Våra tjänster tillhandahålls 'som de är' utan garantier av något slag",
           "Vi garanterar inte oavbruten eller felfri drift",
-          "AI Reliance Tracker är endast för informationsändamål, inte medicinsk rådgivning",
+          "Shinery är endast för informationsändamål, inte medicinsk rådgivning",
           "Smart Bookkeeping hjälper till med bokföring men är inte en ersättning för professionell redovisningsrådgivning",
           "Vi kan ändra, avbryta eller upphöra med tjänster när som helst utan ansvar"
         ]
@@ -1440,7 +1440,7 @@
     },
     "overview": {
       "title": "Controllerinformation och översikt",
-      "controllerTitle": "Cookie-controller",
+      "controllerTitle": "Cookie-ansvarig",
       "company": "Företag:",
       "companyName": "Bromander Global AB",
       "address": "Adress:",
@@ -1452,7 +1452,7 @@
       "supervisoryAuthority": "Tillsynsmyndighet:",
       "supervisoryValue": "Post- och telestyrelsen (PTS)",
       "description1": "Denna cookie-policy förklarar hur Bromander Global AB använder cookies och liknande teknologier på vår webbplats. Vi är engagerade i transparens och att följa principerna i EU:s e-integritetsdirektiv och svenska lagen om elektronisk kommunikation.",
-      "description2": "Våra digitala tjänster (AI Reliance Tracker, Smart Bookkeeping) kan ha ytterligare cookie-överväganden för sina specifika funktioner. Denna policy täcker Bromander Global-webbplatsen."
+      "description2": "Våra digitala tjänster (Shinery, Smart Bookkeeping) kan ha ytterligare cookie-överväganden för sina specifika funktioner. Denna policy täcker Bromander Global-webbplatsen."
     },
     "whatAreCookies": {
       "title": "Vad är cookies och liknande teknologier?",
@@ -1824,6 +1824,126 @@
         "title": "Cookie-policy i kraft",
         "description": "Denna cookie-policy träder i kraft från det senast uppdaterade datumet och gäller för alla besökare på vår webbplats. Genom att fortsätta använda vår webbplats efter att ha läst denna policy bekräftar du förståelse för vår cookie-praxis."
       }
+    }
+  },
+  "contactPage": {
+    "hero": {
+      "title1": "KONTAKTA",
+      "title2": "OSS",
+      "description": "Har du frågor om vårt företag eller portfölj? Vi skulle gärna höra från dig."
+    },
+    "form": {
+      "title": "Skicka ett meddelande",
+      "name": "Namn *",
+      "namePlaceholder": "Ditt fullständiga namn",
+      "email": "E-post *",
+      "emailPlaceholder": "din@epost.com",
+      "company": "Företag",
+      "companyPlaceholder": "Ditt företagsnamn",
+      "message": "Meddelande *",
+      "messagePlaceholder": "Berätta om din förfrågan eller hur vi kan hjälpa dig...",
+      "sendMessage": "Skicka meddelande",
+      "messageSent": "Meddelande skickat!"
+    },
+    "info": {
+      "title": "Kontaktinformation",
+      "description": "Kontakta Bromander Global för företagsförfrågningar, partnerskapsmöjligheter eller frågor om våra portföljbolag.",
+      "email": "E-post",
+      "location": "Plats",
+      "locationValue": "Örebro, Sverige"
+    },
+    "hours": {
+      "title": "Öppettider",
+      "weekdays": "Måndag - Fredag",
+      "weekdaysTime": "09:00 - 18:00 CET",
+      "saturday": "Lördag",
+      "saturdayTime": "10:00 - 14:00 CET",
+      "sunday": "Söndag",
+      "sundayTime": "Stängt"
+    },
+    "quickLinks": {
+      "title": "Snabblänkar",
+      "shinery": "Shinery",
+      "bookkeeping": "Smart Bookkeeping",
+      "about": "Om oss"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title1": "OM",
+      "title2": "BROMANDER",
+      "title3": "GLOBAL",
+      "description": "Bromander Global är ett teknikholdingbolag som äger och driver innovativa digitala produkter. Vi fokuserar på att skapa lösningar som förbättrar mänsklig potential och främjar digital hälsa."
+    },
+    "mission": {
+      "badge": "Vårt uppdrag",
+      "title": "Bygger en portfölj av meningsfull teknologi",
+      "description": "Som ett teknikholdingbolag identifierar, utvecklar och driver vi digitala produkter som tar itu med verkliga utmaningar. Vår portfölj fokuserar på lösningar som förbättrar mänskliga förmågor samtidigt som de främjar digital hälsa och kognitiv självständighet."
+    },
+    "vision": {
+      "badge": "Vår vision",
+      "title": "Leder genom ansvarsfull innovation",
+      "description": "Vi ser Bromander Global som ett modellholdingbolag som visar hur teknikägande kan vara både lönsamt och meningsfullt. Vårt tillvägagångssätt prioriterar långsiktigt värdeskapande framför kortsiktiga vinster, vilket säkerställer att våra produkter tjänar verkliga mänskliga behov."
+    },
+    "values": {
+      "title1": "Våra",
+      "title2": "Värderingar",
+      "subtitle": "Principerna som vägleder allt vi gör",
+      "humanCentered": {
+        "title": "Människocentrerad",
+        "description": "Vi tror att teknik ska förbättra mänsklig potential, inte ersätta den. Varje produkt vi bygger sätter människor först."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Vi flyttar gränser och utmanar konventioner för att skapa lösningar som verkligen gör skillnad."
+      },
+      "purposeDriven": {
+        "title": "Syftesdriven",
+        "description": "Varje kodrad, varje funktion, varje beslut styrs av vårt uppdrag att förbättra liv och företag."
+      },
+      "globalImpact": {
+        "title": "Global påverkan",
+        "description": "Vi tänker globalt men agerar lokalt, skapar lösningar som fungerar för företag och individer över hela världen."
+      }
+    },
+    "philosophy": {
+      "title1": "Vår",
+      "title2": "Filosofi",
+      "subtitle": "De strategiska principerna som vägleder våra investerings- och operativa beslut",
+      "strategic": {
+        "title": "Strategiskt ägande",
+        "description": "Vi förvärvar och utvecklar digitala produkter som har potential att göra meningsfull påverkan på sina respektive marknader. Vårt fokus ligger på hållbar tillväxt snarare än snabb skalning.",
+        "points": [
+          "Långsiktigt värdeskapande",
+          "Marknadspåverkansbedömning",
+          "Fokus på hållbar tillväxt"
+        ]
+      },
+      "humanCentered": {
+        "title": "Människocentrerad teknologi",
+        "description": "Varje produkt i vår portfölj är designad med mänsklig välfärd i kärnan. Vi tror att teknik ska förbättra mänskliga förmågor, inte ersätta dem.",
+        "point1": "Prioritering av digital hälsa",
+        "point2": "Kognitiv självständighet",
+        "point3": "Etiska AI-metoder"
+      }
+    },
+    "team": {
+      "title1": "Möt",
+      "title2": "Grundaren",
+      "subtitle": "Visionären bakom Bromander Global",
+      "founder": {
+        "role": "Grundare & VD",
+        "description": "Visionär entreprenör med en passion för att skapa teknik som förbättrar mänsklig potential. Carl Oscar grundade Bromander Global med uppdraget att bygga en portfölj av digitala produkter som prioriterar mänsklig välfärd och digital hälsa.",
+        "quote": "\"Min far, en livslång säljare, lärde mig den viktigaste lektionen inom affärer: du säljer aldrig bara en produkt eller tjänst. Du bygger förtroende. Hans kunder bevisade detta gång på gång genom att följa honom från ett företag till nästa. De köpte vad han än sålde helt enkelt för att de litade på honom. Det är det förtroendearvets som detta företag är byggt på. Vi jagar inte transaktioner; vi bygger partnerskap som är värda samma lojalitet. För den enda segern som betyder något är en delad sådan.\"",
+        "cite": "Ägare av Bromander Global - Bokföringsapp & Shinery"
+      }
+    },
+    "cta": {
+      "title1": "GÅ MED I VÅR",
+      "title2": "MISSION",
+      "description": "Lär dig mer om vår portfölj eller kontakta vårt team.",
+      "viewPortfolio": "Visa portfölj",
+      "contactUs": "Kontakta oss"
     }
   }
 }

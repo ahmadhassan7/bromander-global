@@ -2,18 +2,20 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Mail, 
-  MapPin, 
+import {
+  Mail,
+  MapPin,
   Send,
   CheckCircle,
   ArrowRight
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SmoothScroll from '@/components/SmoothScroll';
 
 export default function ContactPage() {
+  const t = useTranslations('contactPage');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -61,12 +63,11 @@ export default function ContactPage() {
               className="text-center mb-16"
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-6">
-                <span className="text-white">GET IN </span>
-                <span className="gradient-text-blue">TOUCH</span>
+                <span className="text-white">{t('hero.title1')} </span>
+                <span className="gradient-text-blue">{t('hero.title2')}</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-                Have questions about our company or portfolio? 
-                We&apos;d love to hear from you.
+                {t('hero.description')}
               </p>
             </motion.div>
 
@@ -78,12 +79,12 @@ export default function ContactPage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm"
               >
-                <h2 className="text-xl md:text-2xl font-bold text-white mb-6">Send us a message</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-white mb-6">{t('form.title')}</h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div>
-                      <label className="block text-gray-400 text-sm mb-2">Name *</label>
+                      <label className="block text-gray-400 text-sm mb-2">{t('form.name')}</label>
                       <input
                         type="text"
                         name="name"
@@ -91,11 +92,11 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                        placeholder="Your full name"
+                        placeholder={t('form.namePlaceholder')}
                       />
                     </div>
                     <div>
-                      <label className="block text-gray-400 text-sm mb-2">Email *</label>
+                      <label className="block text-gray-400 text-sm mb-2">{t('form.email')}</label>
                       <input
                         type="email"
                         name="email"
@@ -103,25 +104,25 @@ export default function ContactPage() {
                         onChange={handleInputChange}
                         required
                         className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                        placeholder="your@email.com"
+                        placeholder={t('form.emailPlaceholder')}
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-gray-400 text-sm mb-2">Company</label>
+                    <label className="block text-gray-400 text-sm mb-2">{t('form.company')}</label>
                     <input
                       type="text"
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
-                      placeholder="Your company name"
+                      placeholder={t('form.companyPlaceholder')}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-gray-400 text-sm mb-2">Message *</label>
+                    <label className="block text-gray-400 text-sm mb-2">{t('form.message')}</label>
                     <textarea
                       name="message"
                       value={formData.message}
@@ -129,7 +130,7 @@ export default function ContactPage() {
                       required
                       rows={6}
                       className="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"
-                      placeholder="Tell us about your inquiry or how we can assist you..."
+                      placeholder={t('form.messagePlaceholder')}
                     />
                   </div>
 
@@ -143,12 +144,12 @@ export default function ContactPage() {
                     {isSubmitted ? (
                       <>
                         <CheckCircle className="w-5 h-5" />
-                        Message Sent!
+                        {t('form.messageSent')}
                       </>
                     ) : (
                       <>
                         <Send className="w-5 h-5" />
-                        Send Message
+                        {t('form.sendMessage')}
                       </>
                     )}
                   </motion.button>
@@ -163,10 +164,9 @@ export default function ContactPage() {
                 className="space-y-8"
               >
                 <div>
-                  <h2 className="text-2xl font-bold text-white mb-6">Contact Information</h2>
+                  <h2 className="text-2xl font-bold text-white mb-6">{t('info.title')}</h2>
                   <p className="text-gray-400 leading-relaxed mb-8">
-                    Connect with Bromander Global for corporate inquiries, partnership opportunities, 
-                    or questions about our portfolio companies.
+                    {t('info.description')}
                   </p>
                 </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6 text-blue-500" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">Email</h3>
+                      <h3 className="text-white font-semibold">{t('info.email')}</h3>
                       <p className="text-gray-400">support@bromanderglobal.com</p>
                     </div>
                   </motion.div>
@@ -192,42 +192,42 @@ export default function ContactPage() {
                       <MapPin className="w-6 h-6 text-blue-500" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">Location</h3>
-                      <p className="text-gray-400">Örebro, Sweden</p>
+                      <h3 className="text-white font-semibold">{t('info.location')}</h3>
+                      <p className="text-gray-400">{t('info.locationValue')}</p>
                     </div>
                   </motion.div>
                 </div>
 
                 {/* Business Hours */}
                 <div className="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-blue-500/20 rounded-xl p-6">
-                  <h3 className="text-white font-semibold mb-4">Business Hours</h3>
+                  <h3 className="text-white font-semibold mb-4">{t('hours.title')}</h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Monday - Friday</span>
-                      <span className="text-white">9:00 AM - 6:00 PM CET</span>
+                      <span className="text-gray-400">{t('hours.weekdays')}</span>
+                      <span className="text-white">{t('hours.weekdaysTime')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Saturday</span>
-                      <span className="text-white">10:00 AM - 2:00 PM CET</span>
+                      <span className="text-gray-400">{t('hours.saturday')}</span>
+                      <span className="text-white">{t('hours.saturdayTime')}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-400">Sunday</span>
-                      <span className="text-white">Closed</span>
+                      <span className="text-gray-400">{t('hours.sunday')}</span>
+                      <span className="text-white">{t('hours.sundayTime')}</span>
                     </div>
                   </div>
                 </div>
 
                 {/* Quick Links */}
                 <div>
-                  <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+                  <h3 className="text-white font-semibold mb-4">{t('quickLinks.title')}</h3>
                   <div className="space-y-3">
                     <motion.a
-                      href="/products/ai-tracker"
+                      href="/products/shinery"
                       whileHover={{ x: 5 }}
                       className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
                     >
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      AI Reliance Tracker
+                      {t('quickLinks.shinery')}
                     </motion.a>
                     <motion.a
                       href="/products/bookkeeping"
@@ -235,7 +235,7 @@ export default function ContactPage() {
                       className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
                     >
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      Smart Bookkeeping
+                      {t('quickLinks.bookkeeping')}
                     </motion.a>
                     <motion.a
                       href="/about"
@@ -243,7 +243,7 @@ export default function ContactPage() {
                       className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group"
                     >
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      About Us
+                      {t('quickLinks.about')}
                     </motion.a>
                   </div>
                 </div>

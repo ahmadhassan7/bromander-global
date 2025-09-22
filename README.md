@@ -1,13 +1,13 @@
 # Bromander Global Website
 
-A modern, responsive website for Bromander Global - showcasing our innovative products including AI Reliance Tracker and Smart Bookkeeping.
+A modern, responsive website for Bromander Global - showcasing our innovative products including Shinery and Smart Bookkeeping.
 
 ## 🚀 Features
 
 - **Modern Design**: Dark theme with blue/cyan gradient color scheme
 - **Responsive Layout**: Fully responsive design that works on all devices
 - **Smooth Animations**: Powered by Framer Motion and GSAP
-- **Product Showcases**: Dedicated pages for AI Reliance Tracker and Smart Bookkeeping
+- **Product Showcases**: Dedicated pages for Shinery and Smart Bookkeeping
 - **Interactive Elements**: Engaging hover effects and micro-interactions
 - **Performance Optimized**: Built with Next.js 15 and Turbopack
 
@@ -28,7 +28,7 @@ A modern, responsive website for Bromander Global - showcasing our innovative pr
 
 ### Color Palette
 - **Primary**: Blue (#3b82f6) to Cyan (#06b6d4) gradients
-- **Secondary**: Purple (#a855f7) to Pink (#ec4899) for AI Tracker
+- **Secondary**: Purple (#a855f7) to Pink (#ec4899) for Shinery
 - **Accent**: Emerald (#10b981) for additional highlights
 - **Background**: Pure black (#000000)
 - **Text**: Gray scale from #f3f4f6 to #9ca3af
@@ -52,7 +52,7 @@ src/
 │   ├── about/              # About page
 │   ├── contact/            # Contact page
 │   ├── products/
-│   │   ├── ai-tracker/     # AI Reliance Tracker product page
+│   │   ├── shinery/        # Shinery product page
 │   │   └── bookkeeping/    # Smart Bookkeeping product page
 │   ├── globals.css         # Global styles and theme
 │   ├── layout.tsx          # Root layout
@@ -74,7 +74,7 @@ src/
 - Testimonials
 - Call-to-action sections
 
-### AI Reliance Tracker (/products/ai-tracker)
+### Shinery (/products/shinery)
 - Product overview with interactive mockup
 - Feature highlights
 - User testimonials

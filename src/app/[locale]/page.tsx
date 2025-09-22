@@ -343,7 +343,7 @@ export default function Home() {
                   skewAmount={2}
                   easing="elastic"
                 >
-                  {/* AI Reliance Tracker Window */}
+                  {/* Shinery Window */}
                   <Card className="overflow-hidden bg-gradient-to-br from-gray-900 to-black border border-gray-700 shadow-2xl">
                     {/* Window Title Bar */}
                     <div className="bg-gradient-to-r from-purple-900/50 to-purple-800/50 px-3 sm:px-4 py-2.5 border-b border-purple-500/30 flex items-center justify-between">

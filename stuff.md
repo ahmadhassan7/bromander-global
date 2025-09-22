@@ -5,7 +5,7 @@ Complete Legal & Text Fix List for Bromander Global
 
 [ ] Everywhere on the site, make clear that:
 
-All products (AI Reliance Tracker, Smart Bookkeeping, future apps) are services provided by Bromander Global AB.
+All products (Shinery, Smart Bookkeeping, future apps) are services provided by Bromander Global AB.
 
 Do not call them “portfolio companies.” Instead use:
 
