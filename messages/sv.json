@@ -1868,6 +1868,49 @@
       "about": "Om oss"
     }
   },
+  "dataDeletionPage": {
+    "badge": "Dataintegritet",
+    "hero": {
+      "title": "Begäran om radering av data",
+      "subtitle": "Shinery",
+      "description": "Vi respekterar din integritet och din rätt att radera dina data. Begär radering av ditt konto och all associerad data nedan."
+    },
+    "whatGetsDeleted": {
+      "title": "Vad som raderas",
+      "item1": "Din kontoinformation inklusive e-post, användarnamn och profildata",
+      "item2": "All AI-användningsspårning och aktivitetsloggar",
+      "item3": "Personliga preferenser och appinställningar",
+      "item4": "Analysdata och användningsmönster",
+      "item5": "Allt uppladdat innehåll eller användargenererad data"
+    },
+    "howToRequest": {
+      "title": "Så begär du radering av data",
+      "step1": {
+        "title": "Maila oss",
+        "description": "Skicka ett e-postmeddelande till support@bromanderglobal.com med ämnet \"Begäran om radering av data - Shinery\" från e-postadressen som är kopplad till ditt konto."
+      },
+      "step2": {
+        "title": "Verifiera din identitet",
+        "description": "Vi kan behöva verifiera din identitet för att skydda din integritet. Vänligen inkludera din registrerade e-postadress och annan identifierande information."
+      },
+      "step3": {
+        "title": "Bekräftelse",
+        "description": "Vi kommer att behandla din begäran inom 30 dagar och skicka dig ett bekräftelsemail när dina data har raderats."
+      }
+    },
+    "importantNotes": {
+      "title": "Viktiga anteckningar",
+      "note1": "Radering av data är permanent och kan inte ångras. Du kommer att förlora åtkomst till alla appfunktioner och dina data kan inte återställas.",
+      "note2": "Viss data kan behållas för lagliga efterlevnadsändamål (t.ex. finansiella register, juridiska skyldigheter) enligt svensk lag.",
+      "note3": "Behandlingstiden är vanligtvis 7-14 arbetsdagar, men kan ta upp till 30 dagar enligt GDPR."
+    },
+    "contact": {
+      "title": "Behöver du hjälp?",
+      "description": "Om du har frågor om radering av data eller behöver hjälp är vårt supportteam här för att hjälpa till.",
+      "button": "Skicka raderingsbegäran",
+      "email": "E-post"
+    }
+  },
   "aboutPage": {
     "hero": {
       "title1": "OM",

@@ -1868,6 +1868,49 @@
       "about": "About Us"
     }
   },
+  "dataDeletionPage": {
+    "badge": "Data Privacy",
+    "hero": {
+      "title": "Data Deletion Request",
+      "subtitle": "Shinery",
+      "description": "We respect your privacy and your right to delete your data. Request deletion of your account and all associated data below."
+    },
+    "whatGetsDeleted": {
+      "title": "What Gets Deleted",
+      "item1": "Your account information including email, username, and profile data",
+      "item2": "All AI usage tracking data and activity logs",
+      "item3": "Personal preferences and app settings",
+      "item4": "Analytics data and usage patterns",
+      "item5": "Any uploaded content or user-generated data"
+    },
+    "howToRequest": {
+      "title": "How to Request Data Deletion",
+      "step1": {
+        "title": "Email Us",
+        "description": "Send an email to support@bromanderglobal.com with the subject \"Data Deletion Request - Shinery\" from the email address associated with your account."
+      },
+      "step2": {
+        "title": "Verify Your Identity",
+        "description": "We may need to verify your identity to protect your privacy. Please include your registered email address and any other identifying information."
+      },
+      "step3": {
+        "title": "Confirmation",
+        "description": "We will process your request within 30 days and send you a confirmation email once your data has been deleted."
+      }
+    },
+    "importantNotes": {
+      "title": "Important Notes",
+      "note1": "Data deletion is permanent and cannot be undone. You will lose access to all app features and your data cannot be recovered.",
+      "note2": "Some data may be retained for legal compliance purposes (e.g., financial records, legal obligations) as required by Swedish law.",
+      "note3": "Processing time is typically 7-14 business days, but may take up to 30 days as allowed by GDPR."
+    },
+    "contact": {
+      "title": "Need Help?",
+      "description": "If you have questions about data deletion or need assistance, our support team is here to help.",
+      "button": "Send Deletion Request",
+      "email": "Email"
+    }
+  },
   "aboutPage": {
     "hero": {
       "title1": "ABOUT",
